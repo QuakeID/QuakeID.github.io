@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Arne Spang | QuakeID Research Group</title>
-    <link>http://www.staff.uni-bayreuth.de/~bt303651/author/arne-spang/</link>
-      <atom:link href="http://www.staff.uni-bayreuth.de/~bt303651/author/arne-spang/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://QuakeID.github.io/author/arne-spang/</link>
+      <atom:link href="https://QuakeID.github.io/author/arne-spang/index.xml" rel="self" type="application/rss+xml" />
     <description>Arne Spang</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
     <image>
-      <url>http://www.staff.uni-bayreuth.de/~bt303651/author/arne-spang/avatar_hu0def4187308ada695eb4a30554d5de31_16684_270x270_fill_q75_lanczos_center.jpg</url>
+      <url>https://QuakeID.github.io/author/arne-spang/avatar_hu0def4187308ada695eb4a30554d5de31_16684_270x270_fill_q75_lanczos_center.jpg</url>
       <title>Arne Spang</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/author/arne-spang/</link>
+      <link>https://QuakeID.github.io/author/arne-spang/</link>
     </image>
     
   </channel>

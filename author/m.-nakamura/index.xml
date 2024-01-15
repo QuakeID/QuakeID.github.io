@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>M. Nakamura | QuakeID Research Group</title>
-    <link>http://www.staff.uni-bayreuth.de/~bt303651/author/m.-nakamura/</link>
-      <atom:link href="http://www.staff.uni-bayreuth.de/~bt303651/author/m.-nakamura/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://QuakeID.github.io/author/m.-nakamura/</link>
+      <atom:link href="https://QuakeID.github.io/author/m.-nakamura/index.xml" rel="self" type="application/rss+xml" />
     <description>M. Nakamura</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 01 Jul 2022 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://www.staff.uni-bayreuth.de/~bt303651/media/logo_hu759d274fd7d1bb84a9bad412745ec97e_585457_300x300_fit_lanczos_3.png</url>
+      <url>https://QuakeID.github.io/media/logo_hu759d274fd7d1bb84a9bad412745ec97e_585457_300x300_fit_lanczos_3.png</url>
       <title>M. Nakamura</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/author/m.-nakamura/</link>
+      <link>https://QuakeID.github.io/author/m.-nakamura/</link>
     </image>
     
     <item>
       <title>A New Method for Determining Fluid Flux at High Pressures Applied to the Dehydration of Serpentinites</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/publication/eberhardt-2021-fp/</link>
+      <link>https://QuakeID.github.io/publication/eberhardt-2021-fp/</link>
       <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/publication/eberhardt-2021-fp/</guid>
+      <guid>https://QuakeID.github.io/publication/eberhardt-2021-fp/</guid>
       <description></description>
     </item>
     

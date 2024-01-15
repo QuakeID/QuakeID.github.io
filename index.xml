@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>QuakeID Research Group</title>
-    <link>http://www.staff.uni-bayreuth.de/~bt303651/</link>
-      <atom:link href="http://www.staff.uni-bayreuth.de/~bt303651/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://QuakeID.github.io/</link>
+      <atom:link href="https://QuakeID.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>QuakeID Research Group</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://www.staff.uni-bayreuth.de/~bt303651/media/logo_hu759d274fd7d1bb84a9bad412745ec97e_585457_300x300_fit_lanczos_3.png</url>
+      <url>https://QuakeID.github.io/media/logo_hu759d274fd7d1bb84a9bad412745ec97e_585457_300x300_fit_lanczos_3.png</url>
       <title>QuakeID Research Group</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/</link>
+      <link>https://QuakeID.github.io/</link>
     </image>
     
     <item>
       <title>Installation</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/courses/gmg_gui_tutorial/gmg_gui_installation/</link>
+      <link>https://QuakeID.github.io/courses/gmg_gui_tutorial/gmg_gui_installation/</link>
       <pubDate>Mon, 28 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/courses/gmg_gui_tutorial/gmg_gui_installation/</guid>
+      <guid>https://QuakeID.github.io/courses/gmg_gui_tutorial/gmg_gui_installation/</guid>
       <description>&lt;p&gt;There are two possibilities to install the two GMG apps: (1) install is as a Matlab app (requires MATLAB) or (2) install it as a standalone app. If you choose the second possibility, the MATLAB Runtime environment will be downloaded during the installation.&lt;/p&gt;
 &lt;h2 id=&#34;1-matlab-apps&#34;&gt;1. MATLAB apps&lt;/h2&gt;
 &lt;p&gt;To install the two apps within MATLAB, first download them ( &lt;a href=&#34;https://myfiles.uni-bayreuth.de/filr/public-link/file-download/043490a48a3aba9d018a457677b61cf0/81263/-6817355882462998366/ProfileSelection.mlappinstall&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Profile Picker&lt;/a&gt;, &lt;a href=&#34;https://myfiles.uni-bayreuth.de/filr/public-link/file-download/043490a48a3aba9d018a457677da1cf4/81262/-7085908668330488526/GMGDataPicker.mlappinstall&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Data Picker&lt;/a&gt; ).&lt;/p&gt;
@@ -47,9 +47,9 @@
     
     <item>
       <title>What is a model?</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/courses/modelling_tutorial_halle/tsk_intro/</link>
+      <link>https://QuakeID.github.io/courses/modelling_tutorial_halle/tsk_intro/</link>
       <pubDate>Wed, 27 Oct 2021 00:00:00 +0100</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/courses/modelling_tutorial_halle/tsk_intro/</guid>
+      <guid>https://QuakeID.github.io/courses/modelling_tutorial_halle/tsk_intro/</guid>
       <description>&lt;h2 id=&#34;what-is-a-model&#34;&gt;What is a model?&lt;/h2&gt;
 &lt;p&gt;When it comes to tectonic models, there may be some confusion about the term &amp;ldquo;model&amp;rdquo;. Often, this term is interpreted as something the necessarily involves mathematics. Indeed, as the following definition shows, &amp;ldquo;model&amp;rdquo; often refers to mathematical models:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -82,9 +82,9 @@
     
     <item>
       <title>Intro and Julia basics</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/courses/gmg_tutorial/introjulia/</link>
+      <link>https://QuakeID.github.io/courses/gmg_tutorial/introjulia/</link>
       <pubDate>Tue, 26 Oct 2021 00:00:00 +0100</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/courses/gmg_tutorial/introjulia/</guid>
+      <guid>https://QuakeID.github.io/courses/gmg_tutorial/introjulia/</guid>
       <description>&lt;h2 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h2&gt;
 &lt;p&gt;In this short tutorial, we will introduce the Geophysical Model Generator (GMG). GMG was developed to import and process different kinds of geophysical data. These datasets can then be exported and visualized in Paraview.&lt;/p&gt;
 &lt;p&gt;The main focus of this tutorial is to learn the basics of the programming language Julia and to show how geophysical datasets can be imported using the tools provided by the Geophysical Model Generator (with the focus on seismic tomographies).
@@ -665,9 +665,9 @@ Once you are done with the terminal, you get back to the &lt;code&gt;REPL&lt;/co
     
     <item>
       <title>Data</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/courses/gmg_gui_tutorial/gmg_gui_data/</link>
+      <link>https://QuakeID.github.io/courses/gmg_gui_tutorial/gmg_gui_data/</link>
       <pubDate>Mon, 28 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/courses/gmg_gui_tutorial/gmg_gui_data/</guid>
+      <guid>https://QuakeID.github.io/courses/gmg_gui_tutorial/gmg_gui_data/</guid>
       <description>&lt;p&gt;We will be working with preprocessed data of 12 different profiles where we extracted Vp- and Vs-tomographies, Moho topographies ans seismicty from different data sources. These processed datasets can be downloaded &lt;a href=&#34;https://myfiles.uni-bayreuth.de/filr/public-link/file-download/043490a48a3aba9d018a4574bb3d1cd7/81261/3631492212628888140/ProfileData.zip&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt; as a single zip file.&lt;/p&gt;
 &lt;p&gt;&lt;ul class=&#34;cta-group&#34;&gt;
   
@@ -692,9 +692,9 @@ Once you are done with the terminal, you get back to the &lt;code&gt;REPL&lt;/co
     
     <item>
       <title>Package Description</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/courses/gmg_tutorial/gmg_desc/</link>
+      <link>https://QuakeID.github.io/courses/gmg_tutorial/gmg_desc/</link>
       <pubDate>Wed, 27 Oct 2021 00:00:00 +0100</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/courses/gmg_tutorial/gmg_desc/</guid>
+      <guid>https://QuakeID.github.io/courses/gmg_tutorial/gmg_desc/</guid>
       <description>&lt;h2 id=&#34;1-what-is-the-geophysical-model-generator&#34;&gt;1. What is the Geophysical Model Generator?&lt;/h2&gt;
 &lt;p&gt;The idea for the Geophysical Model Generator was born out of the need to view different geophysical datasets (e.g. tomographies, gravity measurements, receiver functions and others) in a single joint manner without having to resort to specifically programmed visualization routines for each case. The Geophysical Model Generator is NOT a single program, but can rather be seen as a set of tools (written in julia) that allow to import and modify different datasets and transfer them to a common data structure. This common data structure then allows to process and visualize the different datasets in a coherent manner, thus facilitating comparisons and interpretations.
 In addition, the GMG provides tools to assist numerical modellers in creating input models from these datasets.&lt;/p&gt;
@@ -752,9 +752,9 @@ In addition, the GMG provides tools to assist numerical modellers in creating in
     
     <item>
       <title>The modelling workflow</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/courses/modelling_tutorial_halle/tsk_workflow/</link>
+      <link>https://QuakeID.github.io/courses/modelling_tutorial_halle/tsk_workflow/</link>
       <pubDate>Wed, 27 Oct 2021 00:00:00 +0100</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/courses/modelling_tutorial_halle/tsk_workflow/</guid>
+      <guid>https://QuakeID.github.io/courses/modelling_tutorial_halle/tsk_workflow/</guid>
       <description>&lt;h2 id=&#34;the-modelling-workflow&#34;&gt;The modelling workflow&lt;/h2&gt;
 &lt;h4 id=&#34;observation&#34;&gt;Observation&lt;/h4&gt;
 &lt;h4 id=&#34;simplification&#34;&gt;Simplification&lt;/h4&gt;
@@ -784,9 +784,9 @@ In addition, the GMG provides tools to assist numerical modellers in creating in
     
     <item>
       <title>GMG GUI Manual</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/courses/gmg_gui_tutorial/gmg_gui_manual/</link>
+      <link>https://QuakeID.github.io/courses/gmg_gui_tutorial/gmg_gui_manual/</link>
       <pubDate>Mon, 28 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/courses/gmg_gui_tutorial/gmg_gui_manual/</guid>
+      <guid>https://QuakeID.github.io/courses/gmg_gui_tutorial/gmg_gui_manual/</guid>
       <description>&lt;p&gt;The current manual consists of a set of slides which we will go over during the workshop. This file can be downloaded &lt;a href=&#34;https://myfiles.uni-bayreuth.de/filr/public-link/file-download/043490a48a3aba9d018a4574bb0d1cd3/81260/1567055420365200803/Manual.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;ul class=&#34;cta-group&#34;&gt;
   
@@ -802,9 +802,9 @@ In addition, the GMG provides tools to assist numerical modellers in creating in
     
     <item>
       <title>Importing Data</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/courses/gmg_tutorial/gmg_import/</link>
+      <link>https://QuakeID.github.io/courses/gmg_tutorial/gmg_import/</link>
       <pubDate>Wed, 27 Oct 2021 00:00:00 +0100</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/courses/gmg_tutorial/gmg_import/</guid>
+      <guid>https://QuakeID.github.io/courses/gmg_tutorial/gmg_import/</guid>
       <description>&lt;h2 id=&#34;1-data-sources&#34;&gt;1. Data sources&lt;/h2&gt;
 &lt;p&gt;Before you can use GMG, you obviously need data. Given the different kinds of data available, there is a multitude of sources. Here, we list some of them that may be useful in the future:&lt;/p&gt;
 &lt;ul&gt;
@@ -867,7 +867,7 @@ In addition, the GMG provides tools to assist numerical modellers in creating in
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If you, at a later stage, want to load this file again do it as follows:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;julia&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;using&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;JLD2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;GeophysicalModelGenerator&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;julia&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Data_Paffrath_&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;load_object&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;Paffrath_Europe.jld2&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can also find the above workflow in this file: &lt;a href=&#34;./~bt303651/uploads/gmg_tutorial/ReadDataPaffrath.jl&#34; target=&#34;_blank&#34;&gt;ReadDataPaffrath.jl&lt;/a&gt;. To run it, do the following:&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can also find the above workflow in this file: &lt;a href=&#34;https://QuakeID.github.io/uploads/gmg_tutorial/ReadDataPaffrath.jl&#34; target=&#34;_blank&#34;&gt;ReadDataPaffrath.jl&lt;/a&gt;. To run it, do the following:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;julia&amp;gt; include(&amp;#34;ReadDataPaffrath.jl&amp;#34;)
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Make sure to put the data file vgrid_it12_w_res.txt in the same directory.&lt;/p&gt;
 &lt;h2 id=&#34;3-importing-tomographic-data-given-as-netcdf&#34;&gt;3. Importing tomographic data given as netCDF&lt;/h2&gt;
@@ -944,9 +944,9 @@ To load this data, we can now simply use the commmand &lt;em&gt;ncread&lt;/em&gt
     
     <item>
       <title>Model Types</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/courses/modelling_tutorial_halle/tsk_modeltypes/</link>
+      <link>https://QuakeID.github.io/courses/modelling_tutorial_halle/tsk_modeltypes/</link>
       <pubDate>Wed, 27 Oct 2021 00:00:00 +0100</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/courses/modelling_tutorial_halle/tsk_modeltypes/</guid>
+      <guid>https://QuakeID.github.io/courses/modelling_tutorial_halle/tsk_modeltypes/</guid>
       <description>&lt;h2 id=&#34;model-types&#34;&gt;Model types&lt;/h2&gt;
 &lt;h4 id=&#34;conceptual-models&#34;&gt;Conceptual models&lt;/h4&gt;
 &lt;h4 id=&#34;analytical-models&#34;&gt;Analytical models&lt;/h4&gt;
@@ -974,9 +974,9 @@ To load this data, we can now simply use the commmand &lt;em&gt;ncread&lt;/em&gt
     
     <item>
       <title>Creating Cross Sections</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/courses/gmg_tutorial/gmg_cross/</link>
+      <link>https://QuakeID.github.io/courses/gmg_tutorial/gmg_cross/</link>
       <pubDate>Wed, 27 Oct 2021 00:00:00 +0100</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/courses/gmg_tutorial/gmg_cross/</guid>
+      <guid>https://QuakeID.github.io/courses/gmg_tutorial/gmg_cross/</guid>
       <description>&lt;p&gt;In scientific publications that deal with seismic tomographies, the results are often shown in 2D horizontal and vertical cross sections (slices and profiles). The &lt;em&gt;Geophysical Model Generator&lt;/em&gt; therefore also provides tools do exactly this.&lt;/p&gt;
 &lt;p&gt;We will use the data that we have previously imported to show how to create cross sections. If you haven&amp;rsquo;t closed julia, these datasets should still be in memory, otherwise you have to load the corresponding jld2 file:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;julia&amp;gt; load(&amp;#34;Paffrath_Europe.jld2&amp;#34;)
@@ -992,7 +992,7 @@ To load this data, we can now simply use the commmand &lt;em&gt;ncread&lt;/em&gt
   &lt;summary&gt;&lt;strong&gt;Exercises&lt;/strong&gt;&lt;/summary&gt;
   &lt;p&gt;&lt;ol&gt;
 &lt;li&gt;Create cross-sections for all three profiles given below.&lt;/li&gt;
-&lt;li&gt;If you have time, have a look for horizontal slices in &lt;a href=&#34;./~bt303651/uploads/gmg_tutorial/Lippitsch2003.pdf&#34; target=&#34;_blank&#34;&gt;Lippitsch et al. (2003)&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;If you have time, have a look for horizontal slices in &lt;a href=&#34;https://QuakeID.github.io/uploads/gmg_tutorial/Lippitsch2003.pdf&#34; target=&#34;_blank&#34;&gt;Lippitsch et al. (2003)&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;If you have additional time, , do the same for the P-wave tomography by Koulakov et al.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;table&gt;
@@ -1058,9 +1058,9 @@ To load this data, we can now simply use the commmand &lt;em&gt;ncread&lt;/em&gt
     
     <item>
       <title>Numerical methods</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/courses/modelling_tutorial_halle/tsk_methods/</link>
+      <link>https://QuakeID.github.io/courses/modelling_tutorial_halle/tsk_methods/</link>
       <pubDate>Wed, 27 Oct 2021 00:00:00 +0100</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/courses/modelling_tutorial_halle/tsk_methods/</guid>
+      <guid>https://QuakeID.github.io/courses/modelling_tutorial_halle/tsk_methods/</guid>
       <description>&lt;h2 id=&#34;numerical-methods&#34;&gt;Numerical methods&lt;/h2&gt;
 &lt;h4 id=&#34;finite-element-method&#34;&gt;Finite Element Method&lt;/h4&gt;
 &lt;h4 id=&#34;finite-difference-method&#34;&gt;Finite Difference Method&lt;/h4&gt;
@@ -1088,9 +1088,9 @@ To load this data, we can now simply use the commmand &lt;em&gt;ncread&lt;/em&gt
     
     <item>
       <title>Exporting Data</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/courses/gmg_tutorial/gmg_export/</link>
+      <link>https://QuakeID.github.io/courses/gmg_tutorial/gmg_export/</link>
       <pubDate>Wed, 27 Oct 2021 00:00:00 +0100</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/courses/gmg_tutorial/gmg_export/</guid>
+      <guid>https://QuakeID.github.io/courses/gmg_tutorial/gmg_export/</guid>
       <description>&lt;h2 id=&#34;1-exporting-data&#34;&gt;1. Exporting Data&lt;/h2&gt;
 &lt;p&gt;Now that you know how to import data and how to extract cross sections from it, you may want to export it to a format that can be imported into e.g. Paraview. This has been done already at several instances during this tutorial, but we state it here again for completeness. Exporting data to &lt;em&gt;vts&lt;/em&gt; format (which can be imported to Paraview) can be done using the function &lt;mark&gt;Write_Paraview&lt;/mark&gt;.&lt;/p&gt;
 &lt;p&gt;Based on the previous part of the tutorial, you may want to export the whole block of the imported tomography. This is simply done using this command:&lt;/p&gt;
@@ -1131,9 +1131,9 @@ That&amp;rsquo;s it!&lt;/p&gt;
     
     <item>
       <title>Visualization</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/courses/gmg_tutorial/gmg_vis/</link>
+      <link>https://QuakeID.github.io/courses/gmg_tutorial/gmg_vis/</link>
       <pubDate>Sat, 06 Nov 2021 00:00:00 +0100</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/courses/gmg_tutorial/gmg_vis/</guid>
+      <guid>https://QuakeID.github.io/courses/gmg_tutorial/gmg_vis/</guid>
       <description>&lt;p&gt;To show you how to visualize data, we will use one of the exmaples given in the GMG documentation. We will repeat it here for completeness. The example is the P-wave velocity model of the Alps as described in:&lt;/p&gt;
 &lt;p&gt;Zhao, L., Paul, A., Malusà, M.G., Xu, X., Zheng, T., Solarino, S., Guillot, S., Schwartz, S., Dumont, T., Salimbeni, S., Aubert, C., Pondrelli, S., Wang, Q., Zhu, R., 2016. &lt;em&gt;Continuity of the Alpine slab unraveled by high-resolution P wave tomography&lt;/em&gt;. Journal of Geophysical Research: Solid Earth 121, 8720–8737. &lt;a href=&#34;https://doi.org/10.1002/2016JB013310&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;doi:10.1002/2016JB013310&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The data is given in ASCII format with longitude/latitude/depth/velocity anomaly (percentage) format. You can find the processed data &lt;a href=&#34;https://seafile.rlp.net/d/22b0fb85550240758552/files/?p=%2FZhao_etal_2016_data.zip&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
@@ -1414,9 +1414,9 @@ In some cases, you will want to interpolate the data on a different grid. Use th
     
     <item>
       <title>Example Event</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/event/example/</link>
+      <link>https://QuakeID.github.io/event/example/</link>
       <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/event/example/</guid>
+      <guid>https://QuakeID.github.io/event/example/</guid>
       <description>&lt;p&gt;Slides can be added in a few ways:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Create&lt;/strong&gt; slides using Wowchemy&amp;rsquo;s &lt;a href=&#34;https://wowchemy.com/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Slides&lt;/em&gt;&lt;/a&gt; feature and link using &lt;code&gt;slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
@@ -1429,18 +1429,18 @@ In some cases, you will want to interpolate the data on a different grid. Use th
     
     <item>
       <title>Danielle and Tatjana join the team!</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/post/01-12-23_newmembers/</link>
+      <link>https://QuakeID.github.io/post/01-12-23_newmembers/</link>
       <pubDate>Fri, 01 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/post/01-12-23_newmembers/</guid>
+      <guid>https://QuakeID.github.io/post/01-12-23_newmembers/</guid>
       <description>&lt;p&gt;To complete the QuakeID team, Danielle Souze and Tatjana Weiler have started their PhD on December 1st. Welcome!&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>2 Open PhD Positions!</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/post/29-04-23_openpositions/</link>
+      <link>https://QuakeID.github.io/post/29-04-23_openpositions/</link>
       <pubDate>Tue, 25 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/post/29-04-23_openpositions/</guid>
+      <guid>https://QuakeID.github.io/post/29-04-23_openpositions/</guid>
       <description>&lt;p&gt;&lt;strong&gt;2 Open PhD positions!&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;We are looking for 2 PhD students to join QuakeID! For more information and to submit your application documents, follow the links below:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://www.uni-bayreuth.de/job-vacancy-keyword-quakeid_exp-ec070973f6f010f0&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PhD position in high pressure lab quakes&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
@@ -1452,9 +1452,9 @@ For full consideration, apply before May 31, 2023.&lt;/p&gt;
     
     <item>
       <title>EGU General Assembly</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/post/29-04-23_egu/</link>
+      <link>https://QuakeID.github.io/post/29-04-23_egu/</link>
       <pubDate>Thu, 20 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/post/29-04-23_egu/</guid>
+      <guid>https://QuakeID.github.io/post/29-04-23_egu/</guid>
       <description>&lt;p&gt;The EGU General assembly is coming up next week and &lt;strong&gt;QuakeID&lt;/strong&gt; team members will be part of several presentations. Tune in if you are interested (or even better, come directly to the presentation if you are in Vienna).&lt;/p&gt;
 &lt;h3 id=&#34;tuesday-254&#34;&gt;Tuesday, 25.4.&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://meetingorganizer.copernicus.org/EGU23/EGU23-11594.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GPU-based numerical models of rapid ductile strain localization due to thermal runaway &lt;/a&gt;&lt;/p&gt;
@@ -1465,9 +1465,9 @@ For full consideration, apply before May 31, 2023.&lt;/p&gt;
     
     <item>
       <title>Julia Hackathon</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/post/15-02-23_hackathon/</link>
+      <link>https://QuakeID.github.io/post/15-02-23_hackathon/</link>
       <pubDate>Wed, 15 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/post/15-02-23_hackathon/</guid>
+      <guid>https://QuakeID.github.io/post/15-02-23_hackathon/</guid>
       <description>&lt;p&gt;The QuakeID team and collaborators from the Unversity of Frankfurt, the University of Mainz, ETH Zürich, UNIL Lausanne, LMU Munich and Université de Rennes will meet for a Julia hackathon on March 13-17, 2023 to advance different software projects.&lt;/p&gt;
 &lt;h3 id=&#34;hackathon-purpose&#34;&gt;Hackathon purpose&lt;/h3&gt;
 &lt;p&gt;In the hackathon, we will again join forces to continue developing several julia packages that have been started last year.&lt;/p&gt;</description>
@@ -1475,33 +1475,33 @@ For full consideration, apply before May 31, 2023.&lt;/p&gt;
     
     <item>
       <title>Arne Spang joins the team!</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/post/01-10-21_arnespang/</link>
+      <link>https://QuakeID.github.io/post/01-10-21_arnespang/</link>
       <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/post/01-10-21_arnespang/</guid>
+      <guid>https://QuakeID.github.io/post/01-10-21_arnespang/</guid>
       <description>&lt;p&gt;Arne Spang has joined the team! He will work on deciphering the impact of different weakening mechanisms on deep earthquake generation. To this end, Arne will also develop state of the art pseudo-transient solvers to properly resolve the feedbacks between the different mechanisms. Welcome!&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>A New Method for Determining Fluid Flux at High Pressures Applied to the Dehydration of Serpentinites</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/publication/eberhardt-2021-fp/</link>
+      <link>https://QuakeID.github.io/publication/eberhardt-2021-fp/</link>
       <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/publication/eberhardt-2021-fp/</guid>
+      <guid>https://QuakeID.github.io/publication/eberhardt-2021-fp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Narrow, Fast, and “Cool” Mantle Plumes Caused by Strain‐Weakening Rheology in Earth&#39;s Lower Mantle</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/publication/guelcher-2021-ko/</link>
+      <link>https://QuakeID.github.io/publication/guelcher-2021-ko/</link>
       <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/publication/guelcher-2021-ko/</guid>
+      <guid>https://QuakeID.github.io/publication/guelcher-2021-ko/</guid>
       <description></description>
     </item>
     
     <item>
       <title>EGU General Assembly</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/post/20-05-22_egu/</link>
+      <link>https://QuakeID.github.io/post/20-05-22_egu/</link>
       <pubDate>Sun, 22 May 2022 00:00:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/post/20-05-22_egu/</guid>
+      <guid>https://QuakeID.github.io/post/20-05-22_egu/</guid>
       <description>&lt;p&gt;The EGU General assembly is coming up next week and &lt;strong&gt;QuakeID&lt;/strong&gt; team members will be part of several presentations. Tune in if you are interested (or even better, come directly to the presentation if you are in Vienna).&lt;/p&gt;
 &lt;h3 id=&#34;monday-2355&#34;&gt;Monday, 23.55&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://meetingorganizer.copernicus.org/EGU22/EGU22-7483.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Controls on slab detachment and subsequent topography evolution&lt;/a&gt;&lt;/p&gt;
@@ -1517,9 +1517,9 @@ For full consideration, apply before May 31, 2023.&lt;/p&gt;
     
     <item>
       <title>Julia Hackathon</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/post/19-04-22_hackathon/</link>
+      <link>https://QuakeID.github.io/post/19-04-22_hackathon/</link>
       <pubDate>Tue, 19 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/post/19-04-22_hackathon/</guid>
+      <guid>https://QuakeID.github.io/post/19-04-22_hackathon/</guid>
       <description>&lt;p&gt;The QuakeID team and collaborators from the Unversity of Frankfurt, the University of Mainz as well as from ETH Zürich and UNIL Lausanne held the first Julia hackathon on April 4-8, 2022 to advance different software projects.&lt;/p&gt;
 &lt;h3 id=&#34;hackathon-news&#34;&gt;Hackathon News&lt;/h3&gt;
 &lt;p&gt;The first Julia Hackathon was very productive, with many discussions resulting in a variety of advances in different julia packages. Read all about it here:&lt;/p&gt;
@@ -1533,9 +1533,9 @@ For full consideration, apply before May 31, 2023.&lt;/p&gt;
     
     <item>
       <title>Julia Hackathon</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/post/08-04-22_hackathon/</link>
+      <link>https://QuakeID.github.io/post/08-04-22_hackathon/</link>
       <pubDate>Sun, 27 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/post/08-04-22_hackathon/</guid>
+      <guid>https://QuakeID.github.io/post/08-04-22_hackathon/</guid>
       <description>&lt;p&gt;The QuakeID team and collaborators from the Unversity of Frankfurt, the University of Mainz as well as from ETH Zürich and UNIL Lausanne will meet for a Julia hackathon on April 4-8, 2022 to advance different software projects.&lt;/p&gt;
 &lt;h3 id=&#34;hackathon-purpose&#34;&gt;Hackathon purpose&lt;/h3&gt;
 &lt;p&gt;In the hackathon, we aim at moving forward with the various open-source Julia projects within ice-flow dynamics and geodynamics community. We also aim at establishing collaborations between researchers from different institutions to jointly tackle modelling problems.&lt;/p&gt;</description>
@@ -1543,49 +1543,49 @@ For full consideration, apply before May 31, 2023.&lt;/p&gt;
     
     <item>
       <title>Tectonic Modelling Short Course</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/post/08-03-22_tectonicmodelling/</link>
+      <link>https://QuakeID.github.io/post/08-03-22_tectonicmodelling/</link>
       <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/post/08-03-22_tectonicmodelling/</guid>
+      <guid>https://QuakeID.github.io/post/08-03-22_tectonicmodelling/</guid>
       <description>&lt;p&gt;At the &lt;a href=&#34;https://tsk19.geo.uni-halle.de/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;19th Symposium on „Tectonics, Structural Geology and Crystalline Geology“&lt;/a&gt;, Marcel gave a 1-day short course to introduce the basic concepts of numerical modelling and provide some hands-on experience of working with a modelling code. The corresponding lecture slides and codes will be uploaded here soon.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Experimental determination of carbon diffusion in liquid iron at high pressure</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/publication/rebaza-2021-ko/</link>
+      <link>https://QuakeID.github.io/publication/rebaza-2021-ko/</link>
       <pubDate>Mon, 20 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/publication/rebaza-2021-ko/</guid>
+      <guid>https://QuakeID.github.io/publication/rebaza-2021-ko/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ductile weakening as the key to plate tectonics and deep earthquakes</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/talk/17-11-21-kiel/</link>
+      <link>https://QuakeID.github.io/talk/17-11-21-kiel/</link>
       <pubDate>Wed, 17 Nov 2021 10:00:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/talk/17-11-21-kiel/</guid>
+      <guid>https://QuakeID.github.io/talk/17-11-21-kiel/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Andrea Piccolo joins the team!</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/post/21-10-21_andreapiccolo/</link>
+      <link>https://QuakeID.github.io/post/21-10-21_andreapiccolo/</link>
       <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/post/21-10-21_andreapiccolo/</guid>
+      <guid>https://QuakeID.github.io/post/21-10-21_andreapiccolo/</guid>
       <description>&lt;p&gt;Andrea Piccolo has joined the team to work on slab detachment processes and their surface expression in the European Alps. His position is funded by the DFG Project &lt;strong&gt;QDis&lt;/strong&gt;. Welcome!&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>QuakeID starts!</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/post/01-11-21_projectstart/</link>
+      <link>https://QuakeID.github.io/post/01-11-21_projectstart/</link>
       <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/post/01-11-21_projectstart/</guid>
+      <guid>https://QuakeID.github.io/post/01-11-21_projectstart/</guid>
       <description>&lt;p&gt;Today is the official start of &lt;strong&gt;QuakeID&lt;/strong&gt;!&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Open Position!</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/post/21-10-21_openpostdoc/</link>
+      <link>https://QuakeID.github.io/post/21-10-21_openpostdoc/</link>
       <pubDate>Thu, 21 Oct 2021 00:00:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/post/21-10-21_openpostdoc/</guid>
+      <guid>https://QuakeID.github.io/post/21-10-21_openpostdoc/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Open Postdoctoral Researcher Position!&lt;/strong&gt;&lt;/p&gt;
 &lt;div align=&#34;justify&#34;&gt;
 We are looking for a postdoctoral researcher to join the DFG funded Emmy Noether project QuakeID at the Bavarian Research Institute of Experimental Geochemistry and Geophysics (BGI) at the University of Bayreuth, Germany. The position is initially funded for 2.5 years, with the option of extension for an additional 2.5 years. The successful applicant will investigate deep earthquake rupture processes using numerical models und will become part of a team consisting of a post-doctoral researcher, two PhD students and the project leader (Dr. Marcel Thielmann). Candidates should hold a PhD in Geophysics, Computational Physics, Geodynamics or a related field. 
@@ -1601,169 +1601,169 @@ For full consideration, one should apply before November 30, 2021.</description>
     
     <item>
       <title>Contributions of grain size reduction and shear heating to slab detachment</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/talk/30-08-21-badbelzig/</link>
+      <link>https://QuakeID.github.io/talk/30-08-21-badbelzig/</link>
       <pubDate>Tue, 31 Aug 2021 12:10:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/talk/30-08-21-badbelzig/</guid>
+      <guid>https://QuakeID.github.io/talk/30-08-21-badbelzig/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Experimental determination of carbon diffusion in liquid iron at high pressure</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/publication/koemets-2021-gh/</link>
+      <link>https://QuakeID.github.io/publication/koemets-2021-gh/</link>
       <pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/publication/koemets-2021-gh/</guid>
+      <guid>https://QuakeID.github.io/publication/koemets-2021-gh/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A transdisciplinary and community-driven database to unravel subduction zone initiation</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/publication/crameri-2020-ey/</link>
+      <link>https://QuakeID.github.io/publication/crameri-2020-ey/</link>
       <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/publication/crameri-2020-ey/</guid>
+      <guid>https://QuakeID.github.io/publication/crameri-2020-ey/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Contributions of Grain Damage, Thermal Weakening, and Necking to Slab Detachment</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/publication/thielmann-2020-ko/</link>
+      <link>https://QuakeID.github.io/publication/thielmann-2020-ko/</link>
       <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/publication/thielmann-2020-ko/</guid>
+      <guid>https://QuakeID.github.io/publication/thielmann-2020-ko/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Effect of water on lattice thermal conductivity of ringwoodite and its implications for the thermal evolution of descending slabs</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/publication/marzotto-2020-de/</link>
+      <link>https://QuakeID.github.io/publication/marzotto-2020-de/</link>
       <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/publication/marzotto-2020-de/</guid>
+      <guid>https://QuakeID.github.io/publication/marzotto-2020-de/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Combined numerical and experimental study of microstructure and permeability in porous granular media</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/publication/eichheimer-2020-ep/</link>
+      <link>https://QuakeID.github.io/publication/eichheimer-2020-ep/</link>
       <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/publication/eichheimer-2020-ep/</guid>
+      <guid>https://QuakeID.github.io/publication/eichheimer-2020-ep/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Can grain size reduction initiate transform faults? - Insights from a 3D numerical study</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/publication/schierjott-2020-fa/</link>
+      <link>https://QuakeID.github.io/publication/schierjott-2020-fa/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/publication/schierjott-2020-fa/</guid>
+      <guid>https://QuakeID.github.io/publication/schierjott-2020-fa/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ferropericlase Control of Lower Mantle Rheology: Impact of Phase Morphology</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/publication/thielmann-2020-ab/</link>
+      <link>https://QuakeID.github.io/publication/thielmann-2020-ab/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/publication/thielmann-2020-ab/</guid>
+      <guid>https://QuakeID.github.io/publication/thielmann-2020-ab/</guid>
       <description></description>
     </item>
     
     <item>
       <title>High-stress creep preceding coseismic rupturing in amphibolite-facies ultramylonites</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/publication/papa-2020116260/</link>
+      <link>https://QuakeID.github.io/publication/papa-2020116260/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/publication/papa-2020116260/</guid>
+      <guid>https://QuakeID.github.io/publication/papa-2020116260/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ferropericlase control of lower mantle rheology - Impact of phase morphology</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/talk/private/talkdeepearth2019/</link>
+      <link>https://QuakeID.github.io/talk/private/talkdeepearth2019/</link>
       <pubDate>Mon, 18 Nov 2019 11:20:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/talk/private/talkdeepearth2019/</guid>
+      <guid>https://QuakeID.github.io/talk/private/talkdeepearth2019/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Earthquakes and plate tectonics - the importance of ductile weakening mechanisms</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/talk/private/talketh2019/</link>
+      <link>https://QuakeID.github.io/talk/private/talketh2019/</link>
       <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/talk/private/talketh2019/</guid>
+      <guid>https://QuakeID.github.io/talk/private/talketh2019/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ferropericlase control of lower mantle rheology - Impact of phase morphology</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/talk/private/talkvolatiles2019/</link>
+      <link>https://QuakeID.github.io/talk/private/talkvolatiles2019/</link>
       <pubDate>Sat, 01 Jun 2019 18:20:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/talk/private/talkvolatiles2019/</guid>
+      <guid>https://QuakeID.github.io/talk/private/talkvolatiles2019/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Deep intraslab earthquake rupture due to grain size assisted thermal runaway</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/talk/private/talkjpgu2019/</link>
+      <link>https://QuakeID.github.io/talk/private/talkjpgu2019/</link>
       <pubDate>Thu, 30 May 2019 11:15:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/talk/private/talkjpgu2019/</guid>
+      <guid>https://QuakeID.github.io/talk/private/talkjpgu2019/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Earthquakes below the brittle–ductile transition - The role of grain size assisted thermal runaway</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/talk/private/talkras2019/</link>
+      <link>https://QuakeID.github.io/talk/private/talkras2019/</link>
       <pubDate>Fri, 10 May 2019 12:00:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/talk/private/talkras2019/</guid>
+      <guid>https://QuakeID.github.io/talk/private/talkras2019/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Deforming two-phase media - From Topology to Rheology</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/talk/private/talkcreep2019/</link>
+      <link>https://QuakeID.github.io/talk/private/talkcreep2019/</link>
       <pubDate>Fri, 01 Feb 2019 11:00:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/talk/private/talkcreep2019/</guid>
+      <guid>https://QuakeID.github.io/talk/private/talkcreep2019/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Pore-scale permeability prediction for Newtonian and non-Newtonian fluids</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/publication/eichheimer-2019-sj/</link>
+      <link>https://QuakeID.github.io/publication/eichheimer-2019-sj/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/publication/eichheimer-2019-sj/</guid>
+      <guid>https://QuakeID.github.io/publication/eichheimer-2019-sj/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Critical Bursts in Filtration</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/publication/bianchi-2018-gg/</link>
+      <link>https://QuakeID.github.io/publication/bianchi-2018-gg/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/publication/bianchi-2018-gg/</guid>
+      <guid>https://QuakeID.github.io/publication/bianchi-2018-gg/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Grain size assisted thermal runaway as a nucleation mechanism for continental mantle earthquakes: Impact of complex rheologies</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/publication/thielmann-2017-jw/</link>
+      <link>https://QuakeID.github.io/publication/thielmann-2017-jw/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/publication/thielmann-2017-jw/</guid>
+      <guid>https://QuakeID.github.io/publication/thielmann-2017-jw/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tomographic Study of Internal Erosion of Particle Flows in Porous Media</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/publication/bianchi-2018-hn/</link>
+      <link>https://QuakeID.github.io/publication/bianchi-2018-hn/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/publication/bianchi-2018-hn/</guid>
+      <guid>https://QuakeID.github.io/publication/bianchi-2018-hn/</guid>
       <description></description>
     </item>
     
     <item>
       <title>3D geodynamic models for the development of opposing continental subduction zones: The Hindu Kush–Pamir example</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/publication/liao-2017-ie/</link>
+      <link>https://QuakeID.github.io/publication/liao-2017-ie/</link>
       <pubDate>Fri, 01 Dec 2017 00:00:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/publication/liao-2017-ie/</guid>
+      <guid>https://QuakeID.github.io/publication/liao-2017-ie/</guid>
       <description></description>
     </item>
     
     <item>
       <title>WA3: HKQuake</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/project/</link>
+      <link>https://QuakeID.github.io/project/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/project/</guid>
+      <guid>https://QuakeID.github.io/project/</guid>
       <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
 &lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
 &lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
@@ -1774,105 +1774,105 @@ For full consideration, one should apply before November 30, 2021.</description>
     
     <item>
       <title>Critical Fragmentation Properties of Random Drilling: How Many Holes Need to Be Drilled to Collapse a Wooden Cube?</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/publication/schrenk-2016-gha/</link>
+      <link>https://QuakeID.github.io/publication/schrenk-2016-gha/</link>
       <pubDate>Mon, 01 Feb 2016 00:00:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/publication/schrenk-2016-gha/</guid>
+      <guid>https://QuakeID.github.io/publication/schrenk-2016-gha/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tensile stress relaxation in unsaturated granular materials</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/publication/bianchi-2016-cb/</link>
+      <link>https://QuakeID.github.io/publication/bianchi-2016-cb/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/publication/bianchi-2016-cb/</guid>
+      <guid>https://QuakeID.github.io/publication/bianchi-2016-cb/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Lithospheric stresses in Rayleigh–Bénard convection: effects of a free surface and a viscoelastic Maxwell rheology</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/publication/thielmann-2015-dc/</link>
+      <link>https://QuakeID.github.io/publication/thielmann-2015-dc/</link>
       <pubDate>Tue, 01 Dec 2015 00:00:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/publication/thielmann-2015-dc/</guid>
+      <guid>https://QuakeID.github.io/publication/thielmann-2015-dc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Grain-scale modeling of arbitrary fluid saturation in random packings</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/publication/melnikov-et-al-2015/</link>
+      <link>https://QuakeID.github.io/publication/melnikov-et-al-2015/</link>
       <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/publication/melnikov-et-al-2015/</guid>
+      <guid>https://QuakeID.github.io/publication/melnikov-et-al-2015/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Intermediate-depth earthquake generation and shear zone formation caused by grain size reduction and shear heating</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/publication/thielmann-2015-ut/</link>
+      <link>https://QuakeID.github.io/publication/thielmann-2015-ut/</link>
       <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/publication/thielmann-2015-ut/</guid>
+      <guid>https://QuakeID.github.io/publication/thielmann-2015-ut/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Discretization Errors in the Hybrid Finite Element Particle-in-cell Method</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/publication/thielmann-2014-ta/</link>
+      <link>https://QuakeID.github.io/publication/thielmann-2014-ta/</link>
       <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/publication/thielmann-2014-ta/</guid>
+      <guid>https://QuakeID.github.io/publication/thielmann-2014-ta/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Strain Localization in Pyroxenite by Reaction-Enhanced Softening in the Shallow Subcontinental Lithospheric Mantle</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/publication/hidas-2013-ey/</link>
+      <link>https://QuakeID.github.io/publication/hidas-2013-ey/</link>
       <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/publication/hidas-2013-ey/</guid>
+      <guid>https://QuakeID.github.io/publication/hidas-2013-ey/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Shear heating induced lithospheric-scale localization: Does it result in subduction?</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/publication/thielmann-2012-wh/</link>
+      <link>https://QuakeID.github.io/publication/thielmann-2012-wh/</link>
       <pubDate>Sat, 01 Dec 2012 00:00:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/publication/thielmann-2012-wh/</guid>
+      <guid>https://QuakeID.github.io/publication/thielmann-2012-wh/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/contact/</link>
+      <link>https://QuakeID.github.io/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/contact/</guid>
+      <guid>https://QuakeID.github.io/contact/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/geodata/</link>
+      <link>https://QuakeID.github.io/geodata/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/geodata/</guid>
+      <guid>https://QuakeID.github.io/geodata/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/people/</link>
+      <link>https://QuakeID.github.io/people/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/people/</guid>
+      <guid>https://QuakeID.github.io/people/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/software/</link>
+      <link>https://QuakeID.github.io/software/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/software/</guid>
+      <guid>https://QuakeID.github.io/software/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tour</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/tour/</link>
+      <link>https://QuakeID.github.io/tour/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/tour/</guid>
+      <guid>https://QuakeID.github.io/tour/</guid>
       <description></description>
     </item>
     

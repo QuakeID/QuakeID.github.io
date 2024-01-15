@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tatjana Weiler | QuakeID Research Group</title>
-    <link>http://www.staff.uni-bayreuth.de/~bt303651/author/tatjana-weiler/</link>
-      <atom:link href="http://www.staff.uni-bayreuth.de/~bt303651/author/tatjana-weiler/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://QuakeID.github.io/author/tatjana-weiler/</link>
+      <atom:link href="https://QuakeID.github.io/author/tatjana-weiler/index.xml" rel="self" type="application/rss+xml" />
     <description>Tatjana Weiler</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
     <image>
-      <url>http://www.staff.uni-bayreuth.de/~bt303651/author/tatjana-weiler/avatar_hu52a603635ecebd45650b162dadabb4e5_12861_270x270_fill_q75_lanczos_center.jpg</url>
+      <url>https://QuakeID.github.io/author/tatjana-weiler/avatar_hu52a603635ecebd45650b162dadabb4e5_12861_270x270_fill_q75_lanczos_center.jpg</url>
       <title>Tatjana Weiler</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/author/tatjana-weiler/</link>
+      <link>https://QuakeID.github.io/author/tatjana-weiler/</link>
     </image>
     
   </channel>

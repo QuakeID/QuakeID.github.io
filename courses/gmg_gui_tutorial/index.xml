@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>GMG GUI Tutorial | QuakeID Research Group</title>
-    <link>http://www.staff.uni-bayreuth.de/~bt303651/courses/gmg_gui_tutorial/</link>
-      <atom:link href="http://www.staff.uni-bayreuth.de/~bt303651/courses/gmg_gui_tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://QuakeID.github.io/courses/gmg_gui_tutorial/</link>
+      <atom:link href="https://QuakeID.github.io/courses/gmg_gui_tutorial/index.xml" rel="self" type="application/rss+xml" />
     <description>GMG GUI Tutorial</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 28 Aug 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://www.staff.uni-bayreuth.de/~bt303651/courses/gmg_gui_tutorial/featured.png</url>
+      <url>https://QuakeID.github.io/courses/gmg_gui_tutorial/featured.png</url>
       <title>GMG GUI Tutorial</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/courses/gmg_gui_tutorial/</link>
+      <link>https://QuakeID.github.io/courses/gmg_gui_tutorial/</link>
     </image>
     
     <item>
       <title>Installation</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/courses/gmg_gui_tutorial/gmg_gui_installation/</link>
+      <link>https://QuakeID.github.io/courses/gmg_gui_tutorial/gmg_gui_installation/</link>
       <pubDate>Mon, 28 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/courses/gmg_gui_tutorial/gmg_gui_installation/</guid>
+      <guid>https://QuakeID.github.io/courses/gmg_gui_tutorial/gmg_gui_installation/</guid>
       <description>&lt;p&gt;There are two possibilities to install the two GMG apps: (1) install is as a Matlab app (requires MATLAB) or (2) install it as a standalone app. If you choose the second possibility, the MATLAB Runtime environment will be downloaded during the installation.&lt;/p&gt;
 &lt;h2 id=&#34;1-matlab-apps&#34;&gt;1. MATLAB apps&lt;/h2&gt;
 &lt;p&gt;To install the two apps within MATLAB, first download them ( &lt;a href=&#34;https://myfiles.uni-bayreuth.de/filr/public-link/file-download/043490a48a3aba9d018a457677b61cf0/81263/-6817355882462998366/ProfileSelection.mlappinstall&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Profile Picker&lt;/a&gt;, &lt;a href=&#34;https://myfiles.uni-bayreuth.de/filr/public-link/file-download/043490a48a3aba9d018a457677da1cf4/81262/-7085908668330488526/GMGDataPicker.mlappinstall&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Data Picker&lt;/a&gt; ).&lt;/p&gt;
@@ -47,9 +47,9 @@
     
     <item>
       <title>Data</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/courses/gmg_gui_tutorial/gmg_gui_data/</link>
+      <link>https://QuakeID.github.io/courses/gmg_gui_tutorial/gmg_gui_data/</link>
       <pubDate>Mon, 28 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/courses/gmg_gui_tutorial/gmg_gui_data/</guid>
+      <guid>https://QuakeID.github.io/courses/gmg_gui_tutorial/gmg_gui_data/</guid>
       <description>&lt;p&gt;We will be working with preprocessed data of 12 different profiles where we extracted Vp- and Vs-tomographies, Moho topographies ans seismicty from different data sources. These processed datasets can be downloaded &lt;a href=&#34;https://myfiles.uni-bayreuth.de/filr/public-link/file-download/043490a48a3aba9d018a4574bb3d1cd7/81261/3631492212628888140/ProfileData.zip&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt; as a single zip file.&lt;/p&gt;
 &lt;p&gt;&lt;ul class=&#34;cta-group&#34;&gt;
   
@@ -74,9 +74,9 @@
     
     <item>
       <title>GMG GUI Manual</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/courses/gmg_gui_tutorial/gmg_gui_manual/</link>
+      <link>https://QuakeID.github.io/courses/gmg_gui_tutorial/gmg_gui_manual/</link>
       <pubDate>Mon, 28 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/courses/gmg_gui_tutorial/gmg_gui_manual/</guid>
+      <guid>https://QuakeID.github.io/courses/gmg_gui_tutorial/gmg_gui_manual/</guid>
       <description>&lt;p&gt;The current manual consists of a set of slides which we will go over during the workshop. This file can be downloaded &lt;a href=&#34;https://myfiles.uni-bayreuth.de/filr/public-link/file-download/043490a48a3aba9d018a4574bb0d1cd3/81260/1567055420365200803/Manual.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;ul class=&#34;cta-group&#34;&gt;
   

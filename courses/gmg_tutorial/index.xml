@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Geophysical Model Generator Tutorial | QuakeID Research Group</title>
-    <link>http://www.staff.uni-bayreuth.de/~bt303651/courses/gmg_tutorial/</link>
-      <atom:link href="http://www.staff.uni-bayreuth.de/~bt303651/courses/gmg_tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://QuakeID.github.io/courses/gmg_tutorial/</link>
+      <atom:link href="https://QuakeID.github.io/courses/gmg_tutorial/index.xml" rel="self" type="application/rss+xml" />
     <description>Geophysical Model Generator Tutorial</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 26 Oct 2021 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://www.staff.uni-bayreuth.de/~bt303651/courses/gmg_tutorial/featured.png</url>
+      <url>https://QuakeID.github.io/courses/gmg_tutorial/featured.png</url>
       <title>Geophysical Model Generator Tutorial</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/courses/gmg_tutorial/</link>
+      <link>https://QuakeID.github.io/courses/gmg_tutorial/</link>
     </image>
     
     <item>
       <title>Intro and Julia basics</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/courses/gmg_tutorial/introjulia/</link>
+      <link>https://QuakeID.github.io/courses/gmg_tutorial/introjulia/</link>
       <pubDate>Tue, 26 Oct 2021 00:00:00 +0100</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/courses/gmg_tutorial/introjulia/</guid>
+      <guid>https://QuakeID.github.io/courses/gmg_tutorial/introjulia/</guid>
       <description>&lt;h2 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h2&gt;
 &lt;p&gt;In this short tutorial, we will introduce the Geophysical Model Generator (GMG). GMG was developed to import and process different kinds of geophysical data. These datasets can then be exported and visualized in Paraview.&lt;/p&gt;
 &lt;p&gt;The main focus of this tutorial is to learn the basics of the programming language Julia and to show how geophysical datasets can be imported using the tools provided by the Geophysical Model Generator (with the focus on seismic tomographies).
@@ -597,9 +597,9 @@ Once you are done with the terminal, you get back to the &lt;code&gt;REPL&lt;/co
     
     <item>
       <title>Package Description</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/courses/gmg_tutorial/gmg_desc/</link>
+      <link>https://QuakeID.github.io/courses/gmg_tutorial/gmg_desc/</link>
       <pubDate>Wed, 27 Oct 2021 00:00:00 +0100</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/courses/gmg_tutorial/gmg_desc/</guid>
+      <guid>https://QuakeID.github.io/courses/gmg_tutorial/gmg_desc/</guid>
       <description>&lt;h2 id=&#34;1-what-is-the-geophysical-model-generator&#34;&gt;1. What is the Geophysical Model Generator?&lt;/h2&gt;
 &lt;p&gt;The idea for the Geophysical Model Generator was born out of the need to view different geophysical datasets (e.g. tomographies, gravity measurements, receiver functions and others) in a single joint manner without having to resort to specifically programmed visualization routines for each case. The Geophysical Model Generator is NOT a single program, but can rather be seen as a set of tools (written in julia) that allow to import and modify different datasets and transfer them to a common data structure. This common data structure then allows to process and visualize the different datasets in a coherent manner, thus facilitating comparisons and interpretations.
 In addition, the GMG provides tools to assist numerical modellers in creating input models from these datasets.&lt;/p&gt;
@@ -657,9 +657,9 @@ In addition, the GMG provides tools to assist numerical modellers in creating in
     
     <item>
       <title>Importing Data</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/courses/gmg_tutorial/gmg_import/</link>
+      <link>https://QuakeID.github.io/courses/gmg_tutorial/gmg_import/</link>
       <pubDate>Wed, 27 Oct 2021 00:00:00 +0100</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/courses/gmg_tutorial/gmg_import/</guid>
+      <guid>https://QuakeID.github.io/courses/gmg_tutorial/gmg_import/</guid>
       <description>&lt;h2 id=&#34;1-data-sources&#34;&gt;1. Data sources&lt;/h2&gt;
 &lt;p&gt;Before you can use GMG, you obviously need data. Given the different kinds of data available, there is a multitude of sources. Here, we list some of them that may be useful in the future:&lt;/p&gt;
 &lt;ul&gt;
@@ -722,7 +722,7 @@ In addition, the GMG provides tools to assist numerical modellers in creating in
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If you, at a later stage, want to load this file again do it as follows:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-julia&#34; data-lang=&#34;julia&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;julia&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;using&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;JLD2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;GeophysicalModelGenerator&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;julia&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Data_Paffrath_&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;load_object&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;Paffrath_Europe.jld2&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can also find the above workflow in this file: &lt;a href=&#34;../../~bt303651/uploads/gmg_tutorial/ReadDataPaffrath.jl&#34; target=&#34;_blank&#34;&gt;ReadDataPaffrath.jl&lt;/a&gt;. To run it, do the following:&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can also find the above workflow in this file: &lt;a href=&#34;https://QuakeID.github.io/uploads/gmg_tutorial/ReadDataPaffrath.jl&#34; target=&#34;_blank&#34;&gt;ReadDataPaffrath.jl&lt;/a&gt;. To run it, do the following:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;julia&amp;gt; include(&amp;#34;ReadDataPaffrath.jl&amp;#34;)
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Make sure to put the data file vgrid_it12_w_res.txt in the same directory.&lt;/p&gt;
 &lt;h2 id=&#34;3-importing-tomographic-data-given-as-netcdf&#34;&gt;3. Importing tomographic data given as netCDF&lt;/h2&gt;
@@ -799,9 +799,9 @@ To load this data, we can now simply use the commmand &lt;em&gt;ncread&lt;/em&gt
     
     <item>
       <title>Creating Cross Sections</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/courses/gmg_tutorial/gmg_cross/</link>
+      <link>https://QuakeID.github.io/courses/gmg_tutorial/gmg_cross/</link>
       <pubDate>Wed, 27 Oct 2021 00:00:00 +0100</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/courses/gmg_tutorial/gmg_cross/</guid>
+      <guid>https://QuakeID.github.io/courses/gmg_tutorial/gmg_cross/</guid>
       <description>&lt;p&gt;In scientific publications that deal with seismic tomographies, the results are often shown in 2D horizontal and vertical cross sections (slices and profiles). The &lt;em&gt;Geophysical Model Generator&lt;/em&gt; therefore also provides tools do exactly this.&lt;/p&gt;
 &lt;p&gt;We will use the data that we have previously imported to show how to create cross sections. If you haven&amp;rsquo;t closed julia, these datasets should still be in memory, otherwise you have to load the corresponding jld2 file:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;julia&amp;gt; load(&amp;#34;Paffrath_Europe.jld2&amp;#34;)
@@ -817,7 +817,7 @@ To load this data, we can now simply use the commmand &lt;em&gt;ncread&lt;/em&gt
   &lt;summary&gt;&lt;strong&gt;Exercises&lt;/strong&gt;&lt;/summary&gt;
   &lt;p&gt;&lt;ol&gt;
 &lt;li&gt;Create cross-sections for all three profiles given below.&lt;/li&gt;
-&lt;li&gt;If you have time, have a look for horizontal slices in &lt;a href=&#34;../../~bt303651/uploads/gmg_tutorial/Lippitsch2003.pdf&#34; target=&#34;_blank&#34;&gt;Lippitsch et al. (2003)&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;If you have time, have a look for horizontal slices in &lt;a href=&#34;https://QuakeID.github.io/uploads/gmg_tutorial/Lippitsch2003.pdf&#34; target=&#34;_blank&#34;&gt;Lippitsch et al. (2003)&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;If you have additional time, , do the same for the P-wave tomography by Koulakov et al.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;table&gt;
@@ -883,9 +883,9 @@ To load this data, we can now simply use the commmand &lt;em&gt;ncread&lt;/em&gt
     
     <item>
       <title>Exporting Data</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/courses/gmg_tutorial/gmg_export/</link>
+      <link>https://QuakeID.github.io/courses/gmg_tutorial/gmg_export/</link>
       <pubDate>Wed, 27 Oct 2021 00:00:00 +0100</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/courses/gmg_tutorial/gmg_export/</guid>
+      <guid>https://QuakeID.github.io/courses/gmg_tutorial/gmg_export/</guid>
       <description>&lt;h2 id=&#34;1-exporting-data&#34;&gt;1. Exporting Data&lt;/h2&gt;
 &lt;p&gt;Now that you know how to import data and how to extract cross sections from it, you may want to export it to a format that can be imported into e.g. Paraview. This has been done already at several instances during this tutorial, but we state it here again for completeness. Exporting data to &lt;em&gt;vts&lt;/em&gt; format (which can be imported to Paraview) can be done using the function &lt;mark&gt;Write_Paraview&lt;/mark&gt;.&lt;/p&gt;
 &lt;p&gt;Based on the previous part of the tutorial, you may want to export the whole block of the imported tomography. This is simply done using this command:&lt;/p&gt;
@@ -926,9 +926,9 @@ That&amp;rsquo;s it!&lt;/p&gt;
     
     <item>
       <title>Visualization</title>
-      <link>http://www.staff.uni-bayreuth.de/~bt303651/courses/gmg_tutorial/gmg_vis/</link>
+      <link>https://QuakeID.github.io/courses/gmg_tutorial/gmg_vis/</link>
       <pubDate>Sat, 06 Nov 2021 00:00:00 +0100</pubDate>
-      <guid>http://www.staff.uni-bayreuth.de/~bt303651/courses/gmg_tutorial/gmg_vis/</guid>
+      <guid>https://QuakeID.github.io/courses/gmg_tutorial/gmg_vis/</guid>
       <description>&lt;p&gt;To show you how to visualize data, we will use one of the exmaples given in the GMG documentation. We will repeat it here for completeness. The example is the P-wave velocity model of the Alps as described in:&lt;/p&gt;
 &lt;p&gt;Zhao, L., Paul, A., Malusà, M.G., Xu, X., Zheng, T., Solarino, S., Guillot, S., Schwartz, S., Dumont, T., Salimbeni, S., Aubert, C., Pondrelli, S., Wang, Q., Zhu, R., 2016. &lt;em&gt;Continuity of the Alpine slab unraveled by high-resolution P wave tomography&lt;/em&gt;. Journal of Geophysical Research: Solid Earth 121, 8720–8737. &lt;a href=&#34;https://doi.org/10.1002/2016JB013310&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;doi:10.1002/2016JB013310&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The data is given in ASCII format with longitude/latitude/depth/velocity anomaly (percentage) format. You can find the processed data &lt;a href=&#34;https://seafile.rlp.net/d/22b0fb85550240758552/files/?p=%2FZhao_etal_2016_data.zip&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
