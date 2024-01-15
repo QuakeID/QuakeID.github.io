@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Antoine B Rozel | QuakeID Research Group</title>
+    <link>http://www.staff.uni-bayreuth.de/~bt303651/author/antoine-b-rozel/</link>
+      <atom:link href="http://www.staff.uni-bayreuth.de/~bt303651/author/antoine-b-rozel/index.xml" rel="self" type="application/rss+xml" />
+    <description>Antoine B Rozel</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://www.staff.uni-bayreuth.de/~bt303651/media/logo_hu759d274fd7d1bb84a9bad412745ec97e_585457_300x300_fit_lanczos_3.png</url>
+      <title>Antoine B Rozel</title>
+      <link>http://www.staff.uni-bayreuth.de/~bt303651/author/antoine-b-rozel/</link>
+    </image>
+    
+    <item>
+      <title>Can grain size reduction initiate transform faults? - Insights from a 3D numerical study</title>
+      <link>http://www.staff.uni-bayreuth.de/~bt303651/publication/schierjott-2020-fa/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>http://www.staff.uni-bayreuth.de/~bt303651/publication/schierjott-2020-fa/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

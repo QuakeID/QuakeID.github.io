@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Recent &amp; Upcoming Talks | QuakeID Research Group</title>
+    <link>http://www.staff.uni-bayreuth.de/~bt303651/talk/</link>
+      <atom:link href="http://www.staff.uni-bayreuth.de/~bt303651/talk/index.xml" rel="self" type="application/rss+xml" />
+    <description>Recent &amp; Upcoming Talks</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 17 Nov 2021 10:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://www.staff.uni-bayreuth.de/~bt303651/media/logo_hu759d274fd7d1bb84a9bad412745ec97e_585457_300x300_fit_lanczos_3.png</url>
+      <title>Recent &amp; Upcoming Talks</title>
+      <link>http://www.staff.uni-bayreuth.de/~bt303651/talk/</link>
+    </image>
+    
+    <item>
+      <title>Ductile weakening as the key to plate tectonics and deep earthquakes</title>
+      <link>http://www.staff.uni-bayreuth.de/~bt303651/talk/17-11-21-kiel/</link>
+      <pubDate>Wed, 17 Nov 2021 10:00:00 +0000</pubDate>
+      <guid>http://www.staff.uni-bayreuth.de/~bt303651/talk/17-11-21-kiel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Contributions of grain size reduction and shear heating to slab detachment</title>
+      <link>http://www.staff.uni-bayreuth.de/~bt303651/talk/30-08-21-badbelzig/</link>
+      <pubDate>Tue, 31 Aug 2021 12:10:00 +0000</pubDate>
+      <guid>http://www.staff.uni-bayreuth.de/~bt303651/talk/30-08-21-badbelzig/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ferropericlase control of lower mantle rheology - Impact of phase morphology</title>
+      <link>http://www.staff.uni-bayreuth.de/~bt303651/talk/private/talkdeepearth2019/</link>
+      <pubDate>Mon, 18 Nov 2019 11:20:00 +0000</pubDate>
+      <guid>http://www.staff.uni-bayreuth.de/~bt303651/talk/private/talkdeepearth2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Earthquakes and plate tectonics - the importance of ductile weakening mechanisms</title>
+      <link>http://www.staff.uni-bayreuth.de/~bt303651/talk/private/talketh2019/</link>
+      <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>http://www.staff.uni-bayreuth.de/~bt303651/talk/private/talketh2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ferropericlase control of lower mantle rheology - Impact of phase morphology</title>
+      <link>http://www.staff.uni-bayreuth.de/~bt303651/talk/private/talkvolatiles2019/</link>
+      <pubDate>Sat, 01 Jun 2019 18:20:00 +0000</pubDate>
+      <guid>http://www.staff.uni-bayreuth.de/~bt303651/talk/private/talkvolatiles2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deep intraslab earthquake rupture due to grain size assisted thermal runaway</title>
+      <link>http://www.staff.uni-bayreuth.de/~bt303651/talk/private/talkjpgu2019/</link>
+      <pubDate>Thu, 30 May 2019 11:15:00 +0000</pubDate>
+      <guid>http://www.staff.uni-bayreuth.de/~bt303651/talk/private/talkjpgu2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Earthquakes below the brittle–ductile transition - The role of grain size assisted thermal runaway</title>
+      <link>http://www.staff.uni-bayreuth.de/~bt303651/talk/private/talkras2019/</link>
+      <pubDate>Fri, 10 May 2019 12:00:00 +0000</pubDate>
+      <guid>http://www.staff.uni-bayreuth.de/~bt303651/talk/private/talkras2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deforming two-phase media - From Topology to Rheology</title>
+      <link>http://www.staff.uni-bayreuth.de/~bt303651/talk/private/talkcreep2019/</link>
+      <pubDate>Fri, 01 Feb 2019 11:00:00 +0000</pubDate>
+      <guid>http://www.staff.uni-bayreuth.de/~bt303651/talk/private/talkcreep2019/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

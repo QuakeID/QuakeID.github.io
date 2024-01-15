@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>G J Golabek | QuakeID Research Group</title>
+    <link>http://www.staff.uni-bayreuth.de/~bt303651/author/g-j-golabek/</link>
+      <atom:link href="http://www.staff.uni-bayreuth.de/~bt303651/author/g-j-golabek/index.xml" rel="self" type="application/rss+xml" />
+    <description>G J Golabek</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://www.staff.uni-bayreuth.de/~bt303651/media/logo_hu759d274fd7d1bb84a9bad412745ec97e_585457_300x300_fit_lanczos_3.png</url>
+      <title>G J Golabek</title>
+      <link>http://www.staff.uni-bayreuth.de/~bt303651/author/g-j-golabek/</link>
+    </image>
+    
+    <item>
+      <title>Ferropericlase Control of Lower Mantle Rheology: Impact of Phase Morphology</title>
+      <link>http://www.staff.uni-bayreuth.de/~bt303651/publication/thielmann-2020-ab/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>http://www.staff.uni-bayreuth.de/~bt303651/publication/thielmann-2020-ab/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pore-scale permeability prediction for Newtonian and non-Newtonian fluids</title>
+      <link>http://www.staff.uni-bayreuth.de/~bt303651/publication/eichheimer-2019-sj/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>http://www.staff.uni-bayreuth.de/~bt303651/publication/eichheimer-2019-sj/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

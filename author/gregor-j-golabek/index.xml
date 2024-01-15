@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gregor J Golabek | QuakeID Research Group</title>
+    <link>http://www.staff.uni-bayreuth.de/~bt303651/author/gregor-j-golabek/</link>
+      <atom:link href="http://www.staff.uni-bayreuth.de/~bt303651/author/gregor-j-golabek/index.xml" rel="self" type="application/rss+xml" />
+    <description>Gregor J Golabek</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://www.staff.uni-bayreuth.de/~bt303651/media/logo_hu759d274fd7d1bb84a9bad412745ec97e_585457_300x300_fit_lanczos_3.png</url>
+      <title>Gregor J Golabek</title>
+      <link>http://www.staff.uni-bayreuth.de/~bt303651/author/gregor-j-golabek/</link>
+    </image>
+    
+    <item>
+      <title>Effect of water on lattice thermal conductivity of ringwoodite and its implications for the thermal evolution of descending slabs</title>
+      <link>http://www.staff.uni-bayreuth.de/~bt303651/publication/marzotto-2020-de/</link>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>http://www.staff.uni-bayreuth.de/~bt303651/publication/marzotto-2020-de/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Combined numerical and experimental study of microstructure and permeability in porous granular media</title>
+      <link>http://www.staff.uni-bayreuth.de/~bt303651/publication/eichheimer-2020-ep/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>http://www.staff.uni-bayreuth.de/~bt303651/publication/eichheimer-2020-ep/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Can grain size reduction initiate transform faults? - Insights from a 3D numerical study</title>
+      <link>http://www.staff.uni-bayreuth.de/~bt303651/publication/schierjott-2020-fa/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>http://www.staff.uni-bayreuth.de/~bt303651/publication/schierjott-2020-fa/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

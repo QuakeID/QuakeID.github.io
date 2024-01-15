@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Courses | QuakeID Research Group</title>
+    <link>http://www.staff.uni-bayreuth.de/~bt303651/courses/</link>
+      <atom:link href="http://www.staff.uni-bayreuth.de/~bt303651/courses/index.xml" rel="self" type="application/rss+xml" />
+    <description>Courses</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 28 Aug 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://www.staff.uni-bayreuth.de/~bt303651/media/logo_hu759d274fd7d1bb84a9bad412745ec97e_585457_300x300_fit_lanczos_3.png</url>
+      <title>Courses</title>
+      <link>http://www.staff.uni-bayreuth.de/~bt303651/courses/</link>
+    </image>
+    
+  </channel>
+</rss>

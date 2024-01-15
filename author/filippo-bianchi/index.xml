@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Filippo Bianchi | QuakeID Research Group</title>
+    <link>http://www.staff.uni-bayreuth.de/~bt303651/author/filippo-bianchi/</link>
+      <atom:link href="http://www.staff.uni-bayreuth.de/~bt303651/author/filippo-bianchi/index.xml" rel="self" type="application/rss+xml" />
+    <description>Filippo Bianchi</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://www.staff.uni-bayreuth.de/~bt303651/media/logo_hu759d274fd7d1bb84a9bad412745ec97e_585457_300x300_fit_lanczos_3.png</url>
+      <title>Filippo Bianchi</title>
+      <link>http://www.staff.uni-bayreuth.de/~bt303651/author/filippo-bianchi/</link>
+    </image>
+    
+    <item>
+      <title>Critical Bursts in Filtration</title>
+      <link>http://www.staff.uni-bayreuth.de/~bt303651/publication/bianchi-2018-gg/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>http://www.staff.uni-bayreuth.de/~bt303651/publication/bianchi-2018-gg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tomographic Study of Internal Erosion of Particle Flows in Porous Media</title>
+      <link>http://www.staff.uni-bayreuth.de/~bt303651/publication/bianchi-2018-hn/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>http://www.staff.uni-bayreuth.de/~bt303651/publication/bianchi-2018-hn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tensile stress relaxation in unsaturated granular materials</title>
+      <link>http://www.staff.uni-bayreuth.de/~bt303651/publication/bianchi-2016-cb/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>http://www.staff.uni-bayreuth.de/~bt303651/publication/bianchi-2016-cb/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

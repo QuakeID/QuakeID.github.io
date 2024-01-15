@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>K J Schrenk | QuakeID Research Group</title>
+    <link>http://www.staff.uni-bayreuth.de/~bt303651/author/k-j-schrenk/</link>
+      <atom:link href="http://www.staff.uni-bayreuth.de/~bt303651/author/k-j-schrenk/index.xml" rel="self" type="application/rss+xml" />
+    <description>K J Schrenk</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 01 Feb 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://www.staff.uni-bayreuth.de/~bt303651/media/logo_hu759d274fd7d1bb84a9bad412745ec97e_585457_300x300_fit_lanczos_3.png</url>
+      <title>K J Schrenk</title>
+      <link>http://www.staff.uni-bayreuth.de/~bt303651/author/k-j-schrenk/</link>
+    </image>
+    
+    <item>
+      <title>Critical Fragmentation Properties of Random Drilling: How Many Holes Need to Be Drilled to Collapse a Wooden Cube?</title>
+      <link>http://www.staff.uni-bayreuth.de/~bt303651/publication/schrenk-2016-gha/</link>
+      <pubDate>Mon, 01 Feb 2016 00:00:00 +0000</pubDate>
+      <guid>http://www.staff.uni-bayreuth.de/~bt303651/publication/schrenk-2016-gha/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

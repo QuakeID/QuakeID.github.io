@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>A. Néri | QuakeID Research Group</title>
+    <link>http://www.staff.uni-bayreuth.de/~bt303651/author/a.-neri/</link>
+      <atom:link href="http://www.staff.uni-bayreuth.de/~bt303651/author/a.-neri/index.xml" rel="self" type="application/rss+xml" />
+    <description>A. Néri</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 01 Jul 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://www.staff.uni-bayreuth.de/~bt303651/media/logo_hu759d274fd7d1bb84a9bad412745ec97e_585457_300x300_fit_lanczos_3.png</url>
+      <title>A. Néri</title>
+      <link>http://www.staff.uni-bayreuth.de/~bt303651/author/a.-neri/</link>
+    </image>
+    
+    <item>
+      <title>A New Method for Determining Fluid Flux at High Pressures Applied to the Dehydration of Serpentinites</title>
+      <link>http://www.staff.uni-bayreuth.de/~bt303651/publication/eberhardt-2021-fp/</link>
+      <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>http://www.staff.uni-bayreuth.de/~bt303651/publication/eberhardt-2021-fp/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

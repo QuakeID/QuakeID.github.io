@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>George Cooper | QuakeID Research Group</title>
+    <link>http://www.staff.uni-bayreuth.de/~bt303651/author/george-cooper/</link>
+      <atom:link href="http://www.staff.uni-bayreuth.de/~bt303651/author/george-cooper/index.xml" rel="self" type="application/rss+xml" />
+    <description>George Cooper</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://www.staff.uni-bayreuth.de/~bt303651/media/logo_hu759d274fd7d1bb84a9bad412745ec97e_585457_300x300_fit_lanczos_3.png</url>
+      <title>George Cooper</title>
+      <link>http://www.staff.uni-bayreuth.de/~bt303651/author/george-cooper/</link>
+    </image>
+    
+    <item>
+      <title>A transdisciplinary and community-driven database to unravel subduction zone initiation</title>
+      <link>http://www.staff.uni-bayreuth.de/~bt303651/publication/crameri-2020-ey/</link>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>http://www.staff.uni-bayreuth.de/~bt303651/publication/crameri-2020-ey/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

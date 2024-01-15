@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Latest News | QuakeID Research Group</title>
+    <link>http://www.staff.uni-bayreuth.de/~bt303651/post/</link>
+      <atom:link href="http://www.staff.uni-bayreuth.de/~bt303651/post/index.xml" rel="self" type="application/rss+xml" />
+    <description>Latest News</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 01 Dec 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://www.staff.uni-bayreuth.de/~bt303651/media/logo_hu759d274fd7d1bb84a9bad412745ec97e_585457_300x300_fit_lanczos_3.png</url>
+      <title>Latest News</title>
+      <link>http://www.staff.uni-bayreuth.de/~bt303651/post/</link>
+    </image>
+    
+    <item>
+      <title>Danielle and Tatjana join the team!</title>
+      <link>http://www.staff.uni-bayreuth.de/~bt303651/post/01-12-23_newmembers/</link>
+      <pubDate>Fri, 01 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>http://www.staff.uni-bayreuth.de/~bt303651/post/01-12-23_newmembers/</guid>
+      <description>&lt;p&gt;To complete the QuakeID team, Danielle Souze and Tatjana Weiler have started their PhD on December 1st. Welcome!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>2 Open PhD Positions!</title>
+      <link>http://www.staff.uni-bayreuth.de/~bt303651/post/29-04-23_openpositions/</link>
+      <pubDate>Tue, 25 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://www.staff.uni-bayreuth.de/~bt303651/post/29-04-23_openpositions/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;2 Open PhD positions!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We are looking for 2 PhD students to join QuakeID! For more information and to submit your application documents, follow the links below:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://www.uni-bayreuth.de/job-vacancy-keyword-quakeid_exp-ec070973f6f010f0&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PhD position in high pressure lab quakes&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://www.uni-bayreuth.de/job-vacancy-keyword-quakeid_num-f2cc996074ea771a&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PhD position in modelling deep earthquake generation in the Hindu Kush&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;For further information, feel free to contact me directly: &lt;a href=&#34;mailto:Marcel.Thielmann@uni-bayreuth.de&#34;&gt;Marcel.Thielmann@uni-bayreuth.de&lt;/a&gt;
+For full consideration, apply before May 31, 2023.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>EGU General Assembly</title>
+      <link>http://www.staff.uni-bayreuth.de/~bt303651/post/29-04-23_egu/</link>
+      <pubDate>Thu, 20 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://www.staff.uni-bayreuth.de/~bt303651/post/29-04-23_egu/</guid>
+      <description>&lt;p&gt;The EGU General assembly is coming up next week and &lt;strong&gt;QuakeID&lt;/strong&gt; team members will be part of several presentations. Tune in if you are interested (or even better, come directly to the presentation if you are in Vienna).&lt;/p&gt;
+&lt;h3 id=&#34;tuesday-254&#34;&gt;Tuesday, 25.4.&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://meetingorganizer.copernicus.org/EGU23/EGU23-11594.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GPU-based numerical models of rapid ductile strain localization due to thermal runaway &lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;thursday-274&#34;&gt;Thursday, 27.4.&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://meetingorganizer.copernicus.org/EGU23/EGU23-14144.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Insights into slab detachment dynamics from 0D to 3D numerical experiments&lt;/a&gt;
+&lt;a href=&#34;https://meetingorganizer.copernicus.org/EGU23/EGU23-13677.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Phase transition induced stresses and their implications for deep earthquakes&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Julia Hackathon</title>
+      <link>http://www.staff.uni-bayreuth.de/~bt303651/post/15-02-23_hackathon/</link>
+      <pubDate>Wed, 15 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>http://www.staff.uni-bayreuth.de/~bt303651/post/15-02-23_hackathon/</guid>
+      <description>&lt;p&gt;The QuakeID team and collaborators from the Unversity of Frankfurt, the University of Mainz, ETH Zürich, UNIL Lausanne, LMU Munich and Université de Rennes will meet for a Julia hackathon on March 13-17, 2023 to advance different software projects.&lt;/p&gt;
+&lt;h3 id=&#34;hackathon-purpose&#34;&gt;Hackathon purpose&lt;/h3&gt;
+&lt;p&gt;In the hackathon, we will again join forces to continue developing several julia packages that have been started last year.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Arne Spang joins the team!</title>
+      <link>http://www.staff.uni-bayreuth.de/~bt303651/post/01-10-21_arnespang/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>http://www.staff.uni-bayreuth.de/~bt303651/post/01-10-21_arnespang/</guid>
+      <description>&lt;p&gt;Arne Spang has joined the team! He will work on deciphering the impact of different weakening mechanisms on deep earthquake generation. To this end, Arne will also develop state of the art pseudo-transient solvers to properly resolve the feedbacks between the different mechanisms. Welcome!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>EGU General Assembly</title>
+      <link>http://www.staff.uni-bayreuth.de/~bt303651/post/20-05-22_egu/</link>
+      <pubDate>Sun, 22 May 2022 00:00:00 +0000</pubDate>
+      <guid>http://www.staff.uni-bayreuth.de/~bt303651/post/20-05-22_egu/</guid>
+      <description>&lt;p&gt;The EGU General assembly is coming up next week and &lt;strong&gt;QuakeID&lt;/strong&gt; team members will be part of several presentations. Tune in if you are interested (or even better, come directly to the presentation if you are in Vienna).&lt;/p&gt;
+&lt;h3 id=&#34;monday-2355&#34;&gt;Monday, 23.55&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://meetingorganizer.copernicus.org/EGU22/EGU22-7483.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Controls on slab detachment and subsequent topography evolution&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;tuesday-245&#34;&gt;Tuesday, 24.5&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://meetingorganizer.copernicus.org/EGU22/EGU22-8846.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Testing the Strain-rate Hypothesis for Deep Slab Seismicity&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://meetingorganizer.copernicus.org/EGU22/EGU22-11762.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Crushed and fried: ductile rupture at depth due to grain size reduction and shear heating&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://meetingorganizer.copernicus.org/EGU22/EGU22-10101.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The role of grain boundaries for the deformation and grain growth of olivine at upper mantle conditions&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://meetingorganizer.copernicus.org/EGU22/EGU22-7608.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Narrow, fast, and &amp;ldquo;cold&amp;rdquo; mantle plumes on Earth explained by strain-weakening rheology in the lower mantle&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;thursday-265&#34;&gt;Thursday, 26.5.&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://meetingorganizer.copernicus.org/EGU22/EGU22-5704.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;How composable software tools in Julia help developing multi-physics codes in geodynamics&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://meetingorganizer.copernicus.org/EGU22/EGU22-9133.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Testing a (quasi-)free base for modelling core-mantle boundary topography&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Julia Hackathon</title>
+      <link>http://www.staff.uni-bayreuth.de/~bt303651/post/19-04-22_hackathon/</link>
+      <pubDate>Tue, 19 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>http://www.staff.uni-bayreuth.de/~bt303651/post/19-04-22_hackathon/</guid>
+      <description>&lt;p&gt;The QuakeID team and collaborators from the Unversity of Frankfurt, the University of Mainz as well as from ETH Zürich and UNIL Lausanne held the first Julia hackathon on April 4-8, 2022 to advance different software projects.&lt;/p&gt;
+&lt;h3 id=&#34;hackathon-news&#34;&gt;Hackathon News&lt;/h3&gt;
+&lt;p&gt;The first Julia Hackathon was very productive, with many discussions resulting in a variety of advances in different julia packages. Read all about it here:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ptsolvers.github.io/GPU4GEO/posts/julia-hackathon-2022-news_1/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stokes 3D, AD, and multi-AMDGPU&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ptsolvers.github.io/GPU4GEO/posts/julia-hackathon-2022-news_2/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LaMEM BinaryBuilder&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ptsolvers.github.io/GPU4GEO/posts/julia-hackathon-2022-news_3/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GeoParams.jl, GeophysicalModelGenerator, MAGEMin.jl and PETSc.jl&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ptsolvers.github.io/GPU4GEO/posts/julia-hackathon-2022-news_4/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ROCm (AMDGPU) MPI&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>Julia Hackathon</title>
+      <link>http://www.staff.uni-bayreuth.de/~bt303651/post/08-04-22_hackathon/</link>
+      <pubDate>Sun, 27 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>http://www.staff.uni-bayreuth.de/~bt303651/post/08-04-22_hackathon/</guid>
+      <description>&lt;p&gt;The QuakeID team and collaborators from the Unversity of Frankfurt, the University of Mainz as well as from ETH Zürich and UNIL Lausanne will meet for a Julia hackathon on April 4-8, 2022 to advance different software projects.&lt;/p&gt;
+&lt;h3 id=&#34;hackathon-purpose&#34;&gt;Hackathon purpose&lt;/h3&gt;
+&lt;p&gt;In the hackathon, we aim at moving forward with the various open-source Julia projects within ice-flow dynamics and geodynamics community. We also aim at establishing collaborations between researchers from different institutions to jointly tackle modelling problems.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Tectonic Modelling Short Course</title>
+      <link>http://www.staff.uni-bayreuth.de/~bt303651/post/08-03-22_tectonicmodelling/</link>
+      <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>http://www.staff.uni-bayreuth.de/~bt303651/post/08-03-22_tectonicmodelling/</guid>
+      <description>&lt;p&gt;At the &lt;a href=&#34;https://tsk19.geo.uni-halle.de/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;19th Symposium on „Tectonics, Structural Geology and Crystalline Geology“&lt;/a&gt;, Marcel gave a 1-day short course to introduce the basic concepts of numerical modelling and provide some hands-on experience of working with a modelling code. The corresponding lecture slides and codes will be uploaded here soon.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Andrea Piccolo joins the team!</title>
+      <link>http://www.staff.uni-bayreuth.de/~bt303651/post/21-10-21_andreapiccolo/</link>
+      <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>http://www.staff.uni-bayreuth.de/~bt303651/post/21-10-21_andreapiccolo/</guid>
+      <description>&lt;p&gt;Andrea Piccolo has joined the team to work on slab detachment processes and their surface expression in the European Alps. His position is funded by the DFG Project &lt;strong&gt;QDis&lt;/strong&gt;. Welcome!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>QuakeID starts!</title>
+      <link>http://www.staff.uni-bayreuth.de/~bt303651/post/01-11-21_projectstart/</link>
+      <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>http://www.staff.uni-bayreuth.de/~bt303651/post/01-11-21_projectstart/</guid>
+      <description>&lt;p&gt;Today is the official start of &lt;strong&gt;QuakeID&lt;/strong&gt;!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Open Position!</title>
+      <link>http://www.staff.uni-bayreuth.de/~bt303651/post/21-10-21_openpostdoc/</link>
+      <pubDate>Thu, 21 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>http://www.staff.uni-bayreuth.de/~bt303651/post/21-10-21_openpostdoc/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Open Postdoctoral Researcher Position!&lt;/strong&gt;&lt;/p&gt;
+&lt;div align=&#34;justify&#34;&gt;
+We are looking for a postdoctoral researcher to join the DFG funded Emmy Noether project QuakeID at the Bavarian Research Institute of Experimental Geochemistry and Geophysics (BGI) at the University of Bayreuth, Germany. The position is initially funded for 2.5 years, with the option of extension for an additional 2.5 years. The successful applicant will investigate deep earthquake rupture processes using numerical models und will become part of a team consisting of a post-doctoral researcher, two PhD students and the project leader (Dr. Marcel Thielmann). Candidates should hold a PhD in Geophysics, Computational Physics, Geodynamics or a related field. 
+For more information about this position and to submit your cover letter, CV, publication list and contact information for 2 references, click
+&lt;a href=&#34;https://www.uni-bayreuth.de/de/universitaet/arbeiten-an-der-universitaet/stellenangebote/wiss-personal/Thielmann-Postdoc/index.html&#34;&gt;here&lt;/a&gt;.
+&lt;br&gt;
+&lt;/div&gt;
+&lt;br&gt;
+For further information, feel free to contact me directly: Marcel.Thielmann@uni-bayreuth.de
+&lt;br&gt;
+For full consideration, one should apply before November 30, 2021.</description>
+    </item>
+    
+  </channel>
+</rss>

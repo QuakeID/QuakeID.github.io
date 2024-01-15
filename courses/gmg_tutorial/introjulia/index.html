@@ -1,0 +1,1823 @@
+<!DOCTYPE html><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.6.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Marcel Thielmann" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="1. Introduction In this short tutorial, we will introduce the Geophysical Model Generator (GMG). GMG was developed to import and process different kinds of geophysical data. These datasets can then be exported and visualized in Paraview." />
+
+  
+  <link rel="alternate" hreflang="en-us" href="http://www.staff.uni-bayreuth.de/~bt303651/courses/gmg_tutorial/introjulia/" />
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="../../../~bt303651/css/vendor-bundle.min.c7b8d9abd591ba2253ea42747e3ac3f5.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha512-W0xM4mr6dEP9nREo7Z9z+9X70wytKvMGeDsj7ps2+xg5QPrEBXC8tAW1IFnzjR6eoJ90JmCnFzerQJTLzIEHjA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="../../../~bt303651/css/wowchemy.ce39d5378debab09474c9f8ed29efacd.css" />
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="../../../~bt303651/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="../../../~bt303651/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+  
+    <link rel="manifest" href="../../../~bt303651/manifest.webmanifest" />
+  
+
+  
+  <link rel="icon" type="image/png" href="../../../~bt303651/media/icon_hu94d108f34e4ae467190cd514c650f45a_87195_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="../../../~bt303651/media/icon_hu94d108f34e4ae467190cd514c650f45a_87195_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="http://www.staff.uni-bayreuth.de/~bt303651/courses/gmg_tutorial/introjulia/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary" />
+  
+  <meta property="og:site_name" content="QuakeID Research Group" />
+  <meta property="og:url" content="http://www.staff.uni-bayreuth.de/~bt303651/courses/gmg_tutorial/introjulia/" />
+  <meta property="og:title" content="Intro and Julia basics | QuakeID Research Group" />
+  <meta property="og:description" content="1. Introduction In this short tutorial, we will introduce the Geophysical Model Generator (GMG). GMG was developed to import and process different kinds of geophysical data. These datasets can then be exported and visualized in Paraview." /><meta property="og:image" content="http://www.staff.uni-bayreuth.de/~bt303651/media/logo_hu759d274fd7d1bb84a9bad412745ec97e_585457_300x300_fit_lanczos_3.png" />
+    <meta property="twitter:image" content="http://www.staff.uni-bayreuth.de/~bt303651/media/logo_hu759d274fd7d1bb84a9bad412745ec97e_585457_300x300_fit_lanczos_3.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2021-10-26T00:00:00&#43;01:00"
+      />
+    
+    <meta property="article:modified_time" content="2021-10-26T00:00:00&#43;01:00">
+  
+
+  
+
+
+
+  
+
+  
+  
+  
+  
+  
+    <script src="https://cdn.jsdelivr.net/gh/osano/cookieconsent@3.1.1/build/cookieconsent.min.js" integrity="sha512-yXXqOFjdjHNH1GND+1EO0jbvvebABpzGKD66djnUfiKlYME5HGMUJHoCaeE4D5PTG2YsSJf6dwqyUUvQvS0vaA==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/osano/cookieconsent@3.1.1/build/cookieconsent.min.css" integrity="sha512-LQ97camar/lOliT/MqjcQs5kWgy6Qz/cCRzzRzUCfv0fotsCTC9ZHXaPQmJV8Xu/PVALfJZ7BDezl5lW3/qBxg==" crossorigin="anonymous">
+  
+  <script>
+  window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#1565c0",
+          "text": "rgb(255, 255, 255)"
+        },
+        "button": {
+          "background": "rgb(255, 255, 255)",
+          "text": "#1565c0"
+        }
+      },
+      "theme": "classic",
+      "content": {
+        "message": "This website uses cookies to ensure you get the best experience on our website.",
+        "dismiss": "Got it!",
+        "link": "Learn more",
+        "href": "https://www.cookiesandyou.com"
+      }
+    })});
+  </script>
+
+
+
+  <title>Intro and Julia basics | QuakeID Research Group</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="584dce7b255a79c50cf08058f3c1ace1" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="../../../~bt303651/js/wowchemy-init.min.613040fe4f2c0f007b4dcb64404201cb.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<header class="header--fixed">
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="../../../"><img src="../../../~bt303651/media/logo_hu759d274fd7d1bb84a9bad412745ec97e_585457_0x70_resize_lanczos_3.png" alt="QuakeID Research Group"
+            
+            ></a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="../../../"><img src="../../../~bt303651/media/logo_hu759d274fd7d1bb84a9bad412745ec97e_585457_0x70_resize_lanczos_3.png" alt="QuakeID Research Group"
+          
+          ></a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="../../../~bt303651/index.html"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="../../../~bt303651/post"><span>News</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="../../../~bt303651/people"><span>People</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="../../../~bt303651/publication"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="../../../~bt303651/software"><span>Software</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="../../../~bt303651/geodata"><span>Data</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="../../../~bt303651/courses"><span>Courses</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="../../../~bt303651/contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Intro and Julia basics</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Oct 26, 2021
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <h2 id="1-introduction">1. Introduction</h2>
+<p>In this short tutorial, we will introduce the Geophysical Model Generator (GMG). GMG was developed to import and process different kinds of geophysical data. These datasets can then be exported and visualized in Paraview.</p>
+<p>The main focus of this tutorial is to learn the basics of the programming language Julia and to show how geophysical datasets can be imported using the tools provided by the Geophysical Model Generator (with the focus on seismic tomographies).
+At the end, we will also shortly show some basic visualization of selected datasets in Paraview.</p>
+<p>The Julia scientific programming language is fast, completely open source and comes with a nice package manager.  It works on essentially all systems and has an extremely active user base. Programming in Julia is fairly easy and comparable to programming in MATLAB. If you have experience in MATLAB programming, transitioning to Julia should be relatively smooth.</p>
+<p>We are assuming that you are not yet familiar with Julia. The purpose of these exercises is therefore to give you a crash course in how to install it on your system, create a few programs, make plots etc.</p>
+<h2 id="2-installing-julia">2. Installing Julia</h2>
+<p>The best way to start is to download a recent version of julia (1.6.3) from <a href="https://julialang.org" target="_blank" rel="noopener">https://julialang.org</a> (use a binary installer).
+The recommended debugger for julia is <a href="https://code.visualstudio.com" target="_blank" rel="noopener">Microsoft Visual Studio Code</a>, where you should install the julia <a href="https://marketplace.visualstudio.com/items?itemName=julialang.language-julia" target="_blank" rel="noopener">extension</a>. See <a href="https://code.visualstudio.com/docs/languages/julia" target="_blank" rel="noopener">this</a> page for more info.</p>
+<p>Once this is done (in the order indicated above), you can start the Julia REPL (which stands for <code>read-eval-print-loop</code>, similar to the command window in MATLAB) by typing in the Command Palette (which you find in VS Code under the menu View-&gt;Command Palette):</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&gt;Julia: Start REPL
+</span></span></code></pre></div><p>This will take a bit of time initially, as it needs to compile. Once that is done, you should see the following:</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="../julia_init.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h2 id="3-first-steps">3. First steps</h2>
+<p>Let&rsquo;s start with some simple calculations within the <code>REPL</code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="mi">2</span><span class="o">+</span><span class="mi">3</span>
+</span></span><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="mi">3</span><span class="o">*</span><span class="mi">4</span>
+</span></span><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="mi">5</span><span class="o">^</span><span class="mi">2</span>
+</span></span></code></pre></div><p>Powers are performed before division and multiplication, which are done
+before subtraction and addition.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="mi">2</span><span class="o">+</span><span class="mi">3</span><span class="o">*</span><span class="mi">4</span><span class="o">^</span><span class="mi">2</span>
+</span></span></code></pre></div><p>The arrow keys allow &lsquo;command-line editing&rsquo; which cuts down on the amount of typing required, and allows easy error correction. Press the &ldquo;up&rdquo; arrow, and add <code>/2</code>. What will this produce?</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="mi">2</span><span class="o">+</span><span class="mi">3</span><span class="o">*</span><span class="mi">4</span><span class="o">^</span><span class="mi">2</span><span class="o">/</span><span class="mi">2</span>
+</span></span></code></pre></div><p>Parentheses may be used to group terms, or to make them more readable.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="p">(</span><span class="mi">2</span><span class="o">+</span><span class="mi">3</span><span class="o">*</span><span class="mi">4</span><span class="o">^</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span>
+</span></span></code></pre></div><p>The equality sign is used to assign values to variables.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">3</span>
+</span></span><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">b</span> <span class="o">=</span> <span class="n">a</span><span class="o">^</span><span class="mi">2</span>
+</span></span><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">a</span><span class="o">/</span><span class="n">b</span>
+</span></span></code></pre></div><p>If no other name is given, an answer is saved in a variable named <code>ans</code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">a</span><span class="o">/</span><span class="n">b</span>
+</span></span><span class="line"><span class="cl"><span class="mf">3.0</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">ans</span>
+</span></span><span class="line"><span class="cl"><span class="mf">3.0</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">c</span><span class="o">=</span><span class="mi">2</span><span class="o">*</span><span class="n">ans</span>
+</span></span><span class="line"><span class="cl"><span class="mf">6.0</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">ans</span>
+</span></span><span class="line"><span class="cl"><span class="mf">6.0</span>
+</span></span></code></pre></div><p>We can always determine the type of a value with</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">typeof</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="kt">Int64</span>
+</span></span></code></pre></div><p>which shows that <code>a</code> is an integer value.
+If we define <code>a</code> as:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="mf">2.1</span>
+</span></span><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">typeof</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="kt">Float64</span>
+</span></span></code></pre></div><p>which shows that now <code>a</code> is a double precision number.</p>
+<h4 id="31-vectors">3.1 Vectors</h4>
+<p>So far we dealt with scalar values. Working with vectors in Julia is simple:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="o">:</span><span class="mf">.1</span><span class="o">:</span><span class="mi">2</span>
+</span></span><span class="line"><span class="cl"><span class="mf">0.0</span><span class="o">:</span><span class="mf">0.1</span><span class="o">:</span><span class="mf">2.0</span>
+</span></span></code></pre></div><p>We can retrieve a particular value in the vector <code>x</code> by using square brackets:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">x</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="mf">0.2</span>
+</span></span></code></pre></div><p>Arrays in julia start at 1:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="mf">0.0</span>
+</span></span></code></pre></div><p>You can perform computations with <code>x</code>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">y</span> <span class="o">=</span> <span class="n">x</span><span class="o">.^</span><span class="mi">2</span> <span class="o">.+</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl"><span class="mi">21</span><span class="o">-</span><span class="n">element</span> <span class="kt">Vector</span><span class="p">{</span><span class="kt">Float64</span><span class="p">}</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl"> <span class="mf">0.0</span>
+</span></span><span class="line"><span class="cl"> <span class="mf">0.010000000000000002</span>
+</span></span><span class="line"><span class="cl"> <span class="mf">0.04000000000000001</span>
+</span></span><span class="line"><span class="cl"> <span class="mf">0.09</span>
+</span></span><span class="line"><span class="cl"> <span class="mf">0.16000000000000003</span>
+</span></span><span class="line"><span class="cl"> <span class="mf">0.25</span>
+</span></span><span class="line"><span class="cl"> <span class="mf">0.36</span>
+</span></span><span class="line"><span class="cl"> <span class="mf">0.48999999999999994</span>
+</span></span><span class="line"><span class="cl"> <span class="o">⋮</span>
+</span></span><span class="line"><span class="cl"> <span class="mf">1.9599999999999997</span>
+</span></span><span class="line"><span class="cl"> <span class="mf">2.25</span>
+</span></span><span class="line"><span class="cl"> <span class="mf">2.5600000000000005</span>
+</span></span><span class="line"><span class="cl"> <span class="mf">2.8899999999999997</span>
+</span></span><span class="line"><span class="cl"> <span class="mf">3.24</span>
+</span></span><span class="line"><span class="cl"> <span class="mf">3.61</span>
+</span></span><span class="line"><span class="cl"> <span class="mf">4.0</span>
+</span></span></code></pre></div><p>Note the dot <code>.</code> here, which tells julia that every entry of <code>x</code> should be squared and <code>1</code> is added.
+If you want a vector with values, they should be separated by commas:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">a</span><span class="o">=</span><span class="p">[</span><span class="mf">1.2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="mi">4</span><span class="o">-</span><span class="n">element</span> <span class="kt">Vector</span><span class="p">{</span><span class="kt">Float64</span><span class="p">}</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl"> <span class="mf">1.2</span>
+</span></span><span class="line"><span class="cl"> <span class="mf">3.0</span>
+</span></span><span class="line"><span class="cl"> <span class="mf">5.0</span>
+</span></span><span class="line"><span class="cl"> <span class="mf">6.0</span>
+</span></span></code></pre></div><h4 id="32-matrixes">3.2 Matrixes</h4>
+<p>A matrix in julia can be defined as</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span><span class="p">;</span> <span class="mi">4</span> <span class="mi">5</span> <span class="mi">6</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="mi">2</span><span class="o">×</span><span class="mi">3</span> <span class="kt">Matrix</span><span class="p">{</span><span class="kt">Int64</span><span class="p">}</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl"> <span class="mi">1</span>  <span class="mi">2</span>  <span class="mi">3</span>
+</span></span><span class="line"><span class="cl"> <span class="mi">4</span>  <span class="mi">5</span>  <span class="mi">6</span>
+</span></span></code></pre></div><p>Note that the elements of a matrix being entered are enclosed by brackets; a matrix is entered in &ldquo;row-major order&rdquo; (i.e. all of the first row, then all of the second row, etc); rows are separated by a semicolon (or a newline), and the elements of the row should be separated by a space.</p>
+<p>The element in the i&rsquo;th row and j&rsquo;th column of <code>a</code> is referred to in the usual way:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="mi">2</span>
+</span></span></code></pre></div><p>The transpose of a matrix is the result of interchanging rows and columns.
+Julia denotes the transpose by folowing the matrix with the single-quote [apostrophe].</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">a</span><span class="o">&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="mi">3</span><span class="o">×</span><span class="mi">2</span> <span class="n">adjoint</span><span class="p">(</span><span class="o">::</span><span class="kt">Matrix</span><span class="p">{</span><span class="kt">Int64</span><span class="p">})</span> <span class="n">with</span> <span class="n">eltype</span> <span class="kt">Int64</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl"> <span class="mi">1</span>  <span class="mi">4</span>
+</span></span><span class="line"><span class="cl"> <span class="mi">2</span>  <span class="mi">5</span>
+</span></span><span class="line"><span class="cl"> <span class="mi">3</span>  <span class="mi">6</span>
+</span></span></code></pre></div><p>New matrices may be formed out of old ones, in many ways.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">c</span> <span class="o">=</span> <span class="p">[</span><span class="n">a</span><span class="p">;</span> <span class="mi">7</span> <span class="mi">8</span> <span class="mi">9</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="mi">3</span><span class="o">×</span><span class="mi">3</span> <span class="kt">Matrix</span><span class="p">{</span><span class="kt">Int64</span><span class="p">}</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl"> <span class="mi">1</span>  <span class="mi">2</span>  <span class="mi">3</span>
+</span></span><span class="line"><span class="cl"> <span class="mi">4</span>  <span class="mi">5</span>  <span class="mi">6</span>
+</span></span><span class="line"><span class="cl"> <span class="mi">7</span>  <span class="mi">8</span>  <span class="mi">9</span>
+</span></span><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="p">[</span><span class="n">a</span><span class="p">;</span> <span class="n">a</span><span class="p">;</span> <span class="n">a</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="mi">6</span><span class="o">×</span><span class="mi">3</span> <span class="kt">Matrix</span><span class="p">{</span><span class="kt">Int64</span><span class="p">}</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl"> <span class="mi">1</span>  <span class="mi">2</span>  <span class="mi">3</span>
+</span></span><span class="line"><span class="cl"> <span class="mi">4</span>  <span class="mi">5</span>  <span class="mi">6</span>
+</span></span><span class="line"><span class="cl"> <span class="mi">1</span>  <span class="mi">2</span>  <span class="mi">3</span>
+</span></span><span class="line"><span class="cl"> <span class="mi">4</span>  <span class="mi">5</span>  <span class="mi">6</span>
+</span></span><span class="line"><span class="cl"> <span class="mi">1</span>  <span class="mi">2</span>  <span class="mi">3</span>
+</span></span><span class="line"><span class="cl"> <span class="mi">4</span>  <span class="mi">5</span>  <span class="mi">6</span>
+</span></span><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="p">[</span><span class="n">a</span> <span class="n">a</span> <span class="n">a</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="mi">2</span><span class="o">×</span><span class="mi">9</span> <span class="kt">Matrix</span><span class="p">{</span><span class="kt">Int64</span><span class="p">}</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl"> <span class="mi">1</span>  <span class="mi">2</span>  <span class="mi">3</span>  <span class="mi">1</span>  <span class="mi">2</span>  <span class="mi">3</span>  <span class="mi">1</span>  <span class="mi">2</span>  <span class="mi">3</span>
+</span></span><span class="line"><span class="cl"> <span class="mi">4</span>  <span class="mi">5</span>  <span class="mi">6</span>  <span class="mi">4</span>  <span class="mi">5</span>  <span class="mi">6</span>  <span class="mi">4</span>  <span class="mi">5</span>  <span class="mi">6</span>
+</span></span></code></pre></div><p>There are many built.-in matrix constructions. Here are a few:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">rand</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="mi">1</span><span class="o">×</span><span class="mi">3</span> <span class="kt">Matrix</span><span class="p">{</span><span class="kt">Float64</span><span class="p">}</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl"> <span class="mf">0.0398622</span>  <span class="mf">0.229126</span>  <span class="mf">0.148148</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">rand</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="mi">2</span><span class="o">-</span><span class="n">element</span> <span class="kt">Vector</span><span class="p">{</span><span class="kt">Float64</span><span class="p">}</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl"> <span class="mf">0.668085153596309</span>
+</span></span><span class="line"><span class="cl"> <span class="mf">0.4275013437388613</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">zeros</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="mi">3</span><span class="o">-</span><span class="n">element</span> <span class="kt">Vector</span><span class="p">{</span><span class="kt">Float64</span><span class="p">}</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl"> <span class="mf">0.0</span>
+</span></span><span class="line"><span class="cl"> <span class="mf">0.0</span>
+</span></span><span class="line"><span class="cl"> <span class="mf">0.0</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">ones</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="mi">3</span><span class="o">×</span><span class="mi">2</span> <span class="kt">Matrix</span><span class="p">{</span><span class="kt">Float64</span><span class="p">}</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl"> <span class="mf">1.0</span>  <span class="mf">1.0</span>
+</span></span><span class="line"><span class="cl"> <span class="mf">1.0</span>  <span class="mf">1.0</span>
+</span></span><span class="line"><span class="cl"> <span class="mf">1.0</span>  <span class="mf">1.0</span>
+</span></span></code></pre></div><p>Use a semicolon to suppress output within the REPL:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">s</span> <span class="o">=</span> <span class="n">zeros</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="mi">30</span><span class="p">);</span>
+</span></span></code></pre></div><p>This is useful, when working with large matrices.</p>
+<p>An often used part of Julia is the &lsquo;colon operator,&rsquo; which produces a list.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="o">-</span><span class="mi">3</span><span class="o">:</span><span class="mi">3</span>
+</span></span><span class="line"><span class="cl"><span class="o">-</span><span class="mi">3</span><span class="o">:</span><span class="mi">3</span>
+</span></span></code></pre></div><p>The default increment is by 1, but that can be changed.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">x</span><span class="o">=-</span><span class="mi">3</span><span class="o">:</span><span class="mf">.4</span><span class="o">:</span><span class="mi">3</span>
+</span></span></code></pre></div><p>This can be read: <code>x</code> is the name of the list, which begins at -3, and whose entries increase by 0.4, until 3 is surpassed. You may think of <code>x</code> as a list, a vector, or a matrix, whichever you like.</p>
+<p>You may wish use this construction to extract &ldquo;subvectors,&rdquo; as follows.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">x</span><span class="p">[</span><span class="mi">4</span><span class="o">:</span><span class="mi">8</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">x</span><span class="p">[</span><span class="mi">9</span><span class="o">:-</span><span class="mi">2</span><span class="o">:</span><span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">x</span><span class="o">=</span><span class="mi">10</span><span class="o">:</span><span class="mi">100</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">x</span><span class="p">[</span><span class="mi">40</span><span class="o">:</span><span class="mi">5</span><span class="o">:</span><span class="mi">60</span><span class="p">]</span>
+</span></span></code></pre></div><p>The colon notation can also be combined with the earlier method of constructing matrices.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">a</span><span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="o">:</span><span class="mi">6</span> <span class="p">;</span> <span class="mi">2</span><span class="o">:</span><span class="mi">7</span> <span class="p">;</span> <span class="mi">4</span><span class="o">:</span><span class="mi">9</span><span class="p">]</span>
+</span></span></code></pre></div><p>A very common use of the colon notation is to extract rows, or columns, as a sort of &ldquo;wild-card&rdquo; operator which produces a default list. The following command demonstrates this</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">s</span><span class="o">=</span><span class="n">rand</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">5</span><span class="p">);</span> <span class="n">s</span><span class="p">[</span><span class="mi">6</span><span class="o">:</span><span class="mi">7</span><span class="p">,</span><span class="mi">2</span><span class="o">:</span><span class="mi">4</span><span class="p">]</span> 
+</span></span><span class="line"><span class="cl"><span class="mi">2</span><span class="o">×</span><span class="mi">3</span> <span class="kt">Matrix</span><span class="p">{</span><span class="kt">Float64</span><span class="p">}</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl"> <span class="mf">0.163274</span>  <span class="mf">0.923631</span>  <span class="mf">0.877122</span>
+</span></span><span class="line"><span class="cl"> <span class="mf">0.210374</span>  <span class="mf">0.321996</span>  <span class="mf">0.281341</span>
+</span></span></code></pre></div><p>Matrices may also be constructed by programming. Here is an example, creating a &lsquo;program loop.&rsquo;, which shows how</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">A</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span><span class="o">/</span><span class="n">j</span> <span class="k">for</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="o">:</span><span class="mi">10</span><span class="p">,</span><span class="n">j</span><span class="o">=</span><span class="mi">1</span><span class="o">:</span><span class="mi">11</span><span class="p">]</span>
+</span></span></code></pre></div><h2 id="4-matrix-arithmetic">4. Matrix arithmetic</h2>
+<p>If necessary, re-enter the matrices</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">a</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span><span class="p">;</span> <span class="mi">4</span> <span class="mi">5</span> <span class="mi">6</span><span class="p">;</span> <span class="mi">7</span> <span class="mi">8</span> <span class="mi">10</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">b</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span> <span class="mi">1</span> <span class="mi">1</span><span class="p">]</span><span class="o">&#39;</span>
+</span></span></code></pre></div><p>Scalars multiply matrices as expected, and matrices may be added in the usual way; both are done &rsquo;element by element.&rsquo;</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="mi">2</span><span class="o">*</span><span class="n">a</span><span class="p">,</span> <span class="n">a</span><span class="o">/</span><span class="mi">4</span>
+</span></span><span class="line"><span class="cl"><span class="p">([</span><span class="mi">2</span> <span class="mi">4</span> <span class="mi">6</span><span class="p">;</span> <span class="mi">8</span> <span class="mi">10</span> <span class="mi">12</span><span class="p">;</span> <span class="mi">14</span> <span class="mi">16</span> <span class="mi">20</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.25</span> <span class="mf">0.5</span> <span class="mf">0.75</span><span class="p">;</span> <span class="mf">1.0</span> <span class="mf">1.25</span> <span class="mf">1.5</span><span class="p">;</span> <span class="mf">1.75</span> <span class="mf">2.0</span> <span class="mf">2.5</span><span class="p">])</span>
+</span></span></code></pre></div><p>Scalars added to matrices require you to add a dot, as</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">a</span><span class="o">.+</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl"><span class="mi">3</span><span class="o">×</span><span class="mi">3</span> <span class="kt">Matrix</span><span class="p">{</span><span class="kt">Int64</span><span class="p">}</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl"> <span class="mi">2</span>  <span class="mi">3</span>   <span class="mi">4</span>
+</span></span><span class="line"><span class="cl"> <span class="mi">5</span>  <span class="mi">6</span>   <span class="mi">7</span>
+</span></span><span class="line"><span class="cl"> <span class="mi">8</span>  <span class="mi">9</span>  <span class="mi">11</span>
+</span></span></code></pre></div><p>Matrix multiplication requires that the sizes match. If they don&rsquo;t, an error message is generated.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">a</span><span class="o">*</span><span class="n">b</span>
+</span></span><span class="line"><span class="cl"><span class="mi">3</span><span class="o">×</span><span class="mi">1</span> <span class="kt">Matrix</span><span class="p">{</span><span class="kt">Int64</span><span class="p">}</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">  <span class="mi">6</span>
+</span></span><span class="line"><span class="cl"> <span class="mi">15</span>
+</span></span><span class="line"><span class="cl"> <span class="mi">25</span>
+</span></span><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">a</span><span class="o">*</span><span class="n">b</span><span class="o">&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">ERROR</span><span class="o">:</span> <span class="kt">DimensionMismatch</span><span class="p">(</span><span class="s">&#34;matrix A has dimensions (3,3), matrix B has dimensions (1,3)&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">Stacktrace</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl"> <span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="n">_generic_matmatmul!</span><span class="p">(</span><span class="n">C</span><span class="o">::</span><span class="kt">Matrix</span><span class="p">{</span><span class="kt">Int64</span><span class="p">},</span> <span class="n">tA</span><span class="o">::</span><span class="kt">Char</span><span class="p">,</span> <span class="n">tB</span><span class="o">::</span><span class="kt">Char</span><span class="p">,</span> <span class="n">A</span><span class="o">::</span><span class="kt">Matrix</span><span class="p">{</span><span class="kt">Int64</span><span class="p">},</span> <span class="n">B</span><span class="o">::</span><span class="kt">Matrix</span><span class="p">{</span><span class="kt">Int64</span><span class="p">},</span> <span class="n">_add</span><span class="o">::</span><span class="kt">LinearAlgebra</span><span class="o">.</span><span class="kt">MulAddMul</span><span class="p">{</span><span class="kt">true</span><span class="p">,</span> <span class="kt">true</span><span class="p">,</span> <span class="kt">Bool</span><span class="p">,</span> <span class="kt">Bool</span><span class="p">})</span>
+</span></span><span class="line"><span class="cl">   <span class="err">@</span> <span class="n">LinearAlgebra</span> <span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">julia</span><span class="o">/</span><span class="n">buildbot</span><span class="o">/</span><span class="n">worker</span><span class="o">/</span><span class="n">package_macos64</span><span class="o">/</span><span class="n">build</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">julia</span><span class="o">/</span><span class="n">stdlib</span><span class="o">/</span><span class="n">v1</span><span class="mf">.6</span><span class="o">/</span><span class="n">LinearAlgebra</span><span class="o">/</span><span class="n">src</span><span class="o">/</span><span class="n">matmul</span><span class="o">.</span><span class="n">jl</span><span class="o">:</span><span class="mi">814</span>
+</span></span><span class="line"><span class="cl"> <span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="n">generic_matmatmul!</span><span class="p">(</span><span class="n">C</span><span class="o">::</span><span class="kt">Matrix</span><span class="p">{</span><span class="kt">Int64</span><span class="p">},</span> <span class="n">tA</span><span class="o">::</span><span class="kt">Char</span><span class="p">,</span> <span class="n">tB</span><span class="o">::</span><span class="kt">Char</span><span class="p">,</span> <span class="n">A</span><span class="o">::</span><span class="kt">Matrix</span><span class="p">{</span><span class="kt">Int64</span><span class="p">},</span> <span class="n">B</span><span class="o">::</span><span class="kt">Matrix</span><span class="p">{</span><span class="kt">Int64</span><span class="p">},</span> <span class="n">_add</span><span class="o">::</span><span class="kt">LinearAlgebra</span><span class="o">.</span><span class="kt">MulAddMul</span><span class="p">{</span><span class="kt">true</span><span class="p">,</span> <span class="kt">true</span><span class="p">,</span> <span class="kt">Bool</span><span class="p">,</span> <span class="kt">Bool</span><span class="p">})</span>
+</span></span><span class="line"><span class="cl">   <span class="err">@</span> <span class="n">LinearAlgebra</span> <span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">julia</span><span class="o">/</span><span class="n">buildbot</span><span class="o">/</span><span class="n">worker</span><span class="o">/</span><span class="n">package_macos64</span><span class="o">/</span><span class="n">build</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">julia</span><span class="o">/</span><span class="n">stdlib</span><span class="o">/</span><span class="n">v1</span><span class="mf">.6</span><span class="o">/</span><span class="n">LinearAlgebra</span><span class="o">/</span><span class="n">src</span><span class="o">/</span><span class="n">matmul</span><span class="o">.</span><span class="n">jl</span><span class="o">:</span><span class="mi">802</span>
+</span></span><span class="line"><span class="cl"> <span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="n">mul!</span>
+</span></span><span class="line"><span class="cl">   <span class="err">@</span> <span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">julia</span><span class="o">/</span><span class="n">buildbot</span><span class="o">/</span><span class="n">worker</span><span class="o">/</span><span class="n">package_macos64</span><span class="o">/</span><span class="n">build</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">julia</span><span class="o">/</span><span class="n">stdlib</span><span class="o">/</span><span class="n">v1</span><span class="mf">.6</span><span class="o">/</span><span class="n">LinearAlgebra</span><span class="o">/</span><span class="n">src</span><span class="o">/</span><span class="n">matmul</span><span class="o">.</span><span class="n">jl</span><span class="o">:</span><span class="mi">302</span> <span class="p">[</span><span class="n">inlined</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"> <span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="n">mul!</span>
+</span></span><span class="line"><span class="cl">   <span class="err">@</span> <span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">julia</span><span class="o">/</span><span class="n">buildbot</span><span class="o">/</span><span class="n">worker</span><span class="o">/</span><span class="n">package_macos64</span><span class="o">/</span><span class="n">build</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">julia</span><span class="o">/</span><span class="n">stdlib</span><span class="o">/</span><span class="n">v1</span><span class="mf">.6</span><span class="o">/</span><span class="n">LinearAlgebra</span><span class="o">/</span><span class="n">src</span><span class="o">/</span><span class="n">matmul</span><span class="o">.</span><span class="n">jl</span><span class="o">:</span><span class="mi">275</span> <span class="p">[</span><span class="n">inlined</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"> <span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">*</span><span class="p">(</span><span class="n">A</span><span class="o">::</span><span class="kt">Matrix</span><span class="p">{</span><span class="kt">Int64</span><span class="p">},</span> <span class="n">B</span><span class="o">::</span><span class="kt">Matrix</span><span class="p">{</span><span class="kt">Int64</span><span class="p">})</span>
+</span></span><span class="line"><span class="cl">   <span class="err">@</span> <span class="n">LinearAlgebra</span> <span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">julia</span><span class="o">/</span><span class="n">buildbot</span><span class="o">/</span><span class="n">worker</span><span class="o">/</span><span class="n">package_macos64</span><span class="o">/</span><span class="n">build</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">julia</span><span class="o">/</span><span class="n">stdlib</span><span class="o">/</span><span class="n">v1</span><span class="mf">.6</span><span class="o">/</span><span class="n">LinearAlgebra</span><span class="o">/</span><span class="n">src</span><span class="o">/</span><span class="n">matmul</span><span class="o">.</span><span class="n">jl</span><span class="o">:</span><span class="mi">153</span>
+</span></span><span class="line"><span class="cl"> <span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="n">top</span><span class="o">-</span><span class="n">level</span> <span class="n">scope</span>
+</span></span><span class="line"><span class="cl">   <span class="err">@</span> <span class="n">REPL</span><span class="p">[</span><span class="mi">107</span><span class="p">]</span><span class="o">:</span><span class="mi">1</span>
+</span></span></code></pre></div><p>A matrix-matrix multiplication is done with:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">a</span><span class="o">*</span><span class="n">a</span>
+</span></span><span class="line"><span class="cl"><span class="mi">3</span><span class="o">×</span><span class="mi">3</span> <span class="kt">Matrix</span><span class="p">{</span><span class="kt">Int64</span><span class="p">}</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">  <span class="mi">30</span>   <span class="mi">36</span>   <span class="mi">45</span>
+</span></span><span class="line"><span class="cl">  <span class="mi">66</span>   <span class="mi">81</span>  <span class="mi">102</span>
+</span></span><span class="line"><span class="cl"> <span class="mi">109</span>  <span class="mi">134</span>  <span class="mi">169</span>
+</span></span></code></pre></div><p>whereas adding a dot performs a pointwise multiplication:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">a</span><span class="o">.*</span><span class="n">a</span>
+</span></span><span class="line"><span class="cl"><span class="mi">3</span><span class="o">×</span><span class="mi">3</span> <span class="kt">Matrix</span><span class="p">{</span><span class="kt">Int64</span><span class="p">}</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">  <span class="mi">1</span>   <span class="mi">4</span>    <span class="mi">9</span>
+</span></span><span class="line"><span class="cl"> <span class="mi">16</span>  <span class="mi">25</span>   <span class="mi">36</span>
+</span></span><span class="line"><span class="cl"> <span class="mi">49</span>  <span class="mi">64</span>  <span class="mi">100</span>
+</span></span></code></pre></div><h2 id="5-adding-packages">5. Adding packages</h2>
+<p>Now it would be nice to create a plot of the results. In order to do so, you first need to install a plotting package. Many excellent are available, with the most widely used ones being <a href="https://docs.juliaplots.org/latest/" target="_blank" rel="noopener">Plots.jl</a> and <a href="https://makie.juliaplots.org/stable/" target="_blank" rel="noopener">Makie.jl</a></p>
+<p>Before being able to use a package, we first need to install it. Julia has a build-in package manager that automatically takes care of dependencies (that is: other packages that this package may use, including the correct version). You can start the package manager by typing <code>]</code> in the REPL:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nd">@v1</span><span class="mf">.6</span><span class="p">)</span> <span class="n">pkg</span><span class="o">&gt;</span> 
+</span></span></code></pre></div><p>If you want to go back to the main REPL, use the backspace key.</p>
+<p>As an example, lets install the <code>Plots</code> package:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="p">(</span><span class="nd">@v1</span><span class="mf">.6</span><span class="p">)</span> <span class="n">pkg</span><span class="o">&gt;</span> <span class="n">add</span> <span class="n">Plots</span>
+</span></span></code></pre></div><p>This is will download and precompile all dependencies and will look something like this:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="../julia_add_plots.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>The plotting package is fairly large so this will take some time, but this only has to be done once.</p>
+<p>Once the installation is done, you can test whether the package works by running the build-in testing suite of that package (which is available for most julia packages):</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="p">(</span><span class="nd">@v1</span><span class="mf">.6</span><span class="p">)</span> <span class="n">pkg</span><span class="o">&gt;</span> <span class="n">test</span> <span class="n">Plots</span>
+</span></span></code></pre></div><p>This should look something like:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="../julia_test.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+
+Note that this takes a looong time, depending on your machine. If you get impatient, you can stop this with <code>CTRL-C</code>.</p>
+<p>Once you are done with the package manager, go back to the <code>REPL</code> with the backspace button.</p>
+<h2 id="6-create-plots">6. Create plots</h2>
+<p>Now that the plotting package is install, we are ready to create our first plot. First you load the <code>Plots</code> package</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="k">using</span> <span class="n">Plots</span>
+</span></span></code></pre></div><p>Next create a plot with</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
+</span></span></code></pre></div><p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="../plot_1.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>If you are using VSCode, it should show the plot in a seperate tab as in the figure above.</p>
+<p>We can add labels etc. with:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="o">:</span><span class="mf">.1</span><span class="o">:</span><span class="mi">2</span>
+</span></span><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">y</span><span class="o">=</span><span class="n">x</span><span class="o">.^</span><span class="mi">2</span> <span class="o">.+</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span>  <span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span> <span class="n">xlabel</span><span class="o">=</span><span class="s">&#34;x&#34;</span><span class="p">,</span> <span class="n">ylabel</span><span class="o">=</span><span class="s">&#34;y axis&#34;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s">&#34;my first plot&#34;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="ss">:none</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="ss">:red</span><span class="p">)</span>
+</span></span></code></pre></div><p>which gives:</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="../plot_2.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>There are lots of options within the plotting package.  Have a look at the tutorial <a href="https://docs.juliaplots.org/latest/" target="_blank" rel="noopener">here</a>.
+If you are used to work with MATLAB/Octave, here a quick summary of how plotting options are called in the Plots.jl package of julia:</p>
+<table>
+<thead>
+<tr>
+<th>MATLAB/Octave</th>
+<th>Julia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>plot(x,y,&lsquo;r&ndash;&rsquo;)</td>
+<td>plot(x,y,linestyle=:dash, color=:red)</td>
+</tr>
+<tr>
+<td>scatter(x,y)</td>
+<td>scatter(x,y)</td>
+</tr>
+<tr>
+<td>mesh(x,y,z)</td>
+<td>wireframe(x,y,z)</td>
+</tr>
+<tr>
+<td>surf(x,y,z)</td>
+<td>plot(x,y,z,st=:surface)</td>
+</tr>
+<tr>
+<td>pcolor(x,y,z)</td>
+<td>heatmap(x,y,z)</td>
+</tr>
+<tr>
+<td>contour(x,y,z,50)</td>
+<td>contour(x,y,z,level=50)</td>
+</tr>
+<tr>
+<td>contourf(x,y,z)</td>
+<td>contour(x,y,z,level=50,fill=true)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="7-functions">7. Functions</h2>
+<p>A function in julia can be defined in an extremely simple manner:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">=</span> <span class="n">x</span><span class="o">.^</span><span class="mi">2</span> <span class="o">.+</span> <span class="mi">10</span>
+</span></span><span class="line"><span class="cl"><span class="n">f</span> <span class="p">(</span><span class="n">generic</span> <span class="k">function</span> <span class="n">with</span> <span class="mi">1</span> <span class="n">method</span><span class="p">)</span>
+</span></span></code></pre></div><p>You can now use this function with scalars, vectors or arrays:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">f</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="mi">110</span>
+</span></span><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">x</span><span class="o">=</span><span class="mi">1</span><span class="o">:</span><span class="mi">3</span>
+</span></span><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="mi">3</span><span class="o">-</span><span class="n">element</span> <span class="kt">Vector</span><span class="p">{</span><span class="kt">Int64</span><span class="p">}</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">  <span class="mi">11</span>
+</span></span><span class="line"><span class="cl">  <span class="mi">14</span>
+</span></span><span class="line"><span class="cl">  <span class="mi">19</span>
+</span></span><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">y</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span> <span class="mi">2</span><span class="p">;</span> <span class="mi">3</span> <span class="mi">4</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">f</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="mi">2</span><span class="o">×</span><span class="mi">2</span> <span class="kt">Matrix</span><span class="p">{</span><span class="kt">Int64</span><span class="p">}</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl"> <span class="mi">11</span>  <span class="mi">14</span>
+</span></span><span class="line"><span class="cl"> <span class="mi">19</span>  <span class="mi">26</span>
+</span></span></code></pre></div><p>Functions ofcourse don&rsquo;t have to be one-liners, so you can also define it as:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="k">function</span> <span class="n">f1</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">         <span class="n">y</span> <span class="o">=</span> <span class="n">x</span><span class="o">.^</span><span class="mi">2</span> <span class="o">.+</span> <span class="mi">11</span>
+</span></span><span class="line"><span class="cl">         <span class="k">return</span> <span class="n">y</span>
+</span></span><span class="line"><span class="cl">       <span class="k">end</span>
+</span></span><span class="line"><span class="cl"><span class="n">f1</span> <span class="p">(</span><span class="n">generic</span> <span class="k">function</span> <span class="n">with</span> <span class="mi">1</span> <span class="n">method</span><span class="p">)</span>
+</span></span></code></pre></div><p>This creates a new array <code>y</code> and returns that.</p>
+<p>So how fast is this function? Lets start with defining a large vector:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">x</span><span class="o">=</span><span class="mi">1</span><span class="o">:</span><span class="mf">1e6</span><span class="p">;</span>
+</span></span></code></pre></div><p>It turns out that julia has a handy macro, called <code>@time</code>, with which you can record the time that a function took.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="nd">@time</span> <span class="n">f1</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="mf">0.091410</span> <span class="n">seconds</span> <span class="p">(</span><span class="mf">407.44</span> <span class="n">k</span> <span class="n">allocations</span><span class="o">:</span> <span class="mf">31.651</span> <span class="n">MiB</span><span class="p">,</span> <span class="mf">9.82</span><span class="o">%</span> <span class="n">gc</span> <span class="n">time</span><span class="p">,</span> <span class="mf">94.01</span><span class="o">%</span> <span class="n">compilation</span> <span class="n">time</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="mi">1000000</span><span class="o">-</span><span class="n">element</span> <span class="kt">Vector</span><span class="p">{</span><span class="kt">Float64</span><span class="p">}</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl"> <span class="mf">12.0</span>
+</span></span><span class="line"><span class="cl"> <span class="mf">15.0</span>
+</span></span><span class="line"><span class="cl"> <span class="mf">20.0</span>
+</span></span><span class="line"><span class="cl"> <span class="mf">27.0</span>
+</span></span><span class="line"><span class="cl"> <span class="mf">36.0</span>
+</span></span><span class="line"><span class="cl"> <span class="mf">47.0</span>
+</span></span><span class="line"><span class="cl"> <span class="mf">60.0</span>
+</span></span><span class="line"><span class="cl"> <span class="mf">75.0</span>
+</span></span><span class="line"><span class="cl"> <span class="mf">92.0</span>
+</span></span><span class="line"><span class="cl">  <span class="o">⋮</span>
+</span></span><span class="line"><span class="cl">  <span class="mf">9.9998600006e11</span>
+</span></span><span class="line"><span class="cl">  <span class="mf">9.99988000047e11</span>
+</span></span><span class="line"><span class="cl">  <span class="mf">9.99990000036e11</span>
+</span></span><span class="line"><span class="cl">  <span class="mf">9.99992000027e11</span>
+</span></span><span class="line"><span class="cl">  <span class="mf">9.9999400002e11</span>
+</span></span><span class="line"><span class="cl">  <span class="mf">9.99996000015e11</span>
+</span></span><span class="line"><span class="cl">  <span class="mf">9.99998000012e11</span>
+</span></span><span class="line"><span class="cl">  <span class="mf">1.000000000011e12</span>
+</span></span></code></pre></div><p>So this took 0.09 seconds on my machine. Yet, the first time any function in julia is executed, it is compiled and that&rsquo;s why 94% of the time was the compilation time. If we run the same function again, it is much faster and creates 2 allocations:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="nd">@time</span> <span class="n">f1</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="mf">0.006275</span> <span class="n">seconds</span> <span class="p">(</span><span class="mi">2</span> <span class="n">allocations</span><span class="o">:</span> <span class="mf">7.629</span> <span class="n">MiB</span><span class="p">)</span>
+</span></span></code></pre></div><p>In general, it is a very good idea to put things in functions within julia, as it allows julia to precompile the routines.<br>
+Also note that you need to restart the <code>REPL</code> or your Julia session every time you redefine a function or a structure.</p>
+<h2 id="8-scripts">8. Scripts</h2>
+<p>In general, you want to put your code in a julia script so you don&rsquo;t have to type it always in the REPL. Doing that is simple; you simple save it as a textfile that had has <code>*.jl</code> as an ending.
+A simple example is the following <code>test1.jl</code> script:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="k">using</span> <span class="n">Plots</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">function</span> <span class="n">rosenbrock</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">;</span> <span class="n">a</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">b</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">   <span class="n">xt</span> <span class="o">=</span> <span class="n">x</span><span class="o">&#39;</span>     <span class="c"># transpose  </span>
+</span></span><span class="line"><span class="cl">   <span class="n">f</span>  <span class="o">=</span> <span class="p">(</span><span class="n">a</span> <span class="o">.-</span> <span class="n">xt</span><span class="p">)</span><span class="o">.^</span><span class="mi">2</span> <span class="o">.+</span> <span class="n">b</span><span class="o">.*</span><span class="p">(</span><span class="n">y</span> <span class="o">.-</span> <span class="n">xt</span><span class="o">.^</span><span class="mi">2</span><span class="p">)</span><span class="o">.^</span><span class="mi">2</span>
+</span></span><span class="line"><span class="cl">   <span class="k">return</span> <span class="n">f</span>
+</span></span><span class="line"><span class="cl"><span class="k">end</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">x</span> <span class="o">=</span> <span class="n">range</span><span class="p">(</span><span class="o">-</span><span class="mf">2.0</span><span class="p">,</span><span class="mf">2.0</span><span class="p">,</span><span class="n">length</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">y</span> <span class="o">=</span> <span class="n">range</span><span class="p">(</span><span class="o">-</span><span class="mf">1.0</span><span class="p">,</span><span class="mf">1.5</span><span class="p">,</span><span class="n">length</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">f</span> <span class="o">=</span> <span class="n">rosenbrock</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># Create a contourplot</span>
+</span></span><span class="line"><span class="cl"><span class="n">contour</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">f</span><span class="p">,</span> <span class="n">levels</span><span class="o">=</span><span class="mi">0</span><span class="o">:</span><span class="mi">10</span><span class="o">:</span><span class="mi">200</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="nb">true</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">       <span class="n">xlabel</span><span class="o">=</span><span class="s">&#34;X&#34;</span><span class="p">,</span> <span class="n">ylabel</span><span class="o">=</span><span class="s">&#34;y&#34;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s">&#34;rosenbrock&#34;</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">       <span class="n">color</span><span class="o">=</span><span class="ss">:roma</span><span class="p">,</span> <span class="n">clim</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">200</span><span class="p">))</span>
+</span></span></code></pre></div><p>Note that the rosenbrock function has optional parameters (<code>a,b</code>). Calling it with only <code>X,Y</code> will invoke the default parameters, but you can specify the optional ones with <code>f=rosenbrock(x,y, b=200,a=3)</code>.
+You can run this script in the julia in the following way:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">include</span><span class="p">(</span><span class="s">&#34;test1.jl&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><p>Be aware that you need to be in the same directory as the script (see below on how you can change directories using the build-in shell in julia, by typing <code>;</code> in the REPL).
+The result looks like (have a look at how we customized the colormap, and added info for the axes).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="../2021-10-13-14-43-15.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h2 id="9-help">9. Help</h2>
+<p>In general, you can get help for every function by typing <code>?</code> which brings you to the help terminal. Next type the name of the function.
+For example, lets find out how to compute the average of an array</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;?</span><span class="n">mean</span>
+</span></span></code></pre></div><p>You can add help info to your own functions by adding comments before the function, using <code>&quot;&quot;&quot;</code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="s">&#34;&#34;&#34; 
+</span></span></span><span class="line"><span class="cl"><span class="s">    y = f2_withhelp(x)
+</span></span></span><span class="line"><span class="cl"><span class="s">
+</span></span></span><span class="line"><span class="cl"><span class="s">Computes the square of `x` and adds 10 
+</span></span></span><span class="line"><span class="cl"><span class="s">
+</span></span></span><span class="line"><span class="cl"><span class="s">Example
+</span></span></span><span class="line"><span class="cl"><span class="s">=======
+</span></span></span><span class="line"><span class="cl"><span class="s">
+</span></span></span><span class="line"><span class="cl"><span class="s">julia&gt; x=1:10
+</span></span></span><span class="line"><span class="cl"><span class="s">julia&gt; y = f2_withhelp(x)
+</span></span></span><span class="line"><span class="cl"><span class="s">10-element Vector{Int64}:
+</span></span></span><span class="line"><span class="cl"><span class="s">  11
+</span></span></span><span class="line"><span class="cl"><span class="s">  14
+</span></span></span><span class="line"><span class="cl"><span class="s">  19
+</span></span></span><span class="line"><span class="cl"><span class="s">  26
+</span></span></span><span class="line"><span class="cl"><span class="s">  35
+</span></span></span><span class="line"><span class="cl"><span class="s">  46
+</span></span></span><span class="line"><span class="cl"><span class="s">  59
+</span></span></span><span class="line"><span class="cl"><span class="s">  74
+</span></span></span><span class="line"><span class="cl"><span class="s">  91
+</span></span></span><span class="line"><span class="cl"><span class="s"> 110
+</span></span></span><span class="line"><span class="cl"><span class="s">&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="k">function</span> <span class="n">f2_withhelp</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">y</span> <span class="o">=</span> <span class="n">x</span><span class="o">.^</span><span class="mi">2</span> <span class="o">.+</span> <span class="mi">10</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">y</span>
+</span></span><span class="line"><span class="cl"><span class="k">end</span>
+</span></span></code></pre></div><h4 id="91-built-in-terminal">9.1 Built-in terminal</h4>
+<p>Julia has a built-in terminal, which you can reach by typing <code>;</code>. This comes in handy if you want to check in which directory you are, change directories, or look at the files there.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">shell</span><span class="o">&gt;</span> <span class="n">pwd</span>
+</span></span><span class="line"><span class="cl"><span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">kausb</span>
+</span></span></code></pre></div><p>Note that this invokes the default terminal on your operating system, so under windows the commands are a but different than under linux.
+Once you are done with the terminal, you get back to the <code>REPL</code>, by using the backspace.</p>
+<h4 id="92-online-help">9.2 Online help</h4>
+<p>The official julia <a href="https://docs.julialang.org/en/v1/" target="_blank" rel="noopener">manual</a> is a good place to start. Many of the julia packages are hosted on github and have help pages as well. An example, which we will use in this class, is <a href="https://github.com/JuliaGeodynamics/GeophysicalModelGenerator.jl" target="_blank" rel="noopener">GeophysicalModelGenerator.jl</a>.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="../GMG.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>If you click on the blue buttons, you will be taken to the help pages.</p>
+<h2 id="10-other-useful-packages">10. Other useful packages</h2>
+<p>As you will work your way through the tutorials you will see that we often use external packages, for example to load ascii data files into julia. You will find detailed instructions in the respective tutorials.</p>
+<p>The packages we will use in this tutorial are listed below.</p>
+<ul>
+<li><a href="https://github.com/JuliaData/CSV.jl" target="_blank" rel="noopener">CSV</a>: Read comma-separated data files into julia.</li>
+<li><a href="https://github.com/JuliaPlots/Plots.jl" target="_blank" rel="noopener">Plots</a>: Create all kinds of plots in julia (quite an extensive package, but very useful to have).</li>
+<li><a href="https://github.com/JuliaIO/JLD2.jl" target="_blank" rel="noopener">JLD2</a>: This allows saving julia objects (such as a tomographic model) to a binary file and load it again at a later stage.</li>
+<li><a href="https://github.com/JuliaGeo/Geodesy.jl" target="_blank" rel="noopener">Geodesy</a>: Convert UTM coordinates to latitude/longitude/altitude.</li>
+<li><a href="https://github.com/JuliaGeo/NetCDF.jl" target="_blank" rel="noopener">NetCDF</a>: Read NetCDF files.</li>
+<li><a href="https://github.com/GenericMappingTools/GMT.jl" target="_blank" rel="noopener">GMT</a>: A julia interface to the Generic Mapping Tools (GMT), which is a highly popular package to create (geophysical) maps. Note that installing <code>GMT.jl</code> is more complicated than installing the other packages listed above, as you first need to have a working version of <code>GMT</code> on your machine (it is not yet installed automatically). Installation instructions for Windows/Linux are on their <a href="https://www.generic-mapping-tools.org" target="_blank" rel="noopener">webpage</a>. On a Mac, we made the best experiences by downloading the binaries from their webpage and not using a package manager to install GMT.</li>
+</ul>
+<p>Install them through the package manager:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">julia&gt; using Pkg
+</span></span><span class="line"><span class="cl">julia&gt; Pkg.add(&#34;CSV&#34;)
+</span></span></code></pre></div><p><ul class="cta-group">
+  
+  <li>
+    <a href=".."  class="btn btn-primary px-3 py-3">Back to the main tutorial page</a>
+  </li>
+  
+  
+</ul>
+
+<ul class="cta-group">
+  
+  <li>
+    <a href="../gmg_desc"  class="btn btn-primary px-3 py-3">Next: GMG Package Description</a>
+  </li>
+  
+  
+</ul>
+</p>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=http://www.staff.uni-bayreuth.de/~bt303651/courses/gmg_tutorial/introjulia/&amp;text=Intro%20and%20Julia%20basics" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=http://www.staff.uni-bayreuth.de/~bt303651/courses/gmg_tutorial/introjulia/&amp;t=Intro%20and%20Julia%20basics" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Intro%20and%20Julia%20basics&amp;body=http://www.staff.uni-bayreuth.de/~bt303651/courses/gmg_tutorial/introjulia/" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=http://www.staff.uni-bayreuth.de/~bt303651/courses/gmg_tutorial/introjulia/&amp;title=Intro%20and%20Julia%20basics" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Intro%20and%20Julia%20basics%20http://www.staff.uni-bayreuth.de/~bt303651/courses/gmg_tutorial/introjulia/" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=http://www.staff.uni-bayreuth.de/~bt303651/courses/gmg_tutorial/introjulia/&amp;title=Intro%20and%20Julia%20basics" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="../../../~bt303651/author/marcel-thielmann/"><img class="avatar mr-3 avatar-circle" src="../../../~bt303651/author/marcel-thielmann/avatar2_hu255bc339f33b658188e4cc70d300a237_15424_270x270_fill_q75_lanczos_center.jpg" alt="Marcel Thielmann"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="../../../~bt303651/author/marcel-thielmann/">Marcel Thielmann</a></h5>
+      <h6 class="card-subtitle">Principal Investigator/Group Leader</h6>
+      <p class="card-text">Working on localization processes in Earth materials, in particular deep earthquakes, flow of complex fluids in porous media and Earth&rsquo;s lower mantle rheology.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:marcel.thielmann@uni-bayreuth.de" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://orcid.org/0000-0003-1185-3730" target="_blank" rel="noopener">
+        <i class="ai ai-orcid"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?user=yDs-MYAAAAAJ&amp;hl=en&amp;oi=ao" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://figshare.com/authors/Marcel_Thielmann/7360784" target="_blank" rel="noopener">
+        <i class="ai ai-researchgate"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/mthielma/" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="../../../~bt303651/files/cv.pdf" >
+        <i class="ai ai-cv"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+  </div>
+
+  
+
+
+<script src="../../../~bt303651/js/vendor-bundle.min.d26509351aa0ff874abbee824e982e9b.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/gh/bryanbraun/anchorjs@4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+<script>
+  anchors.add();
+</script>
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+
+  <script src="../../../~bt303651/js/wowchemy-headroom.c251366b4128fd5e6b046d4c97a62a51.js" type="module"></script>
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="../../../~bt303651/en/js/wowchemy.min.54dd6e4d8f2e4b1d098381b57f18dd83.js"></script>
+
+
+
+  <script src="../../../~bt303651/js/wowchemy-map.a26e9d2f7238ba5b868384f1c5bc6477.js" type="module"></script>
+
+
+
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <pre><code></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="../../../~bt303651/js/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
