@@ -14,6 +14,37 @@
     
     <item>
       <title>Installation</title>
+      <link>https://QuakeID.github.io/courses/gmg_gui_tutorial_jena/gmg_gui_installation_jena/</link>
+      <pubDate>Thu, 18 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://QuakeID.github.io/courses/gmg_gui_tutorial_jena/gmg_gui_installation_jena/</guid>
+      <description>&lt;p&gt;In this workshop, we will mainly work with the Matlab version of the Data Picker app. We will also have a short look at the julia Data Picker app. Both apps are still under development, but we are aiming at a final julia app. This is simply because Matlab is not a free software, which restricts the usage of the Matlab app.&lt;/p&gt;
+&lt;h2 id=&#34;1-matlab-apps&#34;&gt;1. MATLAB apps&lt;/h2&gt;
+&lt;p&gt;To install the two apps within MATLAB, first download them by accessing the &lt;a href=&#34;https://unibt-my.sharepoint.com/:f:/g/personal/bt303651_myubt_de/EqrYg8m7m5NGpXZryfHaWKEBh3cw5iUU9Mn5dSptLYCYzQ?e=mZA3WG&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;course materials&lt;/a&gt;. There you&amp;rsquo;ll find a folder named Apps. In this folder, you can then download both the GeoDataPicker app and the ProfileSelection app. Install both from within Matlab.&lt;/p&gt;
+&lt;h2 id=&#34;julia-app&#34;&gt;Julia app&lt;/h2&gt;
+&lt;p&gt;The julia Data Picker App is contained in a julia package. Further details on how to install is can be found on the &lt;a href=&#34;https://github.com/JuliaGeodynamics/GeoDataPicker.jl&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;github page&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;ul class=&#34;cta-group&#34;&gt;
+  
+  &lt;li&gt;
+    &lt;a href=&#34;../gmg_gui_data_jena&#34;  class=&#34;btn btn-primary px-3 py-3&#34;&gt;Next: Data&lt;/a&gt;
+  &lt;/li&gt;
+  
+  
+&lt;/ul&gt;
+
+&lt;ul class=&#34;cta-group&#34;&gt;
+  
+  &lt;li&gt;
+    &lt;a href=&#34;..&#34;  class=&#34;btn btn-primary px-3 py-3&#34;&gt;Back to the main page&lt;/a&gt;
+  &lt;/li&gt;
+  
+  
+&lt;/ul&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Installation</title>
       <link>https://QuakeID.github.io/courses/gmg_gui_tutorial/gmg_gui_installation/</link>
       <pubDate>Mon, 28 Aug 2023 00:00:00 +0000</pubDate>
       <guid>https://QuakeID.github.io/courses/gmg_gui_tutorial/gmg_gui_installation/</guid>
@@ -665,6 +696,42 @@ Once you are done with the terminal, you get back to the &lt;code&gt;REPL&lt;/co
     
     <item>
       <title>Data</title>
+      <link>https://QuakeID.github.io/courses/gmg_gui_tutorial_jena/gmg_gui_data_jena/</link>
+      <pubDate>Thu, 18 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://QuakeID.github.io/courses/gmg_gui_tutorial_jena/gmg_gui_data_jena/</guid>
+      <description>&lt;p&gt;We will be working with preprocessed data of different profiles where we extracted Vp- and Vs-tomographies, Moho topographies ans seismicty from different data sources. We will first define the different profiles together and then create the required profiles. The processed datasets can then be found in the &amp;ldquo;Data&amp;rdquo; folder.&lt;/p&gt;
+&lt;p&gt;&lt;ul class=&#34;cta-group&#34;&gt;
+  
+  &lt;li&gt;
+    &lt;a href=&#34;../gmg_gui_manual_jena&#34;  class=&#34;btn btn-primary px-3 py-3&#34;&gt;Next: Manual&lt;/a&gt;
+  &lt;/li&gt;
+  
+  
+&lt;/ul&gt;
+
+&lt;ul class=&#34;cta-group&#34;&gt;
+  
+  &lt;li&gt;
+    &lt;a href=&#34;../gmg_gui_installation_jena&#34;  class=&#34;btn btn-primary px-3 py-3&#34;&gt;Previous: Installation&lt;/a&gt;
+  &lt;/li&gt;
+  
+  
+&lt;/ul&gt;
+
+&lt;ul class=&#34;cta-group&#34;&gt;
+  
+  &lt;li&gt;
+    &lt;a href=&#34;..&#34;  class=&#34;btn btn-primary px-3 py-3&#34;&gt;Back to the main page&lt;/a&gt;
+  &lt;/li&gt;
+  
+  
+&lt;/ul&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Data</title>
       <link>https://QuakeID.github.io/courses/gmg_gui_tutorial/gmg_gui_data/</link>
       <pubDate>Mon, 28 Aug 2023 00:00:00 +0000</pubDate>
       <guid>https://QuakeID.github.io/courses/gmg_gui_tutorial/gmg_gui_data/</guid>
@@ -779,6 +846,24 @@ In addition, the GMG provides tools to assist numerical modellers in creating in
   
 &lt;/ul&gt;
 &lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>GMG GUI Manual</title>
+      <link>https://QuakeID.github.io/courses/gmg_gui_tutorial_jena/gmg_gui_manual_jena/</link>
+      <pubDate>Thu, 18 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://QuakeID.github.io/courses/gmg_gui_tutorial_jena/gmg_gui_manual_jena/</guid>
+      <description>&lt;p&gt;The current manual consists of a set of slides which we will go over during the workshop. This file can be downloaded in the &amp;ldquo;Manual&amp;rdquo; folder.&lt;/p&gt;
+&lt;ul class=&#34;cta-group&#34;&gt;
+  
+  &lt;li&gt;
+    &lt;a href=&#34;..&#34;  class=&#34;btn btn-primary px-3 py-3&#34;&gt;Back to the main page&lt;/a&gt;
+  &lt;/li&gt;
+  
+  
+&lt;/ul&gt;
+
 </description>
     </item>
     
