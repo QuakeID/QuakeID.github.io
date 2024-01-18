@@ -21,7 +21,7 @@
 &lt;h2 id=&#34;1-matlab-apps&#34;&gt;1. MATLAB apps&lt;/h2&gt;
 &lt;p&gt;To install the two apps within MATLAB, first download them by accessing the &lt;a href=&#34;https://unibt-my.sharepoint.com/:f:/g/personal/bt303651_myubt_de/EqrYg8m7m5NGpXZryfHaWKEBh3cw5iUU9Mn5dSptLYCYzQ?e=mZA3WG&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;course materials&lt;/a&gt;. There you&amp;rsquo;ll find a folder named Apps. In this folder, you can then download both the GeoDataPicker app and the ProfileSelection app. Install both from within Matlab.&lt;/p&gt;
 &lt;h2 id=&#34;julia-app&#34;&gt;Julia app&lt;/h2&gt;
-&lt;p&gt;The julia Data Picker App is contained in a julia package. Further details on how to install is can be found on the &lt;a href=&#34;https://github.com/JuliaGeodynamics/GeoDataPicker.jl&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;github page&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The julia Data Picker App is contained in a julia package. Further details on how to install it can be found on the &lt;a href=&#34;https://github.com/JuliaGeodynamics/GeoDataPicker.jl&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;github page&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;ul class=&#34;cta-group&#34;&gt;
   
   &lt;li&gt;
