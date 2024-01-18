@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GMG GUI Tutorial Uni Jena | QuakeID Research Group</title>
+    <link>https://QuakeID.github.io/courses/gmg_gui_tutorial_jena/</link>
+      <atom:link href="https://QuakeID.github.io/courses/gmg_gui_tutorial_jena/index.xml" rel="self" type="application/rss+xml" />
+    <description>GMG GUI Tutorial Uni Jena</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 17 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://QuakeID.github.io/courses/gmg_gui_tutorial_jena/featured.png</url>
+      <title>GMG GUI Tutorial Uni Jena</title>
+      <link>https://QuakeID.github.io/courses/gmg_gui_tutorial_jena/</link>
+    </image>
+    
+  </channel>
+</rss>
