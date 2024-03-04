@@ -5,38 +5,40 @@
     <link>https://QuakeID.github.io/author/marcel-thielmann/</link>
       <atom:link href="https://QuakeID.github.io/author/marcel-thielmann/index.xml" rel="self" type="application/rss+xml" />
     <description>Marcel Thielmann</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 20 Dec 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 17 Nov 2021 10:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://QuakeID.github.io/media/logo_hu759d274fd7d1bb84a9bad412745ec97e_585457_300x300_fit_lanczos_3.png</url>
+      <url>https://QuakeID.github.io/author/marcel-thielmann/avatar2_hu255bc339f33b658188e4cc70d300a237_15424_270x270_fill_q75_lanczos_center.jpg</url>
       <title>Marcel Thielmann</title>
       <link>https://QuakeID.github.io/author/marcel-thielmann/</link>
     </image>
     
     <item>
-      <title>Experimental determination of carbon diffusion in liquid iron at high pressure</title>
-      <link>https://QuakeID.github.io/publication/rebaza-2021-ko/</link>
-      <pubDate>Mon, 20 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>https://QuakeID.github.io/publication/rebaza-2021-ko/</guid>
+      <title>Ductile weakening as the key to plate tectonics and deep earthquakes</title>
+      <link>https://QuakeID.github.io/talk/17-11-21-kiel/</link>
+      <pubDate>Wed, 17 Nov 2021 10:00:00 +0000</pubDate>
+      <guid>https://QuakeID.github.io/talk/17-11-21-kiel/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Experimental determination of carbon diffusion in liquid iron at high pressure</title>
-      <link>https://QuakeID.github.io/publication/koemets-2021-gh/</link>
-      <pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>https://QuakeID.github.io/publication/koemets-2021-gh/</guid>
+      <title>Contributions of grain size reduction and shear heating to slab detachment</title>
+      <link>https://QuakeID.github.io/talk/30-08-21-badbelzig/</link>
+      <pubDate>Tue, 31 Aug 2021 12:10:00 +0000</pubDate>
+      <guid>https://QuakeID.github.io/talk/30-08-21-badbelzig/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>A transdisciplinary and community-driven database to unravel subduction zone initiation</title>
-      <link>https://QuakeID.github.io/publication/crameri-2020-ey/</link>
-      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
-      <guid>https://QuakeID.github.io/publication/crameri-2020-ey/</guid>
+      <title>Ferropericlase control of lower mantle rheology - Impact of phase morphology</title>
+      <link>https://QuakeID.github.io/talk/private/talkvolatiles2019/</link>
+      <pubDate>Sat, 01 Jun 2019 18:20:00 +0000</pubDate>
+      <guid>https://QuakeID.github.io/talk/private/talkvolatiles2019/</guid>
       <description></description>
     </item>
     
-    <item>
+  </channel>
+</rss>
+em>
       <title>Contributions of Grain Damage, Thermal Weakening, and Necking to Slab Detachment</title>
       <link>https://QuakeID.github.io/publication/thielmann-2020-ko/</link>
       <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
