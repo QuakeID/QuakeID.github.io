@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Andrea Piccolo | QuakeID Research Group</title>
+    <link>https://QuakeID.github.io/author/andrea-piccolo/</link>
+      <atom:link href="https://QuakeID.github.io/author/andrea-piccolo/index.xml" rel="self" type="application/rss+xml" />
+    <description>Andrea Piccolo</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
+    <image>
+      <url>https://QuakeID.github.io/author/andrea-piccolo/avatar_hu29fc75eec1ea25ec9cf12ed91e681cbf_18104_270x270_fill_q75_lanczos_center.jpg</url>
+      <title>Andrea Piccolo</title>
+      <link>https://QuakeID.github.io/author/andrea-piccolo/</link>
+    </image>
+    
+  </channel>
+</rss>

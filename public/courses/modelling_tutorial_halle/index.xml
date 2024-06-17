@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tectonic Modelling Short Course | QuakeID Research Group</title>
+    <link>https://QuakeID.github.io/courses/modelling_tutorial_halle/</link>
+      <atom:link href="https://QuakeID.github.io/courses/modelling_tutorial_halle/index.xml" rel="self" type="application/rss+xml" />
+    <description>Tectonic Modelling Short Course</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 08 Mar 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://QuakeID.github.io/courses/modelling_tutorial_halle/featured.png</url>
+      <title>Tectonic Modelling Short Course</title>
+      <link>https://QuakeID.github.io/courses/modelling_tutorial_halle/</link>
+    </image>
+    
+    <item>
+      <title>What is a model?</title>
+      <link>https://QuakeID.github.io/courses/modelling_tutorial_halle/tsk_intro/</link>
+      <pubDate>Wed, 27 Oct 2021 00:00:00 +0100</pubDate>
+      <guid>https://QuakeID.github.io/courses/modelling_tutorial_halle/tsk_intro/</guid>
+      <description>&lt;h2 id=&#34;what-is-a-model&#34;&gt;What is a model?&lt;/h2&gt;
+&lt;p&gt;When it comes to tectonic models, there may be some confusion about the term &amp;ldquo;model&amp;rdquo;. Often, this term is interpreted as something the necessarily involves mathematics. Indeed, as the following definition shows, &amp;ldquo;model&amp;rdquo; often refers to mathematical models:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A simplified description, especially a mathematical one, of a system or process, to assist calculations and predictions.&lt;/p&gt;
+&lt;p&gt;&amp;ndash; &lt;cite&gt;&lt;a href=&#34;https://www.lexico.com/definition/model&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.lexico.com/definition/model&lt;/a&gt;&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;However, the more important part of this definition lies within the first three words of the definition: &lt;strong&gt;A simplified description&lt;/strong&gt;. Indeed, before mathematics may be used, models first involve the step of simplification. This step is crucial to even allow us to make an attempt to understand a given system. Most importantly, this step does not involve any mathematical knowledge. Mathematics may be used at a later step to determine whether a model is feasible, but this does not always need to be the case.&lt;/p&gt;
+&lt;p&gt;Finally, models are designed to help us understand certain observations. As they represent a simnplified version of the real system, they cannot explain every little detail of this system. They also don&amp;rsquo;t need to.&lt;/p&gt;
+&lt;h4 id=&#34;different-earth-models&#34;&gt;Different Earth models&lt;/h4&gt;
+&lt;p&gt;&lt;ul class=&#34;cta-group&#34;&gt;
+  
+  &lt;li&gt;
+    &lt;a href=&#34;..&#34;  class=&#34;btn btn-primary px-3 py-3&#34;&gt;Back to the main page&lt;/a&gt;
+  &lt;/li&gt;
+  
+  
+&lt;/ul&gt;
+
+&lt;ul class=&#34;cta-group&#34;&gt;
+  
+  &lt;li&gt;
+    &lt;a href=&#34;../tsk_workflow&#34;  class=&#34;btn btn-primary px-3 py-3&#34;&gt;Next: Data Import&lt;/a&gt;
+  &lt;/li&gt;
+  
+  
+&lt;/ul&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The modelling workflow</title>
+      <link>https://QuakeID.github.io/courses/modelling_tutorial_halle/tsk_workflow/</link>
+      <pubDate>Wed, 27 Oct 2021 00:00:00 +0100</pubDate>
+      <guid>https://QuakeID.github.io/courses/modelling_tutorial_halle/tsk_workflow/</guid>
+      <description>&lt;h2 id=&#34;the-modelling-workflow&#34;&gt;The modelling workflow&lt;/h2&gt;
+&lt;h4 id=&#34;observation&#34;&gt;Observation&lt;/h4&gt;
+&lt;h4 id=&#34;simplification&#34;&gt;Simplification&lt;/h4&gt;
+&lt;h4 id=&#34;explanation&#34;&gt;Explanation&lt;/h4&gt;
+&lt;h4 id=&#34;validation&#34;&gt;Validation&lt;/h4&gt;
+&lt;h4 id=&#34;the-role-of-mathematics&#34;&gt;The role of mathematics&lt;/h4&gt;
+&lt;p&gt;&lt;ul class=&#34;cta-group&#34;&gt;
+  
+  &lt;li&gt;
+    &lt;a href=&#34;../tsk_intro&#34;  class=&#34;btn btn-primary px-3 py-3&#34;&gt;Previous: Intro&lt;/a&gt;
+  &lt;/li&gt;
+  
+  
+&lt;/ul&gt;
+
+&lt;ul class=&#34;cta-group&#34;&gt;
+  
+  &lt;li&gt;
+    &lt;a href=&#34;../tsk_methods&#34;  class=&#34;btn btn-primary px-3 py-3&#34;&gt;Next: Numerical Methods&lt;/a&gt;
+  &lt;/li&gt;
+  
+  
+&lt;/ul&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Model Types</title>
+      <link>https://QuakeID.github.io/courses/modelling_tutorial_halle/tsk_modeltypes/</link>
+      <pubDate>Wed, 27 Oct 2021 00:00:00 +0100</pubDate>
+      <guid>https://QuakeID.github.io/courses/modelling_tutorial_halle/tsk_modeltypes/</guid>
+      <description>&lt;h2 id=&#34;model-types&#34;&gt;Model types&lt;/h2&gt;
+&lt;h4 id=&#34;conceptual-models&#34;&gt;Conceptual models&lt;/h4&gt;
+&lt;h4 id=&#34;analytical-models&#34;&gt;Analytical models&lt;/h4&gt;
+&lt;h4 id=&#34;numerical-models&#34;&gt;Numerical models&lt;/h4&gt;
+&lt;p&gt;&lt;ul class=&#34;cta-group&#34;&gt;
+  
+  &lt;li&gt;
+    &lt;a href=&#34;../tsk_intro&#34;  class=&#34;btn btn-primary px-3 py-3&#34;&gt;Previous: Intro&lt;/a&gt;
+  &lt;/li&gt;
+  
+  
+&lt;/ul&gt;
+
+&lt;ul class=&#34;cta-group&#34;&gt;
+  
+  &lt;li&gt;
+    &lt;a href=&#34;../tsk_methods&#34;  class=&#34;btn btn-primary px-3 py-3&#34;&gt;Next: Numerical Methods&lt;/a&gt;
+  &lt;/li&gt;
+  
+  
+&lt;/ul&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Numerical methods</title>
+      <link>https://QuakeID.github.io/courses/modelling_tutorial_halle/tsk_methods/</link>
+      <pubDate>Wed, 27 Oct 2021 00:00:00 +0100</pubDate>
+      <guid>https://QuakeID.github.io/courses/modelling_tutorial_halle/tsk_methods/</guid>
+      <description>&lt;h2 id=&#34;numerical-methods&#34;&gt;Numerical methods&lt;/h2&gt;
+&lt;h4 id=&#34;finite-element-method&#34;&gt;Finite Element Method&lt;/h4&gt;
+&lt;h4 id=&#34;finite-difference-method&#34;&gt;Finite Difference Method&lt;/h4&gt;
+&lt;h4 id=&#34;finite-volume-method&#34;&gt;Finite Volume Method&lt;/h4&gt;
+&lt;p&gt;&lt;ul class=&#34;cta-group&#34;&gt;
+  
+  &lt;li&gt;
+    &lt;a href=&#34;../gmg_desc&#34;  class=&#34;btn btn-primary px-3 py-3&#34;&gt;Previous: Package Description&lt;/a&gt;
+  &lt;/li&gt;
+  
+  
+&lt;/ul&gt;
+
+&lt;ul class=&#34;cta-group&#34;&gt;
+  
+  &lt;li&gt;
+    &lt;a href=&#34;../gmg_cross&#34;  class=&#34;btn btn-primary px-3 py-3&#34;&gt;Next: Creating Cross Sections&lt;/a&gt;
+  &lt;/li&gt;
+  
+  
+&lt;/ul&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

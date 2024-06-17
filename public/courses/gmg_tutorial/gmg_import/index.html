@@ -1,0 +1,1382 @@
+<!DOCTYPE html><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.6.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Marcel Thielmann" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="1. Data sources Before you can use GMG, you obviously need data. Given the different kinds of data available, there is a multitude of sources. Here, we list some of them that may be useful in the future:" />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://QuakeID.github.io/courses/gmg_tutorial/gmg_import/" />
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.c7b8d9abd591ba2253ea42747e3ac3f5.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha512-W0xM4mr6dEP9nREo7Z9z+9X70wytKvMGeDsj7ps2+xg5QPrEBXC8tAW1IFnzjR6eoJ90JmCnFzerQJTLzIEHjA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.ce39d5378debab09474c9f8ed29efacd.css" />
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+  
+    <link rel="manifest" href="/manifest.webmanifest" />
+  
+
+  
+  <link rel="icon" type="image/png" href="/media/icon_hu94d108f34e4ae467190cd514c650f45a_87195_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu94d108f34e4ae467190cd514c650f45a_87195_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://QuakeID.github.io/courses/gmg_tutorial/gmg_import/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary" />
+  
+  <meta property="og:site_name" content="QuakeID Research Group" />
+  <meta property="og:url" content="https://QuakeID.github.io/courses/gmg_tutorial/gmg_import/" />
+  <meta property="og:title" content="Importing Data | QuakeID Research Group" />
+  <meta property="og:description" content="1. Data sources Before you can use GMG, you obviously need data. Given the different kinds of data available, there is a multitude of sources. Here, we list some of them that may be useful in the future:" /><meta property="og:image" content="https://QuakeID.github.io/media/logo_hu759d274fd7d1bb84a9bad412745ec97e_585457_300x300_fit_lanczos_3.png" />
+    <meta property="twitter:image" content="https://QuakeID.github.io/media/logo_hu759d274fd7d1bb84a9bad412745ec97e_585457_300x300_fit_lanczos_3.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2021-10-27T00:00:00&#43;01:00"
+      />
+    
+    <meta property="article:modified_time" content="2021-10-27T00:00:00&#43;01:00">
+  
+
+  
+
+
+
+  
+
+  
+  
+  
+  
+  
+    <script src="https://cdn.jsdelivr.net/gh/osano/cookieconsent@3.1.1/build/cookieconsent.min.js" integrity="sha512-yXXqOFjdjHNH1GND+1EO0jbvvebABpzGKD66djnUfiKlYME5HGMUJHoCaeE4D5PTG2YsSJf6dwqyUUvQvS0vaA==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/osano/cookieconsent@3.1.1/build/cookieconsent.min.css" integrity="sha512-LQ97camar/lOliT/MqjcQs5kWgy6Qz/cCRzzRzUCfv0fotsCTC9ZHXaPQmJV8Xu/PVALfJZ7BDezl5lW3/qBxg==" crossorigin="anonymous">
+  
+  <script>
+  window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#1565c0",
+          "text": "rgb(255, 255, 255)"
+        },
+        "button": {
+          "background": "rgb(255, 255, 255)",
+          "text": "#1565c0"
+        }
+      },
+      "theme": "classic",
+      "content": {
+        "message": "This website uses cookies to ensure you get the best experience on our website.",
+        "dismiss": "Got it!",
+        "link": "Learn more",
+        "href": "https://www.cookiesandyou.com"
+      }
+    })});
+  </script>
+
+
+
+  <title>Importing Data | QuakeID Research Group</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="188af0a12a62f842cad26d522054dcb0" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.613040fe4f2c0f007b4dcb64404201cb.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<header class="header--fixed">
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/"><img src="/media/logo_hu759d274fd7d1bb84a9bad412745ec97e_585457_0x70_resize_lanczos_3.png" alt="QuakeID Research Group"
+            
+            ></a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/"><img src="/media/logo_hu759d274fd7d1bb84a9bad412745ec97e_585457_0x70_resize_lanczos_3.png" alt="QuakeID Research Group"
+          
+          ></a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/index.html"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/post"><span>News</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/people"><span>People</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/publication"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/software"><span>Software</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/geodata"><span>Data</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/courses"><span>Courses</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Importing Data</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Oct 27, 2021
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <h2 id="1-data-sources">1. Data sources</h2>
+<p>Before you can use GMG, you obviously need data. Given the different kinds of data available, there is a multitude of sources. Here, we list some of them that may be useful in the future:</p>
+<ul>
+<li><a href="https://dataservices.gfz-potsdam.de/4dmb/" target="_blank" rel="noopener">MB4D Data Repository</a>: Repository for data obtained within SPP 4DMB</li>
+<li><a href="https://ngdc.noaa.gov/mgg/global/global.html" target="_blank" rel="noopener">ETOPO1</a>: Global relief data with a resolution of 1 arc-minute</li>
+<li><a href="http://ds.iris.edu/ds/products/emc-earthmodels/" target="_blank" rel="noopener">IRIS Earth Model Collaboration</a>: Different Earth Models, in particular a large collection of seismic tomographies</li>
+<li><a href="https://seafile.rlp.net/d/22b0fb85550240758552/" target="_blank" rel="noopener">our own database</a>: a collection of different data which we have already processed with GMG</li>
+<li>and many more&hellip;</li>
+</ul>
+<p>A lot of data is also not available via dedicated repositories, but via more general repositories such as Zenodo or even hosted on private websites. For the purpose of this tutorial, we will now focus on data from seismic tomographies. For the European Alps, there are several datasets which are freely available. Here, we will use the dataset by <em>Paffrath et al.</em> which uses AlpArray data. The data is not yet available for download in a public repository, but will soon be. Here we use a simple text file with the data that was provided to us directly by Marcel Paffrath.</p>
+<p>Paffrath, M., Friederich, W., and the AlpArray and AlpArray-Swath D working group: <em>Imaging structure and geometry of slabs in the greater Alpine area – A P-wave traveltime tomography using AlpArray Seismic Network data</em>, Solid Earth Discuss. [preprint], <a href="https://doi.org/10.5194/se-2021-58" target="_blank" rel="noopener">https://doi.org/10.5194/se-2021-58</a>, in review, 2021.</p>
+<h2 id="2-importing-tomographic-data-given-as-ascii-file">2. Importing tomographic data given as ASCII file</h2>
+<p>To start importing data, we start the <code>Julia REPL</code> as described in the <a href="../introjulia">first part</a> of the tutorial. We then load the DelimitedFiles and the GeophysicalModelGenerator packages:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">julia&gt; using DelimitedFiles, GeophysicalModelGenerator, GeoStats
+</span></span></code></pre></div><p>To import the Paffrath dataset, read it using the function <em>readdlm</em>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">julia&gt; data = readdlm(&#34;./vgrid_it12_w_res.txt&#34;,skipstart=1)
+</span></span></code></pre></div><p>This results in a large matrix where the data is stored. As a next step, we will organize this data a bit more:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">julia&gt; lon    =  data[:,1];
+</span></span><span class="line"><span class="cl">julia&gt; lat    =  data[:,2];
+</span></span><span class="line"><span class="cl">julia&gt; depth  = -data[:,3];
+</span></span><span class="line"><span class="cl">julia&gt; Vp     =  data[:,4];
+</span></span><span class="line"><span class="cl">julia&gt; dVp    =  data[:,5];
+</span></span></code></pre></div><p>To process this data, we still have to transfer it to a matrix format. To do so, we first generate a regular 3D grid:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Depth_vec       =   unique(depth)
+</span></span><span class="line"><span class="cl">Lon,Lat,Depth   =   LonLatDepthGrid(0:0.5:21,37:0.25:51,Depth_vec);
+</span></span></code></pre></div><p>Here, we generate a grid that has a longitude range from 0° to 20°, a latitude range from 37° to 21° and a depth range determined by the data.</p>
+<p>To transfer the data in matrix format, we then employ the <em>GeoStats.jl</em> package, which basically interpolates the data from the given data points to the grid:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">julia&gt; dLon = Lon[2,1,1]-Lon[1,1,1]
+</span></span><span class="line"><span class="cl">julia&gt; dLat = Lat[1,2,1]-Lat[1,1,1]
+</span></span><span class="line"><span class="cl">julia&gt; Cgrid = CartesianGrid((size(Lon,1),size(Lon,2)),(minimum(Lon),minimum(Lat)),(dLon,dLat))
+</span></span><span class="line"><span class="cl">julia&gt; Vp_3D = zeros(size(Depth));
+</span></span><span class="line"><span class="cl">julia&gt; dVp_3D = zeros(size(Depth));
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">julia&gt; for iz=1:size(Depth,3)
+</span></span><span class="line"><span class="cl">julia&gt;     println(&#34;Depth = $(Depth[1,1,iz])&#34;)
+</span></span><span class="line"><span class="cl">julia&gt;     ind   = findall(x -&gt; x==Depth[1,1,iz], depth)
+</span></span><span class="line"><span class="cl">julia&gt;     coord = PointSet([lon[ind]&#39;; lat[ind]&#39;])
+</span></span><span class="line"><span class="cl">julia&gt;     Geo   = georef((Vp=Vp[ind],), coord)
+</span></span><span class="line"><span class="cl">julia&gt;     P     = EstimationProblem(Geo, Cgrid, :Vp)
+</span></span><span class="line"><span class="cl">julia&gt;     S     = IDW(:Vp =&gt; (distance=Euclidean(),neighbors=2)); 
+</span></span><span class="line"><span class="cl">julia&gt;     sol   = solve(P, S)
+</span></span><span class="line"><span class="cl">julia&gt;     sol_Vp= values(sol).Vp
+</span></span><span class="line"><span class="cl">julia&gt;     Vp_2D = reshape(sol_Vp, size(domain(sol)))
+</span></span><span class="line"><span class="cl">julia&gt;     Vp_3D[:,:,iz] = Vp_2D;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">julia&gt;     # dVp
+</span></span><span class="line"><span class="cl">julia&gt;     Geo   = georef((dVp=dVp[ind],), coord)
+</span></span><span class="line"><span class="cl">julia&gt;     P     = EstimationProblem(Geo, Cgrid, :dVp)
+</span></span><span class="line"><span class="cl">julia&gt;     S     = IDW(:dVp =&gt; (distance=Euclidean(),neighbors=2)); 
+</span></span><span class="line"><span class="cl">julia&gt;     sol   = solve(P, S)
+</span></span><span class="line"><span class="cl">julia&gt;     sol_dVp= values(sol).dVp
+</span></span><span class="line"><span class="cl">julia&gt;     dVp_2D = reshape(sol_dVp, size(domain(sol)))
+</span></span><span class="line"><span class="cl">julia&gt;     dVp_3D[:,:,iz] = dVp_2D;
+</span></span><span class="line"><span class="cl">julia&gt; end
+</span></span></code></pre></div><p>We have now interpolated both Vp as well as dVp to the 3D grid. What is now left is to put the data in the GMG format:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">julia&gt; Data_Paffrath    =   GeophysicalModelGenerator.GeoData(Lon,Lat,Depth,(Vp_km_s=Vp_3D,dVp_perc=dVp_3D)) 
+</span></span></code></pre></div><p>Now store the imported and interpolated data in GMG format so that you can work with it later. This is done using the <a href="https://github.com/JuliaIO/JLD2.jl" target="_blank" rel="noopener">JLD2.jl</a> package:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="k">using</span> <span class="n">JLD2</span>
+</span></span><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">jldsave</span><span class="p">(</span><span class="s">&#34;Paffrath_Europe.jld2&#34;</span><span class="p">;</span> <span class="n">Data_Paffrath</span><span class="p">)</span>
+</span></span></code></pre></div><p>If you, at a later stage, want to load this file again do it as follows:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="k">using</span> <span class="n">JLD2</span><span class="p">,</span> <span class="n">GeophysicalModelGenerator</span>
+</span></span><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">Data_Paffrath_</span> <span class="o">=</span> <span class="n">load_object</span><span class="p">(</span><span class="s">&#34;Paffrath_Europe.jld2&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><p>You can also find the above workflow in this file: <a href="/uploads/gmg_tutorial/ReadDataPaffrath.jl" target="_blank">ReadDataPaffrath.jl</a>. To run it, do the following:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">julia&gt; include(&#34;ReadDataPaffrath.jl&#34;)
+</span></span></code></pre></div><p>Make sure to put the data file vgrid_it12_w_res.txt in the same directory.</p>
+<h2 id="3-importing-tomographic-data-given-as-netcdf">3. Importing tomographic data given as netCDF</h2>
+<p>As mentioned above, <em>netCDF</em> is a standardized file dormat that is widely used in geoscientifc applications. As an example, we will here import the velocity model of the <em>Collaborative Seismic Earth Model</em> (CSEM, <em>Fichtner et al., 2018</em>), which has been constructed using multi-scale full seismic waveform inversion. This model is available via the IRIS EMC Database and can be downloaded <a href="http://ds.iris.edu/files/products/emc/emc-files/csem-europe-2019.12.01.nc" target="_blank" rel="noopener">here</a>. The original work behind this dataset is:</p>
+<ul>
+<li>Blom, N. and Gokhberg, A. and Fichtner, A., 202. <em>Seismic waveform tomography of the central and eastern Mediterranean upper mantle</em>. Solid Earth; Gottingen Vol. 11, Iss. 2, (2020): 669-690. <a href="https://doi.org/10.5194/se-11-669-2020" target="_blank" rel="noopener">https://doi.org/10.5194/se-11-669-2020</a></li>
+<li>Cubuk-Sabuncu, Y., Taymaz, T., Fichtner, A., 2017. <em>3-D crustal velocity structure of western Turkey: constraints from full-waveform tomography</em>, Physics of the Earth and Planetary Interiors 270, 90-112. <a href="https://doi.org/10.1016/j.pepi.2017.06.014" target="_blank" rel="noopener">https://doi.org/10.1016/j.pepi.2017.06.014</a></li>
+<li>Fichtner, A., Trampert, J., Cupillard, P., Saygin, E., Taymaz, T., Capdeville, Y., Villasenor, A., 2013. <em>Multi-scale full waveform inversion</em>. Geophysical Journal International 194, 534-556. <a href="https://doi.org/10.1093/gji/ggt118" target="_blank" rel="noopener">https://doi.org/10.1093/gji/ggt118</a></li>
+<li>Fichtner, A., van Herwaarden, D.-P., Afanasiev, M., Simute, S., Krischer, L., Cubuk-Sabuncu, Y., Taymaz, T., Colli, L., Saygin, E., Villasenor, A., Trampert, J., Cupillard, P., Bunge, H.-P., Igel, H., 2018. <em>The Collaborative Seismic Earth Model: Generation I</em>. Geophysical Research Letters 45, <a href="https://doi.org/10.1029/2018GL077338" target="_blank" rel="noopener">https://doi.org/10.1029/2018GL077338</a>.</li>
+</ul>
+<p>To import this data, we will use the <a href="NetCDF.jl">https://github.com/JuliaGeo/NetCDF.jl</a> package.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">julia&gt; using NetCDF, GeophysicalModelGenerator
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">julia&gt; using Pkg
+</span></span><span class="line"><span class="cl">julia&gt; Pkg.add(&#34;NetCDF&#34;)
+</span></span></code></pre></div><p>First, you can have a look at the contents of this file (assuming that you are in the same directory where the file is located):</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">julia&gt; using NetCDF
+</span></span><span class="line"><span class="cl">julia&gt; ncinfo(&#34;csem-europe-2019.12.01.nc&#34;)
+</span></span></code></pre></div><p>The output of this command is quite large and lists all variables stored in this file. The important part here is the part where the variables are listed:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">##### Variables #####
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Name                                            Type                    Dimensions                     
+</span></span><span class="line"><span class="cl">-------------------------------------------------------------------------------------------------------------
+</span></span><span class="line"><span class="cl">depth                                           FLOAT                   depth                              
+</span></span><span class="line"><span class="cl">latitude                                        FLOAT                   latitude                           
+</span></span><span class="line"><span class="cl">longitude                                       FLOAT                   longitude                          
+</span></span><span class="line"><span class="cl">Vs                                              FLOAT                   longitude latitude depth           
+</span></span></code></pre></div><p>Here we can see that there are four variables in this file, three of them (depth,latitude, longitude) having a single dimension and the fourth one (Vs) having dimensions of the three previous variables. The three one-dimensional vectors therefore define a regualr grid of coordinates defining the locations where Vs is stored.<br>
+To load this data, we can now simply use the commmand <em>ncread</em>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">julia&gt; lat = ncread(&#34;csem-europe-2019.12.01.nc&#34;,&#34;latitude&#34;)
+</span></span><span class="line"><span class="cl">julia&gt; lon = ncread(&#34;csem-europe-2019.12.01.nc&#34;,&#34;longitude&#34;)
+</span></span><span class="line"><span class="cl">julia&gt; depth = ncread(&#34;csem-europe-2019.12.01.nc&#34;,&#34;depth&#34;)
+</span></span><span class="line"><span class="cl">julia&gt; Vsh_3D = ncread(&#34;csem-europe-2019.12.01.nc&#34;,&#34;vsh&#34;)
+</span></span><span class="line"><span class="cl">julia&gt; Vsv_3D = ncread(&#34;csem-europe-2019.12.01.nc&#34;,&#34;vsv&#34;)
+</span></span><span class="line"><span class="cl">julia&gt; depth = -1 .* depth 
+</span></span></code></pre></div><p>Note that we multiplied depth with -1. This is necessary to make depth to be negative, as that is what <code>GeophysicalModelGenerator.jl</code> expects.</p>
+<h4 id="3-reformat-the-coordinate-data">3. Reformat the coordinate data</h4>
+<p>In the netCDF file, coordinates are given as 1D vectors denoting the location of nodes in a regular grid. However, <code>GeophysicalModelGenerator.jl</code> expects true 3D data, where each data point is assigned a latitude,longitude, depth and the respective property (here: Vs). To generate this full regular 3D grid, do the following:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Lon3D,Lat3D,Depth3D = LonLatDepthGrid(lon, lat, depth);
+</span></span></code></pre></div><h4 id="4-generate-paraview-file">4. Generate Paraview file</h4>
+<p>Once the 3D coordinate matrix has been generated, producing a Paraview file is done with the following command</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">julia&gt; DataCSEM_Europe    =   GeoData(Lon3D,Lat3D,Depth3D,(Vsh_km_s=Vsh_3D,Vsv_km_s=Vsv_3D))   
+</span></span></code></pre></div><p>Finally, export the data again to a Paraview compatible format and</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">Write_Paraview</span><span class="p">(</span><span class="n">DataCSEM_Europe</span><span class="p">,</span> <span class="s">&#34;CSEM_Europe&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><p>Besides exporting the data to Paraview, you may want to store the imported data in GMG format so that you can work with it later. This is done using the <a href="https://github.com/JuliaIO/JLD2.jl" target="_blank" rel="noopener">JLD2.jl</a> package:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">julia&gt; using JLD2
+</span></span><span class="line"><span class="cl">julia&gt; jldsave(&#34;CSEM_Europe.jld2&#34;; DataCSEM_Europe)
+</span></span></code></pre></div><details class="spoiler "  id="spoiler-1">
+  <summary><strong>Exercise</strong></summary>
+  <p><ol>
+<li>Follow the instructions above and import the CSEM velocity model. Save it to both vts and jld2 format.</li>
+</ol>
+</p>
+</details>
+<p><ul class="cta-group">
+  
+  <li>
+    <a href="../gmg_desc"  class="btn btn-primary px-3 py-3">Previous: Package Description</a>
+  </li>
+  
+  
+</ul>
+
+<ul class="cta-group">
+  
+  <li>
+    <a href="../gmg_cross"  class="btn btn-primary px-3 py-3">Next: Creating Cross Sections</a>
+  </li>
+  
+  
+</ul>
+</p>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://QuakeID.github.io/courses/gmg_tutorial/gmg_import/&amp;text=Importing%20Data" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://QuakeID.github.io/courses/gmg_tutorial/gmg_import/&amp;t=Importing%20Data" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Importing%20Data&amp;body=https://QuakeID.github.io/courses/gmg_tutorial/gmg_import/" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://QuakeID.github.io/courses/gmg_tutorial/gmg_import/&amp;title=Importing%20Data" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Importing%20Data%20https://QuakeID.github.io/courses/gmg_tutorial/gmg_import/" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://QuakeID.github.io/courses/gmg_tutorial/gmg_import/&amp;title=Importing%20Data" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="/author/marcel-thielmann/"><img class="avatar mr-3 avatar-circle" src="/author/marcel-thielmann/avatar2_hu255bc339f33b658188e4cc70d300a237_15424_270x270_fill_q75_lanczos_center.jpg" alt="Marcel Thielmann"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/author/marcel-thielmann/">Marcel Thielmann</a></h5>
+      <h6 class="card-subtitle">Principal Investigator/Group Leader</h6>
+      <p class="card-text">Working on localization processes in Earth materials, in particular deep earthquakes, flow of complex fluids in porous media and Earth&rsquo;s lower mantle rheology.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:marcel.thielmann@uni-bayreuth.de" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://orcid.org/0000-0003-1185-3730" target="_blank" rel="noopener">
+        <i class="ai ai-orcid"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?user=yDs-MYAAAAAJ&amp;hl=en&amp;oi=ao" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://figshare.com/authors/Marcel_Thielmann/7360784" target="_blank" rel="noopener">
+        <i class="ai ai-researchgate"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/mthielma/" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/files/cv.pdf" >
+        <i class="ai ai-cv"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.b4708d4364577c16ab7001b265a063a4.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/gh/bryanbraun/anchorjs@4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+<script>
+  anchors.add();
+</script>
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+
+  <script src="/js/wowchemy-headroom.c251366b4128fd5e6b046d4c97a62a51.js" type="module"></script>
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.42010733157c11a71adebfe9bae43355.js"></script>
+
+
+
+  <script src="/js/wowchemy-map.a26e9d2f7238ba5b868384f1c5bc6477.js" type="module"></script>
+
+
+
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <pre><code></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/wowchemy-publication.af9327db0521d4a01354bfc8b77a4324.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

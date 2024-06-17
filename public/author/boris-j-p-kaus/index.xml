@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Boris J P Kaus | QuakeID Research Group</title>
+    <link>https://QuakeID.github.io/author/boris-j-p-kaus/</link>
+      <atom:link href="https://QuakeID.github.io/author/boris-j-p-kaus/index.xml" rel="self" type="application/rss+xml" />
+    <description>Boris J P Kaus</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://QuakeID.github.io/media/logo_hu759d274fd7d1bb84a9bad412745ec97e_585457_300x300_fit_lanczos_3.png</url>
+      <title>Boris J P Kaus</title>
+      <link>https://QuakeID.github.io/author/boris-j-p-kaus/</link>
+    </image>
+    
+    <item>
+      <title>Pore-scale permeability prediction for Newtonian and non-Newtonian fluids</title>
+      <link>https://QuakeID.github.io/publication/eichheimer-2019-sj/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://QuakeID.github.io/publication/eichheimer-2019-sj/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lithospheric stresses in Rayleigh–Bénard convection: effects of a free surface and a viscoelastic Maxwell rheology</title>
+      <link>https://QuakeID.github.io/publication/thielmann-2015-dc/</link>
+      <pubDate>Tue, 01 Dec 2015 00:00:00 +0000</pubDate>
+      <guid>https://QuakeID.github.io/publication/thielmann-2015-dc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Intermediate-depth earthquake generation and shear zone formation caused by grain size reduction and shear heating</title>
+      <link>https://QuakeID.github.io/publication/thielmann-2015-ut/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>https://QuakeID.github.io/publication/thielmann-2015-ut/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Discretization Errors in the Hybrid Finite Element Particle-in-cell Method</title>
+      <link>https://QuakeID.github.io/publication/thielmann-2014-ta/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>https://QuakeID.github.io/publication/thielmann-2014-ta/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shear heating induced lithospheric-scale localization: Does it result in subduction?</title>
+      <link>https://QuakeID.github.io/publication/thielmann-2012-wh/</link>
+      <pubDate>Sat, 01 Dec 2012 00:00:00 +0000</pubDate>
+      <guid>https://QuakeID.github.io/publication/thielmann-2012-wh/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

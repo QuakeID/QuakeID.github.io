@@ -1,0 +1,12 @@
+---
+title: "Contributions of Grain Damage, Thermal Weakening, and Necking to Slab Detachment"
+date: 2020-07-01
+publishDate: 2021-10-28T21:57:09.073839Z
+authors: ["Marcel Thielmann", "Stefan M Schmalholz"]
+publication_types: ["2"]
+abstract: "We investigate the impact of three coupled weakening mechanisms on the viscous detachment of a stalled lithospheric slab: structural weakening due to necking, material weakening due to grain size reduction, using a two-phase grain damage model, and thermal weakening due to shear heating (thermal damage). We consider a combined flow law of dislocation and diffusion creep. To understand and quantify the coupling of these three nonlinear weakening processes, we derive a mathematical model, which consists of three coupled nonlinear ordinary differential equations describing the evolution of slab thickness, grain size and temperature. With dimensional analysis, we determine the dimensionless parameters which control the relative importance of the three weakening processes and the two creep mechanisms. We derive several analytical solutions for end-member scenarios that predict the detachment time, that is the duration of slab detachment until slab thickness becomes zero. These analytical solutions are then tested against numerical solutions for intermediate cases. The analytical solutions are accurate for end-member scenarios where one of the weakening mechanisms and one of the creep mechanisms is dominant. Furthermore, we use numerical solutions of the system of equations to systematically explore the parameter space with a Monte Carlo approach.. The numerical approach shows that the analytical solutions typically never deviate by more than 50% from the numerical ones, even for scenarios where all three weakening and both creep mechanisms are important. When both grain and thermal damage are important, the two damage processes generate a positive feedback loop resulting in the fastest detachment times. For Earth conditions, we find that the onset of slab detachment is controlled by grain damage and that during later stages of slab detachment thermal weakening becomes increasingly important and can become the dominating weakening process. We argue that both grain and thermal damage are important for slab detachment and that both damage processes could also be important for lithosphere necking during continental rifting leading to break-up and ocean formation."
+featured: false
+publication: "*Frontiers in Earth Science*"
+doi: "10.3389/feart.2020.00254"
+---
+

@@ -1,0 +1,13 @@
+---
+title: "3D geodynamic models for the development of opposing continental subduction zones: The Hindu Kush–Pamir example"
+date: 2017-12-01
+publishDate: 2021-10-28T21:57:09.080447Z
+authors: ["Jie Liao", "Taras V Gerya", "Marcel Thielmann", "A Alexander G Webb", "Sofia-Katerina Kufner", "An Yin"]
+publication_types: ["2"]
+abstract: "The development of opposing continental subduction zones remains scantly explored in three dimensions. The Hindu Kush–Pamir orogenic system at the western end of the Himalayan orogen provides a rare example of continental collision linked to two opposing intra-continental subduction zones. The subducted plates feature a peculiar 3D geometry consisting of two distinct lithospheric fragments with different polarities, subduction angles and slab-curvatures beneath the Hindu Kush and Pamir, respectively. Using 3D geodynamic modeling, we simulate possible development of two opposing continental subduction zones to understand the dynamic evolution of the Hindu Kush–Pamir orogenic system. Our geodynamic model reproduces the major tectonic elements observed: (1) the deeper subduction depth, the steeper dip angle and the southward offset of the Hindu Kush subduction zone relative to the Pamir naturally occur if convergence direction of the subducting Indian plate and dip-direction of the Hindu Kush subduction zone match. (2) The formation of the highly asymmetrically curved Pamir region and the south-dipping subduction is promoted by the initial geometry of the indenting Indian lithosphere together with the existence of a major strike-slip fault on the eastern margin of the Pamir region. (3) Subduction of only the lower continental crust during continental collision can occur if the coupling between upper and lower crusts is weak enough to allow a separation of these two components, and that (4) the subduction of mainly lower crust then facilitates that conditions for intermediate-depth seismicity can be reached. (5) The secondary tectonic features modeled here such as strike-slip-fault growth, north–northwest striking extension zone, and lateral flow of the thickened ductile upper crust are comparable to the current tectonics of the region. (6) Model results are further compared to the potentially similar orogenic system, i.e., the Alpine orogen, in terms of the curved Western Alpine arc and the two opposing subducted slabs beneath the Alps and the Dinarides."
+featured: false
+publication: "*Earth and Planetary Science Letters*"
+url_pdf: "http://linkinghub.elsevier.com/retrieve/pii/S0012821X17305642"
+doi: "10.1016/j.epsl.2017.10.005"
+---
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>QuakeID Research Group</title>
+    <link>https://QuakeID.github.io/author/</link>
+      <atom:link href="https://QuakeID.github.io/author/index.xml" rel="self" type="application/rss+xml" />
+    <description>QuakeID Research Group</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
+    <image>
+      <url>https://QuakeID.github.io/author/avatar_hufcccbd28c4d2c3f3de98c2db7ba2ca2e_36571_270x270_fill_lanczos_center_3.png</url>
+      <title>QuakeID Research Group</title>
+      <link>https://QuakeID.github.io/author/</link>
+    </image>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>M. D. Ballmer | QuakeID Research Group</title>
+    <link>https://QuakeID.github.io/author/m.-d.-ballmer/</link>
+      <atom:link href="https://QuakeID.github.io/author/m.-d.-ballmer/index.xml" rel="self" type="application/rss+xml" />
+    <description>M. D. Ballmer</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 01 Jul 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://QuakeID.github.io/media/logo_hu759d274fd7d1bb84a9bad412745ec97e_585457_300x300_fit_lanczos_3.png</url>
+      <title>M. D. Ballmer</title>
+      <link>https://QuakeID.github.io/author/m.-d.-ballmer/</link>
+    </image>
+    
+    <item>
+      <title>Narrow, Fast, and “Cool” Mantle Plumes Caused by Strain‐Weakening Rheology in Earth&#39;s Lower Mantle</title>
+      <link>https://QuakeID.github.io/publication/guelcher-2021-ko/</link>
+      <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://QuakeID.github.io/publication/guelcher-2021-ko/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

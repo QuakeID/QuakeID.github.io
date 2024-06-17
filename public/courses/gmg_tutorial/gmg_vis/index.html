@@ -1,0 +1,1523 @@
+<!DOCTYPE html><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.6.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Marcel Thielmann" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="To show you how to visualize data, we will use one of the exmaples given in the GMG documentation. We will repeat it here for completeness. The example is the P-wave velocity model of the Alps as described in:" />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://QuakeID.github.io/courses/gmg_tutorial/gmg_vis/" />
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.c7b8d9abd591ba2253ea42747e3ac3f5.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha512-W0xM4mr6dEP9nREo7Z9z+9X70wytKvMGeDsj7ps2+xg5QPrEBXC8tAW1IFnzjR6eoJ90JmCnFzerQJTLzIEHjA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.ce39d5378debab09474c9f8ed29efacd.css" />
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+  
+    <link rel="manifest" href="/manifest.webmanifest" />
+  
+
+  
+  <link rel="icon" type="image/png" href="/media/icon_hu94d108f34e4ae467190cd514c650f45a_87195_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu94d108f34e4ae467190cd514c650f45a_87195_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://QuakeID.github.io/courses/gmg_tutorial/gmg_vis/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary" />
+  
+  <meta property="og:site_name" content="QuakeID Research Group" />
+  <meta property="og:url" content="https://QuakeID.github.io/courses/gmg_tutorial/gmg_vis/" />
+  <meta property="og:title" content="Visualization | QuakeID Research Group" />
+  <meta property="og:description" content="To show you how to visualize data, we will use one of the exmaples given in the GMG documentation. We will repeat it here for completeness. The example is the P-wave velocity model of the Alps as described in:" /><meta property="og:image" content="https://QuakeID.github.io/media/logo_hu759d274fd7d1bb84a9bad412745ec97e_585457_300x300_fit_lanczos_3.png" />
+    <meta property="twitter:image" content="https://QuakeID.github.io/media/logo_hu759d274fd7d1bb84a9bad412745ec97e_585457_300x300_fit_lanczos_3.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2021-11-06T00:00:00&#43;01:00"
+      />
+    
+    <meta property="article:modified_time" content="2021-11-06T00:00:00&#43;01:00">
+  
+
+  
+
+
+
+  
+
+  
+  
+  
+  
+  
+    <script src="https://cdn.jsdelivr.net/gh/osano/cookieconsent@3.1.1/build/cookieconsent.min.js" integrity="sha512-yXXqOFjdjHNH1GND+1EO0jbvvebABpzGKD66djnUfiKlYME5HGMUJHoCaeE4D5PTG2YsSJf6dwqyUUvQvS0vaA==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/osano/cookieconsent@3.1.1/build/cookieconsent.min.css" integrity="sha512-LQ97camar/lOliT/MqjcQs5kWgy6Qz/cCRzzRzUCfv0fotsCTC9ZHXaPQmJV8Xu/PVALfJZ7BDezl5lW3/qBxg==" crossorigin="anonymous">
+  
+  <script>
+  window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#1565c0",
+          "text": "rgb(255, 255, 255)"
+        },
+        "button": {
+          "background": "rgb(255, 255, 255)",
+          "text": "#1565c0"
+        }
+      },
+      "theme": "classic",
+      "content": {
+        "message": "This website uses cookies to ensure you get the best experience on our website.",
+        "dismiss": "Got it!",
+        "link": "Learn more",
+        "href": "https://www.cookiesandyou.com"
+      }
+    })});
+  </script>
+
+
+
+  <title>Visualization | QuakeID Research Group</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="a8420a927e515809f640c1a63211b7bf" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.613040fe4f2c0f007b4dcb64404201cb.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<header class="header--fixed">
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/"><img src="/media/logo_hu759d274fd7d1bb84a9bad412745ec97e_585457_0x70_resize_lanczos_3.png" alt="QuakeID Research Group"
+            
+            ></a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/"><img src="/media/logo_hu759d274fd7d1bb84a9bad412745ec97e_585457_0x70_resize_lanczos_3.png" alt="QuakeID Research Group"
+          
+          ></a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/index.html"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/post"><span>News</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/people"><span>People</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/publication"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/software"><span>Software</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/geodata"><span>Data</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/courses"><span>Courses</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Visualization</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Nov 6, 2021
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>To show you how to visualize data, we will use one of the exmaples given in the GMG documentation. We will repeat it here for completeness. The example is the P-wave velocity model of the Alps as described in:</p>
+<p>Zhao, L., Paul, A., Malusà, M.G., Xu, X., Zheng, T., Solarino, S., Guillot, S., Schwartz, S., Dumont, T., Salimbeni, S., Aubert, C., Pondrelli, S., Wang, Q., Zhu, R., 2016. <em>Continuity of the Alpine slab unraveled by high-resolution P wave tomography</em>. Journal of Geophysical Research: Solid Earth 121, 8720–8737. <a href="https://doi.org/10.1002/2016JB013310" target="_blank" rel="noopener">doi:10.1002/2016JB013310</a></p>
+<p>The data is given in ASCII format with longitude/latitude/depth/velocity anomaly (percentage) format. You can find the processed data <a href="https://seafile.rlp.net/d/22b0fb85550240758552/files/?p=%2FZhao_etal_2016_data.zip" target="_blank" rel="noopener">here</a>.</p>
+<h2 id="1-visualizing-data-with-paraview">1. Visualizing data with Paraview</h2>
+<p>Importing data into Paraview is fairly straightforward, as one simply needs to open the desired vts file. In our case, open the file <em>Zhao_etal_2016_dVp_percentage.vts</em>. in Paraview. Press <code>Apply</code> (left menu) after doing that. Once you did that you can select <code>dVp_Percentage</code> and <code>Surface</code> (see red ellipses below)/.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="../Tutorial_Zhao_Paraview_1.png" alt="Paraview_1" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>This visualisation employs the default colormap, which is not particularly good.</p>
+<p>You can change that by importing the roma colormap (<a href="https://www.fabiocrameri.ch/visualisation/" target="_blank" rel="noopener">link</a>). For this, open the colormap editor and click the one with the heart on the right hand side. Next, import roma and select it. Alternatively, use one of the already provided colormaps.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="../Tutorial_Zhao_Paraview_2.png" alt="Paraview_2" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>In order to change the color range select the button in the red ellipse and change the lower/upper bound.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="../Tutorial_Zhao_Paraview_3.png" alt="Paraview_3" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>If you want to create a horizontal cross-section @ 200 km depth, you need to select the <code>Slice</code> tool, select <code>Sphere</code> as a clip type, set the center to <code>[0,0,0]</code> and set the radius to <code>6171</code> (=radius earth - 200 km).</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="../Tutorial_Zhao_Paraview_4.png" alt="Paraview_4" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>After pushing <code>Apply</code>, you&rsquo;ll see this:</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="../Tutorial_Zhao_Paraview_5.png" alt="Paraview_5" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>If you want to plot iso-surfaces (e.g. at -3%), you can use the <code>Clip</code> option again, but this time select <code>scalar</code> and don&rsquo;t forget to unclick <code>invert</code>.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="../Tutorial_Zhao_Paraview_6.png" alt="Paraview_6" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h2 id="2-visualizing-cross-sections">2. Visualizing cross sections</h2>
+<p>In principle, Paraview allows to create cross sections of given data. However, Paraview operates in Cartesian coordinates, which makes it difficult to create arbitrary cross-sections with given longitude and latitude. As we have already covered in this tutorial, there is a simple way to create cross sections using the CrossSection function. Here we will go through creating different cross-sections, exporting them and to visualize them in Paraview.</p>
+<p>First, go to the directory where the data is located, start up julia and load the JLD2 and GeophyicalModelGenerator package. Then, load the data that we have already converted to GMG format:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="k">using</span>  <span class="n">GeophysicalModelGenerator</span><span class="p">,</span><span class="n">JLD2</span>
+</span></span><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">load_object</span><span class="p">(</span><span class="s">&#34;Zhao_Pwave.jld2&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><p>Below, we list the commands needed to create different cross-sections.</p>
+<p>To make a cross-section at a given depth:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">Data_cross</span>  <span class="o">=</span>   <span class="n">CrossSection</span><span class="p">(</span><span class="n">Data_set</span><span class="p">,</span> <span class="n">Depth_level</span><span class="o">=-</span><span class="mi">100</span><span class="n">km</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl"><span class="n">GeoData</span> 
+</span></span><span class="line"><span class="cl">  <span class="n">size</span>  <span class="o">:</span> <span class="p">(</span><span class="mi">121</span><span class="p">,</span> <span class="mi">94</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="n">lon</span>   <span class="n">ϵ</span> <span class="p">[</span> <span class="mf">0.0</span> <span class="o">:</span> <span class="mf">18.0</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="n">lat</span>   <span class="n">ϵ</span> <span class="p">[</span> <span class="mf">38.0</span> <span class="o">:</span> <span class="mf">51.95</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="n">depth</span> <span class="n">ϵ</span> <span class="p">[</span> <span class="o">-</span><span class="mf">101.0</span> <span class="n">km</span> <span class="o">:</span> <span class="o">-</span><span class="mf">101.0</span> <span class="n">km</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="n">fields</span><span class="o">:</span> <span class="p">(</span><span class="ss">:dVp_Percentage</span><span class="p">,)</span>
+</span></span><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">Write_Paraview</span><span class="p">(</span><span class="n">Data_cross</span><span class="p">,</span> <span class="s">&#34;Zhao_CrossSection_100km&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="mi">1</span><span class="o">-</span><span class="n">element</span> <span class="kt">Vector</span><span class="p">{</span><span class="kt">String</span><span class="p">}</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl"> <span class="s">&#34;Zhao_CrossSection_100km.vts&#34;</span>
+</span></span></code></pre></div><p>Or at a specific longitude:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">Data_cross</span>  <span class="o">=</span>   <span class="n">CrossSection</span><span class="p">(</span><span class="n">Data_set</span><span class="p">,</span> <span class="n">Lon_level</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">GeoData</span> 
+</span></span><span class="line"><span class="cl">  <span class="n">size</span>  <span class="o">:</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">94</span><span class="p">,</span> <span class="mi">101</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="n">lon</span>   <span class="n">ϵ</span> <span class="p">[</span> <span class="mf">10.05</span> <span class="o">:</span> <span class="mf">10.05</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="n">lat</span>   <span class="n">ϵ</span> <span class="p">[</span> <span class="mf">38.0</span> <span class="o">:</span> <span class="mf">51.95</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="n">depth</span> <span class="n">ϵ</span> <span class="p">[</span> <span class="o">-</span><span class="mf">1001.0</span> <span class="n">km</span> <span class="o">:</span> <span class="o">-</span><span class="mf">1.0</span> <span class="n">km</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="n">fields</span><span class="o">:</span> <span class="p">(</span><span class="ss">:dVp_Percentage</span><span class="p">,)</span> 
+</span></span><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">Write_Paraview</span><span class="p">(</span><span class="n">Data_cross</span><span class="p">,</span> <span class="s">&#34;Zhao_CrossSection_Lon10&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="mi">1</span><span class="o">-</span><span class="n">element</span> <span class="kt">Vector</span><span class="p">{</span><span class="kt">String</span><span class="p">}</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl"> <span class="s">&#34;Zhao_CrossSection_Lon10.vts&#34;</span>
+</span></span></code></pre></div><p>As you see, this cross-section is not taken at exactly 10 degrees longitude. That is because by default we don&rsquo;t interpolate the data, but rather use the closest point in longitude in the original data set.</p>
+<p>If you wish to interpolate the data, specify <code>Interpolate=true</code>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">Data_cross</span>  <span class="o">=</span>   <span class="n">CrossSection</span><span class="p">(</span><span class="n">Data_set</span><span class="p">,</span> <span class="n">Lon_level</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">Interpolate</span><span class="o">=</span><span class="nb">true</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">GeoData</span> 
+</span></span><span class="line"><span class="cl">  <span class="n">size</span>  <span class="o">:</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="n">lon</span>   <span class="n">ϵ</span> <span class="p">[</span> <span class="mf">10.0</span> <span class="o">:</span> <span class="mf">10.0</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="n">lat</span>   <span class="n">ϵ</span> <span class="p">[</span> <span class="mf">38.0</span> <span class="o">:</span> <span class="mf">51.95</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="n">depth</span> <span class="n">ϵ</span> <span class="p">[</span> <span class="o">-</span><span class="mf">1001.0</span> <span class="n">km</span> <span class="o">:</span> <span class="o">-</span><span class="mf">1.0</span> <span class="n">km</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="n">fields</span><span class="o">:</span> <span class="p">(</span><span class="ss">:dVp_Percentage</span><span class="p">,)</span>
+</span></span><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">Write_Paraview</span><span class="p">(</span><span class="n">Data_cross</span><span class="p">,</span> <span class="s">&#34;Zhao_CrossSection_Lon10_interpolated&#34;</span><span class="p">);</span>
+</span></span></code></pre></div><p>as you see, this causes the data to be interpolated on a <code>(100,100)</code> grid (which can be changed by adding a <code>dims</code> input parameter).</p>
+<p>We can also create a diagonal cut through the model:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">Data_cross</span>  <span class="o">=</span>   <span class="n">CrossSection</span><span class="p">(</span><span class="n">Data_set</span><span class="p">,</span> <span class="n">Start</span><span class="o">=</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span><span class="mi">39</span><span class="p">),</span> <span class="n">End</span><span class="o">=</span><span class="p">(</span><span class="mi">18</span><span class="p">,</span><span class="mi">50</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="n">GeoData</span> 
+</span></span><span class="line"><span class="cl">  <span class="n">size</span>  <span class="o">:</span> <span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="n">lon</span>   <span class="n">ϵ</span> <span class="p">[</span> <span class="mf">1.0</span> <span class="o">:</span> <span class="mf">18.0</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="n">lat</span>   <span class="n">ϵ</span> <span class="p">[</span> <span class="mf">39.0</span> <span class="o">:</span> <span class="mf">50.0</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="n">depth</span> <span class="n">ϵ</span> <span class="p">[</span> <span class="o">-</span><span class="mf">1001.0</span> <span class="n">km</span> <span class="o">:</span> <span class="o">-</span><span class="mf">1.0</span> <span class="n">km</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="n">fields</span><span class="o">:</span> <span class="p">(</span><span class="ss">:dVp_Percentage</span><span class="p">,)</span>
+</span></span><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">Write_Paraview</span><span class="p">(</span><span class="n">Data_cross</span><span class="p">,</span> <span class="s">&#34;Zhao_CrossSection_diagonal&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><p>Here an image that shows the resulting cross-sections:</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="../Tutorial_Zhao_Paraview_7.png" alt="Paraview_7" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h2 id="3-extract-a-3d-subset-of-the-data">3. Extract a (3D) subset of the data</h2>
+<p>Sometimes, the data set covers a large region (e.g., the whole Earth), and you are only interested in a subset of this data for your project. You can obviously cut your data to the correct size in Paraview. Yet, an even easier way is the routine <code>ExtractSubvolume</code>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">Data_subset</span>     <span class="o">=</span>   <span class="n">ExtractSubvolume</span><span class="p">(</span><span class="n">Data_set</span><span class="p">,</span><span class="n">Lon_level</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">12</span><span class="p">),</span> <span class="n">Lat_level</span><span class="o">=</span><span class="p">(</span><span class="mi">40</span><span class="p">,</span><span class="mi">45</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="n">GeoData</span> 
+</span></span><span class="line"><span class="cl">  <span class="n">size</span>  <span class="o">:</span> <span class="p">(</span><span class="mi">48</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="mi">101</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="n">lon</span>   <span class="n">ϵ</span> <span class="p">[</span> <span class="mf">4.95</span> <span class="o">:</span> <span class="mf">12.0</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="n">lat</span>   <span class="n">ϵ</span> <span class="p">[</span> <span class="mf">39.95</span> <span class="o">:</span> <span class="mf">45.05</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="n">depth</span> <span class="n">ϵ</span> <span class="p">[</span> <span class="o">-</span><span class="mf">1001.0</span> <span class="n">km</span> <span class="o">:</span> <span class="o">-</span><span class="mf">1.0</span> <span class="n">km</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="n">fields</span><span class="o">:</span> <span class="p">(</span><span class="ss">:dVp_Percentage</span><span class="p">,)</span>
+</span></span><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">Write_Paraview</span><span class="p">(</span><span class="n">Data_subset</span><span class="p">,</span> <span class="s">&#34;Zhao_Subset&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><p>This gives the resulting image. You can obviously use that new, smaller, data set to create cross-sections etc.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="../Tutorial_Zhao_Paraview_8.png" alt="Paraview_8" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>By default, we extract the original data and do not interpolate it on a new grid.
+In some cases, you will want to interpolate the data on a different grid. Use the <code>Interpolate=true</code> option for that:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">Data_subset_interp</span>     <span class="o">=</span>   <span class="n">ExtractSubvolume</span><span class="p">(</span><span class="n">Data_set</span><span class="p">,</span><span class="n">Lon_level</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">12</span><span class="p">),</span> <span class="n">Lat_level</span><span class="o">=</span><span class="p">(</span><span class="mi">40</span><span class="p">,</span><span class="mi">45</span><span class="p">),</span> <span class="n">Interpolate</span><span class="o">=</span><span class="nb">true</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">GeoData</span> 
+</span></span><span class="line"><span class="cl">  <span class="n">size</span>  <span class="o">:</span> <span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="n">lon</span>   <span class="n">ϵ</span> <span class="p">[</span> <span class="mf">5.0</span> <span class="o">:</span> <span class="mf">12.0</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="n">lat</span>   <span class="n">ϵ</span> <span class="p">[</span> <span class="mf">40.0</span> <span class="o">:</span> <span class="mf">45.0</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="n">depth</span> <span class="n">ϵ</span> <span class="p">[</span> <span class="o">-</span><span class="mf">1001.0</span> <span class="n">km</span> <span class="o">:</span> <span class="o">-</span><span class="mf">1.0</span> <span class="n">km</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="n">fields</span><span class="o">:</span> <span class="p">(</span><span class="ss">:dVp_Percentage</span><span class="p">,)</span>
+</span></span><span class="line"><span class="cl"><span class="n">julia</span><span class="o">&gt;</span> <span class="n">Write_Paraview</span><span class="p">(</span><span class="n">Data_subset</span><span class="p">,</span> <span class="s">&#34;Zhao_Subset_interp&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><p>If you need more colormaps or if you do not like the ones provided in Paraview, you can download additional colormaps for Paraview from <a href="https://www.fabiocrameri.ch/visualisation/" target="_blank" rel="noopener">Fabio Crameris website</a>.</p>
+<p><details class="spoiler "  id="spoiler-0">
+  <summary><strong>Exercises</strong></summary>
+  <p><ol>
+<li>Visualize the body wave tomography by Paffrath et al. by employing similar steps as above.</li>
+</ol>
+</p>
+</details>
+<ul class="cta-group">
+  
+  <li>
+    <a href="../gmg_export"  class="btn btn-primary px-3 py-3">Previous: Exporting data</a>
+  </li>
+  
+  
+</ul>
+
+<ul class="cta-group">
+  
+  <li>
+    <a href=".."  class="btn btn-primary px-3 py-3">Back to the main page</a>
+  </li>
+  
+  
+</ul>
+</p>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://QuakeID.github.io/courses/gmg_tutorial/gmg_vis/&amp;text=Visualization" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://QuakeID.github.io/courses/gmg_tutorial/gmg_vis/&amp;t=Visualization" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Visualization&amp;body=https://QuakeID.github.io/courses/gmg_tutorial/gmg_vis/" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://QuakeID.github.io/courses/gmg_tutorial/gmg_vis/&amp;title=Visualization" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Visualization%20https://QuakeID.github.io/courses/gmg_tutorial/gmg_vis/" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://QuakeID.github.io/courses/gmg_tutorial/gmg_vis/&amp;title=Visualization" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="/author/marcel-thielmann/"><img class="avatar mr-3 avatar-circle" src="/author/marcel-thielmann/avatar2_hu255bc339f33b658188e4cc70d300a237_15424_270x270_fill_q75_lanczos_center.jpg" alt="Marcel Thielmann"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/author/marcel-thielmann/">Marcel Thielmann</a></h5>
+      <h6 class="card-subtitle">Principal Investigator/Group Leader</h6>
+      <p class="card-text">Working on localization processes in Earth materials, in particular deep earthquakes, flow of complex fluids in porous media and Earth&rsquo;s lower mantle rheology.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:marcel.thielmann@uni-bayreuth.de" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://orcid.org/0000-0003-1185-3730" target="_blank" rel="noopener">
+        <i class="ai ai-orcid"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?user=yDs-MYAAAAAJ&amp;hl=en&amp;oi=ao" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://figshare.com/authors/Marcel_Thielmann/7360784" target="_blank" rel="noopener">
+        <i class="ai ai-researchgate"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/mthielma/" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/files/cv.pdf" >
+        <i class="ai ai-cv"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.b4708d4364577c16ab7001b265a063a4.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/gh/bryanbraun/anchorjs@4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+<script>
+  anchors.add();
+</script>
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+
+  <script src="/js/wowchemy-headroom.c251366b4128fd5e6b046d4c97a62a51.js" type="module"></script>
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.42010733157c11a71adebfe9bae43355.js"></script>
+
+
+
+  <script src="/js/wowchemy-map.a26e9d2f7238ba5b868384f1c5bc6477.js" type="module"></script>
+
+
+
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <pre><code></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/wowchemy-publication.af9327db0521d4a01354bfc8b77a4324.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

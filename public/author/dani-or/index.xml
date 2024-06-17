@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dani Or | QuakeID Research Group</title>
+    <link>https://QuakeID.github.io/author/dani-or/</link>
+      <atom:link href="https://QuakeID.github.io/author/dani-or/index.xml" rel="self" type="application/rss+xml" />
+    <description>Dani Or</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://QuakeID.github.io/media/logo_hu759d274fd7d1bb84a9bad412745ec97e_585457_300x300_fit_lanczos_3.png</url>
+      <title>Dani Or</title>
+      <link>https://QuakeID.github.io/author/dani-or/</link>
+    </image>
+    
+    <item>
+      <title>Tensile stress relaxation in unsaturated granular materials</title>
+      <link>https://QuakeID.github.io/publication/bianchi-2016-cb/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>https://QuakeID.github.io/publication/bianchi-2016-cb/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

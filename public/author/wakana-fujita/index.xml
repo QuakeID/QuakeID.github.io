@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wakana Fujita | QuakeID Research Group</title>
+    <link>https://QuakeID.github.io/author/wakana-fujita/</link>
+      <atom:link href="https://QuakeID.github.io/author/wakana-fujita/index.xml" rel="self" type="application/rss+xml" />
+    <description>Wakana Fujita</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://QuakeID.github.io/media/logo_hu759d274fd7d1bb84a9bad412745ec97e_585457_300x300_fit_lanczos_3.png</url>
+      <title>Wakana Fujita</title>
+      <link>https://QuakeID.github.io/author/wakana-fujita/</link>
+    </image>
+    
+    <item>
+      <title>Combined numerical and experimental study of microstructure and permeability in porous granular media</title>
+      <link>https://QuakeID.github.io/publication/eichheimer-2020-ep/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>https://QuakeID.github.io/publication/eichheimer-2020-ep/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

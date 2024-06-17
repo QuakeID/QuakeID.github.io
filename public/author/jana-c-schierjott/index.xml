@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jana C Schierjott | QuakeID Research Group</title>
+    <link>https://QuakeID.github.io/author/jana-c-schierjott/</link>
+      <atom:link href="https://QuakeID.github.io/author/jana-c-schierjott/index.xml" rel="self" type="application/rss+xml" />
+    <description>Jana C Schierjott</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://QuakeID.github.io/media/logo_hu759d274fd7d1bb84a9bad412745ec97e_585457_300x300_fit_lanczos_3.png</url>
+      <title>Jana C Schierjott</title>
+      <link>https://QuakeID.github.io/author/jana-c-schierjott/</link>
+    </image>
+    
+    <item>
+      <title>Can grain size reduction initiate transform faults? - Insights from a 3D numerical study</title>
+      <link>https://QuakeID.github.io/publication/schierjott-2020-fa/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://QuakeID.github.io/publication/schierjott-2020-fa/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

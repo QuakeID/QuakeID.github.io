@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GMG GUI Tutorial | QuakeID Research Group</title>
+    <link>https://QuakeID.github.io/courses/gmg_gui_tutorial/</link>
+      <atom:link href="https://QuakeID.github.io/courses/gmg_gui_tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <description>GMG GUI Tutorial</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 28 Aug 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://QuakeID.github.io/courses/gmg_gui_tutorial/featured.png</url>
+      <title>GMG GUI Tutorial</title>
+      <link>https://QuakeID.github.io/courses/gmg_gui_tutorial/</link>
+    </image>
+    
+    <item>
+      <title>Installation</title>
+      <link>https://QuakeID.github.io/courses/gmg_gui_tutorial/gmg_gui_installation/</link>
+      <pubDate>Mon, 28 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://QuakeID.github.io/courses/gmg_gui_tutorial/gmg_gui_installation/</guid>
+      <description>&lt;p&gt;There are two possibilities to install the two GMG apps: (1) install is as a Matlab app (requires MATLAB) or (2) install it as a standalone app. If you choose the second possibility, the MATLAB Runtime environment will be downloaded during the installation.&lt;/p&gt;
+&lt;h2 id=&#34;1-matlab-apps&#34;&gt;1. MATLAB apps&lt;/h2&gt;
+&lt;p&gt;To install the two apps within MATLAB, first download them ( &lt;a href=&#34;https://myfiles.uni-bayreuth.de/filr/public-link/file-download/043490a48a3aba9d018a457677b61cf0/81263/-6817355882462998366/ProfileSelection.mlappinstall&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Profile Picker&lt;/a&gt;, &lt;a href=&#34;https://myfiles.uni-bayreuth.de/filr/public-link/file-download/043490a48a3aba9d018a457677da1cf4/81262/-7085908668330488526/GMGDataPicker.mlappinstall&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Data Picker&lt;/a&gt; ).&lt;/p&gt;
+&lt;h2 id=&#34;2-standalone-apps&#34;&gt;2. Standalone apps&lt;/h2&gt;
+&lt;p&gt;If you do not have access to MATLAB, you may then install the standalone version of the app. During the installation process, the MATLAB Runtime environment will also be installed. The standalone version has to match your operating system. As we did not have access to all operating systems beforehand, only a standalone version for Macs is available right now. However, we will create stanalon versions for different operating systems during the workshop.&lt;/p&gt;
+&lt;p&gt;The standalone apps can be downloaded by clicking on the respective link:
+&lt;a href=&#34;https://myfiles.uni-bayreuth.de/filr/public-link/file-download/043490a48a3aba9d018a458388191d30/81265/-2833648125223114224/ProfileSelection_IntelMac.zip&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Profile Picker Intel Mac&lt;/a&gt;, &lt;a href=&#34;https://myfiles.uni-bayreuth.de/filr/public-link/file-download/043490a48a3aba9d018a458388461d34/81264/7717492506916493435/GMGDataPicker_IntelMac.zip&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Data Picker Intel Mac&lt;/a&gt;, &lt;a href=&#34;https://myfiles.uni-bayreuth.de/filr/public-link/file-download/043490a58a3abaae018a4b159ee44961/81296/6661181477785012146/ProfileSelection_Win.exe&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Profile Picker Win&lt;/a&gt;, &lt;a href=&#34;https://myfiles.uni-bayreuth.de/filr/public-link/file-download/043490a58a3abaae018a4b27930b498c/81298/-2193537999682260750/ProfileSelection_Linux.install&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Profile Picker Linux&lt;/a&gt;, &lt;a href=&#34;https://myfiles.uni-bayreuth.de/filr/public-link/file-download/043490a58a3abaae018a4b3df27b499b/81300/4364483070845544323/GMGDataPicker_Win.exe&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GMG Data Picker Win&lt;/a&gt;, &lt;a href=&#34;https://myfiles.uni-bayreuth.de/filr/public-link/file-download/043490a58a3abaae018a4b2793394990/81299/-629886852228712367/GMGDataPicker_Linux.install&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GMG Data Picker Linux&lt;/a&gt;. Double clicking the downloaded file should then start an installer that will guid you through the installation process.&lt;/p&gt;
+&lt;p&gt;&lt;ul class=&#34;cta-group&#34;&gt;
+  
+  &lt;li&gt;
+    &lt;a href=&#34;../gmg_gui_data&#34;  class=&#34;btn btn-primary px-3 py-3&#34;&gt;Next: Data&lt;/a&gt;
+  &lt;/li&gt;
+  
+  
+&lt;/ul&gt;
+
+&lt;ul class=&#34;cta-group&#34;&gt;
+  
+  &lt;li&gt;
+    &lt;a href=&#34;..&#34;  class=&#34;btn btn-primary px-3 py-3&#34;&gt;Back to the main page&lt;/a&gt;
+  &lt;/li&gt;
+  
+  
+&lt;/ul&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Data</title>
+      <link>https://QuakeID.github.io/courses/gmg_gui_tutorial/gmg_gui_data/</link>
+      <pubDate>Mon, 28 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://QuakeID.github.io/courses/gmg_gui_tutorial/gmg_gui_data/</guid>
+      <description>&lt;p&gt;We will be working with preprocessed data of 12 different profiles where we extracted Vp- and Vs-tomographies, Moho topographies ans seismicty from different data sources. These processed datasets can be downloaded &lt;a href=&#34;https://myfiles.uni-bayreuth.de/filr/public-link/file-download/043490a48a3aba9d018a4574bb3d1cd7/81261/3631492212628888140/ProfileData.zip&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt; as a single zip file.&lt;/p&gt;
+&lt;p&gt;&lt;ul class=&#34;cta-group&#34;&gt;
+  
+  &lt;li&gt;
+    &lt;a href=&#34;../gmg_gui_manual&#34;  class=&#34;btn btn-primary px-3 py-3&#34;&gt;Next: Manual&lt;/a&gt;
+  &lt;/li&gt;
+  
+  
+&lt;/ul&gt;
+
+&lt;ul class=&#34;cta-group&#34;&gt;
+  
+  &lt;li&gt;
+    &lt;a href=&#34;..&#34;  class=&#34;btn btn-primary px-3 py-3&#34;&gt;Back to the main page&lt;/a&gt;
+  &lt;/li&gt;
+  
+  
+&lt;/ul&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>GMG GUI Manual</title>
+      <link>https://QuakeID.github.io/courses/gmg_gui_tutorial/gmg_gui_manual/</link>
+      <pubDate>Mon, 28 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://QuakeID.github.io/courses/gmg_gui_tutorial/gmg_gui_manual/</guid>
+      <description>&lt;p&gt;The current manual consists of a set of slides which we will go over during the workshop. This file can be downloaded &lt;a href=&#34;https://myfiles.uni-bayreuth.de/filr/public-link/file-download/043490a48a3aba9d018a4574bb0d1cd3/81260/1567055420365200803/Manual.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;ul class=&#34;cta-group&#34;&gt;
+  
+  &lt;li&gt;
+    &lt;a href=&#34;..&#34;  class=&#34;btn btn-primary px-3 py-3&#34;&gt;Back to the main page&lt;/a&gt;
+  &lt;/li&gt;
+  
+  
+&lt;/ul&gt;
+
+</description>
+    </item>
+    
+  </channel>
+</rss>

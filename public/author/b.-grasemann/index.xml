@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title> B. Grasemann | QuakeID Research Group</title>
+    <link>https://QuakeID.github.io/author/b.-grasemann/</link>
+      <atom:link href="https://QuakeID.github.io/author/b.-grasemann/index.xml" rel="self" type="application/rss+xml" />
+    <description> B. Grasemann</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 20 Mar 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://QuakeID.github.io/media/logo_hu759d274fd7d1bb84a9bad412745ec97e_585457_300x300_fit_lanczos_3.png</url>
+      <title> B. Grasemann</title>
+      <link>https://QuakeID.github.io/author/b.-grasemann/</link>
+    </image>
+    
+    <item>
+      <title>The Effect of the Garnet Content on Deformation Mechanisms and Weakening of Eclogite: Insights From Deformation Experiments and Numerical Simulations</title>
+      <link>https://QuakeID.github.io/publication/rogowitz-2023-hs/</link>
+      <pubDate>Mon, 20 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>https://QuakeID.github.io/publication/rogowitz-2023-hs/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
